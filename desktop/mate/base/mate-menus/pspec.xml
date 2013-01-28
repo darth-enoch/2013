@@ -25,6 +25,7 @@
 	    <Dependency>mate-corba-devel</Dependency>
 	    <Dependency>python-gudev</Dependency>
 	    <Dependency>python-gtk-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">fix-underlinking.patch</Patch>
@@ -45,6 +46,7 @@
 	    <Dependency>mate-corba</Dependency>
 	    <Dependency>python-gudev</Dependency>
 	    <Dependency>python-gtk</Dependency>
+	    <Dependency>glib2</Dependency>
         </RuntimeDependencies>
         <Files>
 	  <Path fileType="library">/usr/lib</Path>

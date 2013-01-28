@@ -20,7 +20,6 @@ def setup():
 				    --disable-static \
 				    --enable-introspection \
 				    --libexecdir=/usr/lib/mate-file-manager")
-    autotools.configure()
 
 
 

@@ -17,7 +17,6 @@ def setup():
 				    --localstatedir=/var \
 				    --libexecdir=/usr/bin \
 				    --disable-static ")
-    autotools.configure()
 
 
 

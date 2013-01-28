@@ -28,14 +28,22 @@
             <Dependency>libxml2-devel</Dependency>
 	    <Dependency>dbus-glib-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libXrender-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">mate-1.2.2-add_gmodules_to_linker.patch</Patch>
+            <!--<Patch level="1">mate-1.2.2-add_gmodules_to_linker.patch</Patch>
 	    <Patch level="0">caja-filetype-symlink-fix.patch</Patch>
 	    <Patch level="1">caja-gvfs-desktop-key-2.patch</Patch>
 	    <Patch level="1">caja-rtl-fix.patch</Patch>
 	    <Patch level="1">mate-file-manager-1.4.0-docfix.patch</Patch>
-	    <Patch level="1">no_session_delay.patch</Patch>
+	    <Patch level="1">no_session_delay.patch</Patch>-->
 	</Patches>
     </Source>
 
@@ -56,6 +64,15 @@
 	    <Dependency>dbus-glib</Dependency>
 	    <Dependency>clamz</Dependency>
             <Dependency>gobject-introspection</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>clamz</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>

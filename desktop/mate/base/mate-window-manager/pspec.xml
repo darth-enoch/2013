@@ -28,6 +28,19 @@
 	    <Dependency>libICE-devel</Dependency>
 	    <Dependency>libXcomposite-devel</Dependency>
 	    <Dependency>startup-notification-devel</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>libXext-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>libXrandr-devel</Dependency>
+	    <Dependency>libXfixes-devel</Dependency>
+	    <Dependency>libXcursor-devel</Dependency>
+	    <Dependency>libXrender-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>libXdamage-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>libXinerama-devel</Dependency>
 	</BuildDependencies>
 	<Patches>
 	  <Patch level="1">Allow-breaking-out-from-maximization-during-mouse.patch</Patch>
@@ -50,6 +63,19 @@
 	    <Dependency>libXcomposite</Dependency>
 	    <Dependency>startup-notification</Dependency>
 	    <Dependency>libcanberra-gtk</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>libXext</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>libXrandr</Dependency>
+	    <Dependency>libXfixes</Dependency>
+	    <Dependency>libXcursor</Dependency>
+	    <Dependency>libXrender</Dependency>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>libXdamage</Dependency>
+	    <Dependency>fontconfig</Dependency>
+	    <Dependency>libXinerama</Dependency>
 	</RuntimeDependencies>
         <Files>
 	  <Path fileType="library">/usr/lib</Path>

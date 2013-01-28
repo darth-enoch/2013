@@ -40,6 +40,16 @@
 	    <Dependency>libxkbfile-devel</Dependency>
 	    <Dependency>libcanberra-devel</Dependency>
 	    <Dependency>libSM-devel</Dependency>
+	    <Dependency>libXft-devel</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>libXcursor-devel</Dependency>
+	    <Dependency>libcanberra-gtk</Dependency>
+	    <Dependency>libXft-devel</Dependency>
 	</BuildDependencies>
 	<Patches>
             <!--<Patch level="1">suse/mate-1.2.1-fix_pointer.patch</Patch>
@@ -75,6 +85,15 @@
 	    <Dependency>libxkbfile</Dependency>
 	    <Dependency>libcanberra</Dependency>
 	    <Dependency>libSM</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>fontconfig</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>libXcursor</Dependency>
+	    <Dependency>libcanberra-gtk</Dependency>
+	    <Dependency>libXft</Dependency>
 	</RuntimeDependencies>
         <Files>
 	  <Path fileType="config">/etc</Path>

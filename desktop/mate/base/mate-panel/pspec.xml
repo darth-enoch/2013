@@ -36,6 +36,17 @@
 	    <Dependency>desktop-file-utils</Dependency>
 	    <Dependency>dconf-devel</Dependency>
             <Dependency>icon-naming-utils</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>libICE-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>libXrandr-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>libart_lgpl-devel</Dependency>
+	    <Dependency>libmatecanvas-devel</Dependency>
+	    <Dependency>libcanberra-gtk</Dependency>
 	 </BuildDependencies>
     </Source>
 
@@ -64,6 +75,17 @@
 	    <Dependency>desktop-file-utils</Dependency>
 	    <Dependency>dconf</Dependency>
             <Dependency>icon-naming-utils</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>libICE</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>libXrandr</Dependency>
+	    <Dependency>glib2</Dependency>
+	    <Dependency>fontconfig</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>libart_lgpl</Dependency>
+	    <Dependency>libmatecanvas</Dependency>
+	    <Dependency>libcanberra-gtk</Dependency>
 	</RuntimeDependencies>
         <Files>
 	   <Path fileType="executable">/usr/bin</Path>

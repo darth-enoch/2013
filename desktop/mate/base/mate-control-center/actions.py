@@ -13,12 +13,11 @@ from pisi.actionsapi import get
 
 def setup():
 
-    shelltools.system("./autogen.sh")
-    autotools.configure(" --prefix=/usr \
-			  --sysconfdir=/etc \
-			  --localstatedir=/var \
-			  --disable-update-mimedb \
-			  --disable-appindicator")
+    shelltools.system("./autogen.sh --prefix=/usr \
+				    --sysconfdir=/etc \
+				    --localstatedir=/var \
+				    --disable-update-mimedb \
+				    --disable-appindicator")
 
 
 
@@ -26,4 +25,8 @@ def build():
     autotools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())   
+
+    pisitools.dodoc("README", "COPYING", "NEWS", "ChangeLog", "AUTHORS", "TODO")
+    
+    pisitools.remove("/usr/share/applications/mimeinfo.cache")

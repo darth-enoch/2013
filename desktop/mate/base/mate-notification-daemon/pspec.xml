@@ -25,6 +25,13 @@
 	    <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>icon-naming-utils</Dependency>
 	    <Dependency>libmatenotify-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
 	 </BuildDependencies>
     </Source>
 
@@ -42,6 +49,13 @@
 	    <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>icon-naming-utils</Dependency>
 	    <Dependency>libmatenotify</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>

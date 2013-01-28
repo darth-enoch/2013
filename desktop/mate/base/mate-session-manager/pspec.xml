@@ -29,38 +29,47 @@
 	    <Dependency>icon-naming-utils</Dependency>
 	    <Dependency>polkit-devel</Dependency>
 	    <Dependency>libcanberra-devel</Dependency>
-	    <Dependency>libcanberra</Dependency>
+	    <Dependency>libICE-devel</Dependency>
+	    <Dependency>libXext-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>libXrender-devel</Dependency>
+	    <Dependency>libXtst-devel</Dependency>
 	</BuildDependencies>
     </Source>
 
     <Package>
       <Name>mate-session-manager</Name>
       <RuntimeDependencies>
-	  <Dependency>mate-conf</Dependency>
-	  <Dependency>desktop-file-utils</Dependency>
-	  <Dependency>mate-conf</Dependency>
-	  <Dependency>gtk2</Dependency>
-	  <Dependency>dbus-glib</Dependency>
-	  <Dependency>mate-common</Dependency>
-	  <Dependency>gst-plugins-base</Dependency>
-	  <Dependency>libSM</Dependency>
-	  <Dependency>upower</Dependency>
-	  <Dependency>mate-polkit</Dependency>
-	  <Dependency>mate-icon-theme</Dependency>
-	  <Dependency>icon-naming-utils</Dependency>
-	  <Dependency>polkit</Dependency>
+	    <Dependency>mate-conf</Dependency>
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>mate-conf</Dependency>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>dbus-glib</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>gst-plugins-base</Dependency>
+	    <Dependency>libSM</Dependency>
+	    <Dependency>upower</Dependency>
+	    <Dependency>mate-polkit</Dependency>
+	    <Dependency>mate-icon-theme</Dependency>
+	    <Dependency>icon-naming-utils</Dependency>
+	    <Dependency>polkit</Dependency>
+	    <Dependency>libICE</Dependency>
+	    <Dependency>libXext</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>libXrender</Dependency>
+	    <Dependency>libXtst</Dependency>
       </RuntimeDependencies>
       <Files>
-	 <Path fileType="executable">/usr/bin</Path>
-	 <Path fileType="config">/etc</Path>
-	 <Path fileType="data">/usr/share/applications</Path>
-	 <Path fileType="doc">/usr/share/doc</Path>
-	 <Path fileType="data">/usr/share/icons</Path>
-	 <Path fileType="localedata">/usr/share/locale</Path>
-	 <Path fileType="man">/usr/share/man</Path>
-	 <Path fileType="data">/usr/share/glib-2.0/</Path>
-	 <Path fileType="data">/usr/share/mate-session</Path>
-	 <Path fileType="data">/usr/share/xsessions</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="config">/etc</Path>
+	    <Path fileType="data">/usr/share/applications</Path>
+	    <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="data">/usr/share/icons</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="man">/usr/share/man</Path>
+	    <Path fileType="data">/usr/share/glib-2.0/</Path>
+	    <Path fileType="data">/usr/share/mate-session</Path>
+	    <Path fileType="data">/usr/share/xsessions</Path>
       </Files>
     </Package>
 

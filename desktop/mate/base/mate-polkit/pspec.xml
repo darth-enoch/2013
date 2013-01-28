@@ -20,7 +20,12 @@
 	    <Dependency>polkit-devel</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
             <Dependency>desktop-file-utils</Dependency>
-            <Dependency>gobject-introspection-devel</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>fontonfigc-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
 	 </BuildDependencies>
     </Source>
 
@@ -31,7 +36,12 @@
 	    <Dependency>gtk2</Dependency>
 	    <Dependency>glib2</Dependency>
             <Dependency>desktop-file-utils</Dependency>
-	    <Dependency>gobject-introspection</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>fontonfigc</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="library">/usr/lib</Path>

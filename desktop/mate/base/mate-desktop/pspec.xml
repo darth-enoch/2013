@@ -30,6 +30,13 @@
 	    <Dependency>libXi-devel</Dependency>
 	    <Dependency>libXcursor-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>gtk2-devel</Dependency>
 	 </BuildDependencies>
     </Source>
 
@@ -51,7 +58,14 @@
 	    <Dependency>libXrandr</Dependency>
 	    <Dependency>libXi</Dependency>
 	    <Dependency>libXcursor</Dependency>
-            <Dependency>gtk-doc</Dependency>
+	    <Dependency>gtk-doc</Dependency>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>fontconfig</Dependency>
 	 </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>

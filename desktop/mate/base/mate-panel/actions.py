@@ -25,7 +25,6 @@ def setup():
 				    --disable-scrollkeeper \
 				    --enable-introspection \
 				    --enable-matecomponent")
-    autotools.configure()
 
 def build():
     autotools.make()

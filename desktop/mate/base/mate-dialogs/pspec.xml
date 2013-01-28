@@ -20,6 +20,7 @@
 	   <Dependency>mate-common</Dependency>
 	   <Dependency>rarian-devel</Dependency>
 	   <Dependency>gtk2-devel</Dependency>
+	   <Dependency>gdk-pixbuf-devel</Dependency>
 	</BuildDependencies>
     </Source>
 
@@ -31,6 +32,7 @@
 	   <Dependency>mate-common</Dependency>
 	   <Dependency>rarian</Dependency>
 	   <Dependency>gtk2</Dependency>
+	   <Dependency>gdk-pixbuf</Dependency>
 	</RuntimeDependencies>
         <Files>
 	   <Path fileType="data">/usr/share/omf</Path>

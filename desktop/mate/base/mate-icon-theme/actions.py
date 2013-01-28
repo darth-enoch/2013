@@ -14,9 +14,9 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
 
-    shelltools.system("./autogen.sh --prefix=/usr")
-    autotools.configure("--enable-icon-mapping \
-			 --disable-static")
+    shelltools.system("./autogen.sh --prefix=/usr \
+				    --enable-icon-mapping \
+				    --disable-static ")
 
 
 
