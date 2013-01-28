@@ -4,7 +4,9 @@
         <Name>clementine</Name>
         <Summary xml:lang="tr">Amarok 1.4 tabanlı müzik oynatıcı</Summary>
         <Summary xml:lang="pl">Nowoczesny i prosty w obsłudze odtwarzacz muzyki</Summary>
+        <Summary xml:lang="es">Reproductor de música basado en Amarok 1.4</Summary>
         <Description xml:lang="tr">Clementine, Amarok 1.4 esas alınarak Qt4 ile yeniden yazılmış modern bir müzik oynatıcıdır.</Description>
         <Description xml:lang="pl">Clementine to port Amaroka 1.4 - popularnego odtwarzacza muzycznego dla systemu Linux.</Description>
+        <Description xml:lang="es">Clementine es un moderno reproductor de música escrito en QT4 y basado en Amarok 1.4.</Description>
     </Source>
 </PISI>
