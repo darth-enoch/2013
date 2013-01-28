@@ -11,7 +11,7 @@ Index: rekonq-0.6.80/src/rekonq.kcfg
      </entry>
      <entry name="previewUrls" type="StringList">
 -        <default>http://www.kde.org,http://userbase.kde.org,http://rekonq.kde.org</default>
-+        <default>http://www.pardus-anka.org,http://www.ozgurlukicin.com/</default>
++        <default>http://www.pardus-anka.org/</default>
      </entry>
  </group>
  
