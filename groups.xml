@@ -199,6 +199,7 @@
     <Group>
       <Name>cinnamon.desktop</Name>
       <LocalName xml:lang="en">Cinnamon Desktop</LocalName>
+      <LocalName xml:lang="nl">Cinnamon Desktop</LocalName>
       <LocalName xml:lang="sv">Skrivbord, Cinnamon</LocalName>
       <LocalName xml:lang="tr">Cinnamon Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Cinnamon</LocalName>
