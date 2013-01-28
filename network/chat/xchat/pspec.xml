@@ -49,7 +49,6 @@
             <Dependency>pango</Dependency>
             <Dependency>tcl</Dependency>
             <Dependency>xdg-utils</Dependency>
-            <Dependency>xchat-xsys</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
