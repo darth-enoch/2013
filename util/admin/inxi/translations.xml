@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>inxi</Name>
+        <Summary xml:lang="tr">script to get system information</Summary>
+        <Description xml:lang="tr">script to get system information</Description>
+    </Source>
+</PISI>
