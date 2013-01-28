@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE Network Management Plasmoid</Summary>
         <Description>plasma-applet-networkmanagement is a Plasma applet for controlling network connections on systems that use the NetworkManager daemon</Description>
-        <Archive sha1sum="25762e4d0e4cd1f4f7e3e17739998b31a23ca316" type="tarbz2">mirrors://kde/unstable/networkmanagement/0.9.0.6/src/networkmanagement-0.9.0.6.tar.bz2</Archive>
+        <Archive sha1sum="2f453625c2a125da14cecd1b18e6c70f440ee696" type="tarbz2">mirrors://kde/unstable/networkmanagement/0.9.0.7/src/networkmanagement-0.9.0.7.tar.bz2</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr/knetworkmanager.po">knetworkmanager.po</AdditionalFile>
             <AdditionalFile target="po/tr/libknetworkmanager.po">libknetworkmanager.po</AdditionalFile>
@@ -48,8 +48,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-08</Date>
-            <Version>0.9.0.6</Version>
+            <Date>2013-01-28</Date>
+            <Version>0.9.0.7</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
