@@ -25,6 +25,8 @@
             <Dependency>openldap-client</Dependency>
             <Dependency>libical-devel</Dependency>
             <Dependency>libgpg-error-devel</Dependency>
+            <Dependency>nepomuk-core-devel</Dependency>
+            <Dependency>libqjson-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="0">disable-pth-build.diff</Patch>
@@ -34,6 +36,7 @@
     <Package>
         <Name>kdepimlibs</Name>
         <RuntimeDependencies>
+            <Dependency>qt</Dependency>
             <Dependency>kdelibs</Dependency>
             <Dependency>akonadi</Dependency>
             <Dependency>phonon</Dependency>
@@ -44,6 +47,8 @@
             <Dependency>openldap-client</Dependency>
             <Dependency>libical</Dependency>
             <Dependency>libgpg-error</Dependency>
+            <Dependency>nepomuk-core</Dependency>
+            <Dependency>libqjson</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>  
