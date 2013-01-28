@@ -17,7 +17,7 @@
    "make_chrome_default" : false
  },
  "first_run_tabs" : [
-   "http://www.pardus.org.tr",
+   "http://www.pardus-anka.org",
    "welcome_page",
    "new_tab_page"
  ]
