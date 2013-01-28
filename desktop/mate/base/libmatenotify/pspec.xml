@@ -17,6 +17,14 @@
 	    <Dependency>gtk2-devel</Dependency>
             <Dependency>dbus-glib-devel</Dependency>
 	    <Dependency>mate-common</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>dbus-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>mate-corba-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
 	 </BuildDependencies>
     </Source>
     <Package>
@@ -25,6 +33,14 @@
 	    <Dependency>gtk2</Dependency>
             <Dependency>dbus-glib</Dependency>
 	    <Dependency>mate-common</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>dbus</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>mate-corba</Dependency>
+	    <Dependency>fontconfig</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>

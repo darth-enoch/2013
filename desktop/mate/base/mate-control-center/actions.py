@@ -17,13 +17,8 @@ def setup():
     autotools.configure(" --prefix=/usr \
 			  --sysconfdir=/etc \
 			  --localstatedir=/var \
-			  --disable-static \
 			  --disable-update-mimedb \
-			  --disable-appindicator \
-			  --disable-schemas-install \
-			  --disable-scrollkeeper  \
-			  --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
-			  --disable-schemas-install")
+			  --disable-appindicator")
 
 
 

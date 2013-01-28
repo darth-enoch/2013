@@ -22,6 +22,13 @@
 	    <Dependency>libgcrypt-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>libpcap-devel</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
 	 </BuildDependencies>
     </Source>
     <Package>
@@ -34,6 +41,13 @@
 	    <Dependency>libgcrypt</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>libpcap</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>fontconfig</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>glib2</Dependency>
 	 </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

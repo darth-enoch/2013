@@ -20,6 +20,13 @@
 	    <Dependency>libxklavier-devel</Dependency>
 	    <Dependency>mate-common</Dependency>
 	    <Dependency>mate-conf-devel</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
 	 </BuildDependencies>
     </Source>
     <Package>
@@ -30,6 +37,13 @@
 	    <Dependency>libxklavier</Dependency>
 	    <Dependency>mate-common</Dependency>
 	    <Dependency>mate-conf</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>fontconfig</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>glib2</Dependency>
 	</RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

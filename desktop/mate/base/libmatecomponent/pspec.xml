@@ -20,6 +20,7 @@
 	    <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>popt-devel</Dependency>
 	    <Dependency>libxml2-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,6 +32,7 @@
 	    <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>popt</Dependency>
 	    <Dependency>libxml2</Dependency>
+	    <Dependency>glib2</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="config">/etc</Path>

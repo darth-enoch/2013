@@ -25,6 +25,19 @@
 	    <Dependency>libglade-devel</Dependency>
 	    <Dependency>popt-devel</Dependency>
 	    <Dependency>gtk-doc</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>libSM-devel</Dependency>
+	    <Dependency>libICE-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>mate-corba-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>libart_lgpl-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+	    <Dependency>libxml2-devel</Dependency>
 	</BuildDependencies>
     </Source>
 
@@ -41,6 +54,19 @@
 	    <Dependency>libglade</Dependency>
 	    <Dependency>popt</Dependency>
 	    <Dependency>gtk-doc</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>libSM</Dependency>
+	    <Dependency>libICE</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>mate-corba</Dependency>
+	    <Dependency>fontconfig</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>libart_lgpl</Dependency>
+	    <Dependency>glib2</Dependency>
+	    <Dependency>libxml2</Dependency>
 	</RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -15,7 +15,6 @@ def setup():
 				    --sysconfdir=/etc \
 				    --localstatedir=/var \
 				    --disable-static")
-    autotools.configure()
 
 def build():
     autotools.make()

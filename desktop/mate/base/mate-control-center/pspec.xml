@@ -42,8 +42,8 @@
 	    <Dependency>libSM-devel</Dependency>
 	</BuildDependencies>
 	<Patches>
-            <Patch level="1">suse/mate-1.2.1-fix_pointer.patch</Patch>
-            <Patch level="1">suse/mate-1.2.1-add_gmodules_to_linker.patch</Patch>
+            <!--<Patch level="1">suse/mate-1.2.1-fix_pointer.patch</Patch>
+            <Patch level="1">suse/mate-1.2.1-add_gmodules_to_linker.patch</Patch>-->
 	</Patches>
     </Source>
     <Package>

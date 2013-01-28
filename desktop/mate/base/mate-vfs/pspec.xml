@@ -28,6 +28,7 @@
 	    <Dependency>acl-devel</Dependency>
 	    <Dependency>keyutils</Dependency>
 	    <Dependency>libxml2-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
         </BuildDependencies>
 	<Patches>
             <Patch level="1">mate-vfs-browser_default.patch</Patch>
@@ -64,6 +65,7 @@
 	    <Dependency>acl</Dependency>
 	    <Dependency>keyutils</Dependency>
 	    <Dependency>libxml2</Dependency>
+	    <Dependency>glib2</Dependency>
         </BuildDependencies>
         </RuntimeDependencies>
     </Package>

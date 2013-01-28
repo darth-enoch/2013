@@ -12,11 +12,11 @@ from pisi.actionsapi import get
 
 def setup():
     shelltools.system("./autogen.sh --disable-static --disable-schemas-install")
-    autotools.configure()
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    
     pisitools.dodoc("NEWS", "README", "COPYING*", "AUTHORS", "ChangeLog")

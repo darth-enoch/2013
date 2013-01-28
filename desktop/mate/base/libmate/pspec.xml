@@ -22,6 +22,7 @@
 	    <Dependency>libcanberra-devel</Dependency>
 	    <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>popt-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
 	 </BuildDependencies>
     </Source>
     <Package>

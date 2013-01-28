@@ -31,6 +31,16 @@
 	    <Dependency>libX11-devel</Dependency>
 	    <Dependency>libmatekeyring-devel</Dependency>
 	    <Dependency>popt-devel</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>libSM-devel</Dependency>
+	    <Dependency>libICE-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>mate-corba-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>libart_lgpl-devel</Dependency>
+	    <Dependency>libmatecomponent-devel</Dependency>
 	 </BuildDependencies>
     </Source>
     <Package>
@@ -51,6 +61,16 @@
 	    <Dependency>libX11</Dependency>
 	    <Dependency>libmatekeyring</Dependency>
 	    <Dependency>popt</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>libSM</Dependency>
+	    <Dependency>libICE</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>mate-corba</Dependency>
+	    <Dependency>fontconfig</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>libart_lgpl</Dependency>
+	    <Dependency>libmatecomponent</Dependency>
 	</RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

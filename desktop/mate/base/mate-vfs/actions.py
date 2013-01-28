@@ -28,7 +28,6 @@ def setup():
                          --disable-cdda \
                          --disable-fam \
                          --disable-howl")
-    autotools.configure()
 
 def build():
     #shelltools.export("MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL", "1")

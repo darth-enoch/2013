@@ -17,7 +17,6 @@ def setup():
 				    --disable-static \
 				    --libexecdir=/usr/lib/matecomponent \
 				    --enable-gtk-doc")
-    autotools.configure()
 
 def build():
     autotools.make()

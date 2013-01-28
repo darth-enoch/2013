@@ -16,7 +16,6 @@ def setup():
 				     --enable-pam \
 				     --with-pam-dir=/lib/security \
 				     --with-root-certs=/etc")
-    autotools.configure()
 
 def build():
     autotools.make()

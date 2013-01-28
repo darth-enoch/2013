@@ -18,6 +18,12 @@
 	    <Dependency>gtk2-devel</Dependency>
 	    <Dependency>libart_lgpl-devel</Dependency>
 	    <Dependency>libglade-devel</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	    <Dependency>cairo-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>freetype-devel</Dependency>
+	    <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>fontconfig-devel</Dependency>
 	 </BuildDependencies>
         <Patches>
             <Patch level="1">disable-gtk-doc-configure_in.patch</Patch>
@@ -32,6 +38,12 @@
 	    <Dependency>gtk2</Dependency>
             <Dependency>libart_lgpl</Dependency>
 	    <Dependency>libglade</Dependency>
+	    <Dependency>atk</Dependency>
+	    <Dependency>cairo</Dependency>
+	    <Dependency>pangol</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>fontconfig</Dependency>
 	 </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

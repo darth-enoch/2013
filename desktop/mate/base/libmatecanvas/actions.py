@@ -14,8 +14,6 @@ def setup():
     shelltools.system("./autogen.sh --enable-glade \
 				    --disable-static \
 				    --prefix=/usr")
-				    #FIXME glade does not works
-    autotools.configure()
 
 def build():
     autotools.make()
