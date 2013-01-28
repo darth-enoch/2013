@@ -23,7 +23,6 @@
             <Dependency>libXft-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>tcl-devel</Dependency>
-            <Dependency>xchat-xsys</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>xchat_desktop.patch</Patch>
@@ -50,6 +49,7 @@
             <Dependency>pango</Dependency>
             <Dependency>tcl</Dependency>
             <Dependency>xdg-utils</Dependency>
+            <Dependency>xchat-xsys</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
