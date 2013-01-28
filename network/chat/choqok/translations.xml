@@ -11,5 +11,6 @@
     <Package>
         <Name>choqok-devel</Name>
         <Summary xml:lang="tr">choqok için geliştirme dosyaları</Summary>
+        <Summary xml:lang="es">Archivos de desarrollo para choqok</Summary>
     </Package>
 </PISI>
