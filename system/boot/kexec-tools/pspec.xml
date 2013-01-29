@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Tools for booting into a kernel without rebooting</Summary>
         <Description>kexec-tools contains userspace tools for loading another kernel from the currently executing kernel with the help of kexec system call.</Description>
-        <Archive sha1sum="c0e3dbb880fc198b3fb8c864cb607ce1ef01047d" type="tarbz2">http://cekirdek.pardus.org.tr/~ozan/dist/sources/kexec-tools-2.0.2_20110617.tar.bz2</Archive>
+        <Archive sha1sum="8b21571f83e0a9abd8999de8ff10be38b5c6317b" type="tarxz">http://anka.pardus-linux.org/2013/source/kexec-tools-20130117.tar.xz</Archive>
         <Patches>
             <Patch level="1">kexec-tools-2.0.0-disable-kexec-test.patch</Patch>
         </Patches>
@@ -34,11 +34,11 @@
 
     <History>
         <Update release="1">
-            <Date>2011-06-17</Date>
-            <Version>2.0.2_20110617</Version>
-            <Comment>First release</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Date>2013-01-29</Date>
+            <Version>2.0.4_20130117</Version>
+            <Comment>First release.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
         </Update>
     </History>
 </PISI>
