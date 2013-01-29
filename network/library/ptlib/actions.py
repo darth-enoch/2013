@@ -14,6 +14,7 @@ def setup():
                          --enable-v4l2 \
                          --enable-plugins \
                          --enable-oss \
+                         --enable-ipv6 \
                          --enable-expat")
 
 def build():
