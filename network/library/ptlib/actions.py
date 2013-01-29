@@ -11,10 +11,10 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--enable-v4l \
-			 --enable-v4l2 \
-    			 --enable-plugins \
-    			 --enable-oss \
-    			 --enable-esd")
+                         --enable-v4l2 \
+                         --enable-plugins \
+                         --enable-oss \
+                         --enable-expat")
 
 def build():
     autotools.make()
