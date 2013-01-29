@@ -14,14 +14,14 @@
         <Description>Mesa implementation of the standard GLU OpenGL utility API.</Description>
         <Archive sha1sum="c2814bbaf1e60e28a75ec80f4646047c0da742bd" type="tarbz2">ftp://ftp.freedesktop.org/pub/mesa/glu/glu-9.0.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency vresionFrom="9.0">mesa-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mesa-glu</Name>
         <RuntimeDependencies>
-            <Dependency vresionFrom="9.0">mesa</Dependency>
+            <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -33,7 +33,7 @@
         <Summary>Development files for mesa-glu</Summary>
         <RuntimeDependencies>
             <Dependency release="current">mesa-glu</Dependency>
-            <Dependency vresionFrom="9.0">mesa-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -48,11 +48,11 @@
         <Summary>32-bit shared libraries for mesa-glu</Summary>
         <BuildType>emul32</BuildType>
         <BuildDependencies>
-            <Dependency vresionFrom="9.0">mesa-32bit</Dependency>
+            <Dependency>mesa-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">mesa-glu</Dependency>
-            <Dependency vresionFrom="9.0">mesa-32bit</Dependency>
+            <Dependency>mesa-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
@@ -60,6 +60,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-24</Date>
+            <Version>9.0.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-13</Date>
             <Version>9.0.0</Version>

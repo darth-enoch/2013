@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Mesa graphics libraries and utilities</Summary>
         <Description>Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.</Description>
-        <Archive sha1sum="dcddfd6b6b4a4ed4f7123ca75fd0108007bbad74" type="tarbz2">ftp://ftp.freedesktop.org/pub/mesa/9.0/MesaLib-9.0.tar.bz2</Archive>
+        <Archive sha1sum="741e5a7e067d842ab3d93cb59fff8215fa3fa889" type="tarbz2">ftp://ftp.freedesktop.org/pub/mesa/9.0.2/MesaLib-9.0.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXdamage-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
@@ -25,10 +25,11 @@
             <Dependency>xorg-proto</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">git_fixes.diff</Patch>
+            <!--Patch level="1">git_fixes.diff</Patch-->
             <Patch level="1">mesa-8.0-llvmpipe-shmget.patch</Patch>
             <Patch level="1">mesa-8.0-nouveau-tfp-blacklist.patch</Patch>
             <Patch level="1">mesa-8.0.1-fix-16bpp.patch</Patch>
+            <Patch level="1">llvm32.patch</Patch>
         </Patches>
     </Source>
 
@@ -54,10 +55,9 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/drirc">drirc</AdditionalFile>
         </AdditionalFiles>
-        <!-- seems we don't need comar script longer -->
-        <!--Provides>
-        <COMAR script="package.py">System.Package</COMAR>
-        </Provides-->
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
     </Package>
 
     <Package>
@@ -110,11 +110,18 @@
         <Files>
             <Path fileType="library">/usr/lib32</Path>
         </Files>
-        <!--Provides>
-        <COMAR script="package-emul32.py">System.Package</COMAR>
-        </Provides-->
+        <Provides>
+            <COMAR script="package-emul32.py">System.Package</COMAR>
+        </Provides>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2013-01-24</Date>
+            <Version>9.0.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-04</Date>
             <Version>9.0</Version>

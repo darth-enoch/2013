@@ -8,8 +8,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "Mesa-%s" % get.srcVERSION().replace("_", "-")
-
 if get.buildTYPE() == "emul32":
     Libdir = "/usr/lib32"
 else:
@@ -18,34 +16,35 @@ else:
 def setup():
     shelltools.export("CFLAGS", "%s -DNDEBUG" % get.CFLAGS())
 
-    # Fix sandbox violations
-    pisitools.dosed("src/gallium/auxiliary/Makefile", "(\$\(PYTHON2\))", r"\1 -B")
-    pisitools.dosed("src/gallium/drivers/llvmpipe/Makefile", "(\$\(PYTHON_FLAGS\))", r"\1 -B")
-
     autotools.autoreconf("-vif")
 
     # gallium-lvm is enabled by default by commit a86fc719d6402eb482657707741890e69e81700f
     options ="--enable-pic \
-              --enable-glx-tls \
-              --disable-egl \
-              --enable-gallium \
-              --with-gallium-drivers=r300,r600,nouveau,swrast \
-              --with-driver=dri \
               --with-dri-driverdir=/usr/lib/xorg/modules/dri \
-              --with-dri-drivers=i915,i965,nouveau,r200,radeon,swrast"
-
+              --with-gallium-drivers=r300,r600,nouveau,svga,swrast \
+              --with-dri-drivers=i915,i965,r200,radeon,nouveau,swrast \
+              --enable-gallium-llvm \
+              --enable-egl \
+              --enable-gallium-egl \
+              --with-egl-platforms=x11,drm \
+              --enable-shared-glapi \
+              --enable-gbm \
+              --enable-glx-tls \
+              --enable-dri \
+              --enable-glx \
+              --enable-osmesa \
+              --enable-gles1 \
+              --enable-gles2 \
+              --enable-texture-float \
+              --enable-xa \
+              --enable-vdpau "
 
     if get.buildTYPE() == "emul32":
         # compile with llvm doesn't work for now, test it later
-        options += " --libdir=/usr/lib32 \
-                     --with-dri-driverdir=/usr/lib32/xorg/modules/dri \
+        options += " --with-dri-driverdir=/usr/lib32/xorg/modules/dri \
                      --disable-gallium-llvm \
                      --with-gallium-drivers=r600,nouveau,swrast \
                      --enable-32-bit"
-
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-        shelltools.export("CXXFLAGS", "%s -m32" % get.CXXFLAGS())
-        shelltools.export("LDFLAGS", "%s -m32" % get.LDFLAGS())
 
     autotools.configure(options)
 
@@ -58,8 +57,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    # needed to build xapian-core
-    pisitools.dosym("libGL.so.1.2.0", "%s/libGL.so.1.2" % Libdir)
+    pisitools.domove("%s/libGL.so.1.2.0" % Libdir, "%s/mesa" % Libdir)
 
     if get.buildTYPE() == "emul32":
         return

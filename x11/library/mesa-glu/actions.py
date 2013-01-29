@@ -9,21 +9,14 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-
     autotools.autoreconf("-vif")
-    options ="--disable-static"
-
-    if get.buildTYPE() == "emul32":
-        options += " --libdir=/usr/lib32"
-
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-        shelltools.export("CXXFLAGS", "%s -m32" % get.CXXFLAGS())
-        shelltools.export("LDFLAGS", "%s -m32" % get.LDFLAGS())
-
-    autotools.configure(options)
+    autotools.configure("--disable-static")
 
 def build():
     autotools.make()
+
+def check():
+    autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

@@ -4,11 +4,11 @@ import os
 
 def postInstall(fromVersion, fromRelease, toVersion, toRelease):
     os.system("/usr/sbin/alternatives \
-                --install /usr/lib32/libGL.so.1.2 libGL-32bit /usr/lib32/mesa/libGL.so.1.2 80 \
-                --slave /usr/lib32/xorg/modules/volatile xorg-modules-volatile-32bit /var/empty")
+               --install /usr/lib32/libGL.so.1.2.0 libGL-32bit /usr/lib32/mesa/libGL.so.1.2.0 80 \
+               --slave /usr/lib32/xorg/modules/volatile xorg-modules-volatile-32bit /var/empty")
 
-    if not os.path.lexists("/usr/lib32/libGL.so.1"):
-        os.symlink("libGL.so.1.2", "/usr/lib32/libGL.so.1")
+    if not os.path.lexists("/usr/lib32/libGL.so.1.2"):
+        os.symlink("libGL.so.1.2.0", "/usr/lib32/libGL.so.1.2")
 
 def preRemove():
     # FIXME This is not needed when upgrading package; but pisi does not
