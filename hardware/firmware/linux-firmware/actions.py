@@ -14,7 +14,6 @@ from pisi.actionsapi import get
 WorkDir = "linux-firmware-20121212"
 
 def setup():
-    shelltools.system("rpm2targz -v mix/aic94xx_seq-30-1.noarch.rpm")
     # Remove source files
     shelltools.unlink("usbdux/*dux")
     shelltools.unlink("*/*.asm")
@@ -35,11 +34,11 @@ def install():
     pisitools.remove("/lib/firmware/GPL-3")
     pisitools.remove("/lib/firmware/LICENCE*")
     pisitools.remove("/lib/firmware/LICENSE*")
-    pisitools.remove("/lib/firmware/*pdf")
     pisitools.remove("/lib/firmware/configure")
     pisitools.remove("/lib/firmware/Makefile")
-    pisitools.remove("/lib/firmware/aic94xx_seq-30-1.noarch.rpm")
-    pisitools.remove("/lib/firmware/aic94xx_seq-30-1.noarch.tar.gz")
+    pisitools.remove("/lib/firmware/ipw2200-bss.fw")
+    pisitools.remove("/lib/firmware/ipw2200-ibss.fw")
+    pisitools.remove("/lib/firmware/ipw2200-sniffer.fw")
     pisitools.removeDir("/lib/firmware/mix")
 
     # Install LICENSE files
