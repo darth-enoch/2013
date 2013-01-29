@@ -6,6 +6,8 @@
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
+from pisi.actionsapi import perlmodules
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
@@ -13,7 +15,8 @@ from pisi.actionsapi import get
 KeepSpecial=["libtool"]
 
 def setup():
-    #autotools.autoreconf("-vif")
+    pisitools.dosed("configure.ac", "AC_PATH_XTRA")
+    autotools.autoreconf("-vif")
 
     pisitools.dosed("configure", "DOCUMENTATION_RELATIVE_PATH=.*", "DOCUMENTATION_RELATIVE_PATH=%s/html" % get.srcNAME())
     autotools.configure("--with-gs-font-dir=/usr/share/fonts/default/ghostscript \
@@ -49,6 +52,9 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     pisitools.dodoc("AUTHORS.txt", "ChangeLog", "LICENSE", "NEWS.txt")
-    
-    pisitools.remove("/usr/lib/perl5/5.16.1/x86_64-linux-thread-multi/perllocal.pod")
 
+    shelltools.chmod("%s/usr/lib/perl5/vendor_perl/%s/%s-linux-thread-multi/auto/Image/Magick/Magick.so" % (get.installDIR(), get.curPERL(), get.HOST().split("-")[0]))
+
+    pisitools.remove("/usr/lib/*.la")
+    perlmodules.removePacklist()
+    perlmodules.removePodfiles()

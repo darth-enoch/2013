@@ -12,8 +12,8 @@
         <IsA>app:gui</IsA>
         <Summary>A collection of tools and libraries for many image file formats</Summary>
         <Description>ImageMagick is a software suite to create, edit, and compose bitmap images. It can read, convert and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. You can use ImageMagick to translate, flip, mirror, rotate, scale, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.</Description>
-	<Archive sha1sum="7c7737972713f240ba7d784110e66f267f0a5226" type="tarbz2">http://anka.pardus-linux.org/2013/source/ImageMagick-6.8.0-2.tar.bz2</Archive>
-	<BuildDependencies>
+        <Archive sha1sum="1fd74bdeb728ca9655c7402170b33ee24d04a7df" type="tarxz">http://www.imagemagick.org/download/ImageMagick-6.8.2-1.tar.xz</Archive>
+        <BuildDependencies>
             <Dependency>ghostscript-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
@@ -40,7 +40,7 @@
             <Patch>mandriva/imagemagick-urw.diff</Patch>
             <Patch>mandriva/imagemagick-fpx.diff</Patch>
             <Patch level="1">mandriva/ImageMagick-libpath.diff</Patch>
-	    <Patch level="0">perlmagick.rpath.patch</Patch>
+            <Patch level="0">perlmagick.rpath.patch</Patch>
             <!--<Patch level="1">mandriva/ImageMagick-6.4.8-9-fix-montageimages-test.patch</Patch>-->
             <!--<Patch>mandriva/ImageMagick-linkage_fix.diff</Patch>-->
         </Patches>
@@ -70,7 +70,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="config">/etc/ImageMagick/</Path>
+            <Path fileType="config">/etc/ImageMagick/</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/ImageMagick-*</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -102,6 +102,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-29</Date>
+            <Version>6.8.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-12</Date>
             <Version>6.8.0.2</Version>
