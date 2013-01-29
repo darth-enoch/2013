@@ -17,7 +17,7 @@ def setup():
                          --disable-dependency-tracking \
                          --disable-maintainer-mode \
                          --disable-scrollkeeper \
-                         --disable-eds \
+                         --enable-eds \
                          --disable-gdu \
                          --enable-gstreamer \
                          --enable-avahi \
@@ -26,9 +26,7 @@ def setup():
                          --enable-dbus_service \
                          --enable-fast-install \
                          --enable-libtool-lock \
-                         --enable-static=no \
-                         --sysconfdir=/etc \
-                         --prefix=/usr")
+                         --enable-static=no")
 
 def build():
     autotools.make()
