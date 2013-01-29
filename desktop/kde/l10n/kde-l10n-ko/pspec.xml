@@ -12,7 +12,7 @@
         <IsA>locale:ko</IsA>
         <Summary>Korean KDE4 internationalization package</Summary>
         <Description>kde-l10n-ko is the KDE4 internationalization package that provides Korean translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="ccb9a5433968ee9e9334e7b0b8dbe5d863183ad7">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-ko-4.9.98.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="5e95061d5b96fdaa5e9869727b12d9b5de474c50">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-ko-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

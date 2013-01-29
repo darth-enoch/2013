@@ -12,7 +12,7 @@
         <IsA>locale:kk</IsA>
         <Summary>Kazakh KDE4 internationalization package</Summary>
         <Description>kde-l10n-kk is the KDE4 internationalization package that provides Kazakh translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="d863a44bbf4cadf4a6ad2718370d9ee9e8d1ece1">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-kk-4.9.98.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="1e0f38006a8006ecefa929a9882a531a356de7f5">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-kk-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
