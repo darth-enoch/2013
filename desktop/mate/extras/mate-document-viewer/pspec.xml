@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate için döküman görüntüleyicisi</Summary>
         <Description>mate-document-viewer, mate masaüstü için döküman görüntüleyicidir.</Description>
-        <Archive sha1sum="b09291bc2979437994ec133187ad59706651e1e7" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-document-viewer-1.4.0.tar.xz</Archive>
+        <Archive sha1sum="008dab6c37740d14467cb475c2cee0bd6b5272c4" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-document-viewer-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>mate-icon-theme</Dependency>
             <Dependency>mate-common</Dependency>
