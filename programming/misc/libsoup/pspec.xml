@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>An HTTP library implementation in C</Summary>
         <Description>libsoup is an HTTP client/server library for GNOME.</Description>
-        <Archive sha1sum="223e9243ab5434c5bdf7ce31032c27be3bda4400" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/libsoup/2.40/libsoup-2.40.0.tar.xz</Archive>
+        <Archive sha1sum="63ce1d2b022b58831430099b28dee3b47fb63ed1" type="tarxz">mirrors://gnome/libsoup/2.40/libsoup-2.40.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libgcrypt-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
@@ -20,11 +20,10 @@
             <Dependency>libgnome-keyring-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
             <Dependency>tls-devel</Dependency>
-            <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>glib-networking</Dependency>
         </BuildDependencies>
-        <!--<Patches>
-            <Patch level="0">CVE-2011-2524.patch</Patch>
-        </Patches>-->
+        <Patches>
+        </Patches>
     </Source>
 
     <Package>
@@ -34,10 +33,11 @@
             <Dependency>tls</Dependency>
             <Dependency>libgcrypt</Dependency>
             <Dependency>gconf</Dependency>
+            <Dependency>glib-networking</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="localedata">/usr/share/locale/</Path>
+            <Path fileType="localedata">/usr/share/locale/</Path>
             <Path fileType="library">/usr/lib/girepository-1.0/Soup-2.4.typelib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
@@ -85,6 +85,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-29</Date>
+            <Version>2.40.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1" type="security">
             <Date>2012-10-14</Date>
             <Version>2.40.0</Version>
