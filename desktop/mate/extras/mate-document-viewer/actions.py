@@ -30,7 +30,7 @@ def setup():
 				    --enable-pixbuf \
 				    --enable-impress \
 				    --disable-scrollkeeper \
-				    --enable-introspection \
+				    --disable-introspection \
 				    --disable-schemas-compile \
 				    --disable-schemas-install")
 
@@ -38,6 +38,6 @@ def build():
     autotools.make()
 
 def install():
-    autotools.rawInstall("MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1" "DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall("MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("README", "NEWS", "ChangeLog", "AUTHORS", "COPYING")
