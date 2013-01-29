@@ -15,6 +15,7 @@ def setup():
     shelltools.export("LDFLAGS", get.LDFLAGS())
 
     autotools.configure("--enable-gpl \
+                         --enable-gpl3 \
                          --disable-gtk2 \
                          --qimage-libdir=/usr/lib/ \
                          --qimage-includedir=/usr/include/Qt \
@@ -38,4 +39,4 @@ def install():
     pisitools.insinto("/usr/lib/perl5/vendor_perl/%s/" % get.curPERL(), "src/swig/perl/blib/lib/mlt.pm")
     pisitools.dolib("src/swig/perl/blib/arch/auto/mlt/mlt.so", "/usr/lib/perl5/vendor_perl/%s/i686-linux-thread-multi/auto/mlt/" % get.curPERL())
 
-    pisitools.dodoc("ChangeLog", "COPYING", "GPL", "README")
+    pisitools.dodoc("ChangeLog", "COPYING", "GPL*", "README")
