@@ -14,7 +14,7 @@ from pisi.actionsapi import get
 WorkDir = "linux-firmware-20121212"
 
 def setup():
-    shelltools.system("rpm2targz -v aic94xx_seq-30-1.noarch.rpm")
+    shelltools.system("rpm2targz -v mix/aic94xx_seq-30-1.noarch.rpm")
     # Remove source files
     shelltools.unlink("usbdux/*dux")
     shelltools.unlink("*/*.asm")
@@ -29,16 +29,18 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.insinto("/lib/firmware", "*")
+    pisitools.insinto("/lib/firmware", "mix/*")
 
-    # Remove installed WHENCE and LIC* files from /lib/firmware
+    # Remove installed and LIC* files from /lib/firmware
     pisitools.remove("/lib/firmware/GPL-3")
-    pisitools.remove("/lib/firmware/WHENCE*")
     pisitools.remove("/lib/firmware/LICENCE*")
     pisitools.remove("/lib/firmware/LICENSE*")
+    pisitools.remove("/lib/firmware/*pdf")
     pisitools.remove("/lib/firmware/configure")
     pisitools.remove("/lib/firmware/Makefile")
     pisitools.remove("/lib/firmware/aic94xx_seq-30-1.noarch.rpm")
+    pisitools.remove("/lib/firmware/aic94xx_seq-30-1.noarch.tar.gz")
+    pisitools.removeDir("/lib/firmware/mix")
 
     # Install LICENSE files
     pisitools.dodoc("WHENCE", "LICENCE.*", "LICENSE.*", "GPL-3")
