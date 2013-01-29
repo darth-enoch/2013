@@ -22,6 +22,7 @@
 	    <Dependency>mate-desktop-devel</Dependency>
 	    <Dependency>mate-corba-devel</Dependency>
 	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>gnome-doc-utils</Dependency>
 	    <Dependency>mate-menus-devel</Dependency>
 	    <Dependency>dbus-glib-devel</Dependency>
 	    <Dependency>libmatekbd-devel</Dependency>
