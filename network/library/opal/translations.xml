@@ -8,5 +8,6 @@
         <Description xml:lang="de">Das ist ein Open Source-Klassenbibliothek für die Entwicklung von Anwendungen, die auf SIP / H.323 Protokolle für Multimedia-Kommunikation über paketbasierte Netzwerke nutzen wollen.</Description>
         <Summary xml:lang="nl">VoIP-bibliotheek</Summary>
         <Description xml:lang="nl">Dit is een open source class library voor de ontwikkeling van toepassingen die willen SIP / H.323 protocollen voor multimedia-communicatie gebruiken via packet gebaseerde netwerken.</Description>
+        <Summary xml:lang="pl">Biblioteka Open Phone Abstraction Library (aka OpenH323 v2)</Summary>
     </Source>
 </PISI>
