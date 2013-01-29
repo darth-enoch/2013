@@ -13,15 +13,13 @@ from pisi.actionsapi import get
 def setup():
     shelltools.export("AUTOPOINT", "/bin/true")
     autotools.autoreconf("-fi")
-    autotools.configure("--with-x \
+    autotools.configure("--with-frontend=qt4 \
                          --without-aspell \
                          --with-enchant \
                          --with-hunspell \
-                         --with-aiksaurus \
-                         --enable-shared=yes \
-                         --enable-static=no \
                          --enable-build-type=release \
                          --without-included-boost \
+                         --without-included-mythes \
                          --disable-stdlib-debug \
                          --disable-rpath")
 
@@ -33,4 +31,4 @@ def install():
 
     pisitools.insinto("/usr/share/pixmaps/", "lib/images/lyx.png")
 
-    pisitools.dodoc("ANNOUNCE", "COPYING", "RELEASE-NOTES", "README", "NEWS", "UPGRADING")
+    pisitools.dodoc("ANNOUNCE", "COPYING", "RELEASE-NOTES", "README", "NEWS")
