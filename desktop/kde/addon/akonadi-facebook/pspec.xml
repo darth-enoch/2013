@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Facebook Akonadi resource</Summary>
         <Description>akonadi-facebook makes events, contacts, notes and messages from Facebook available in KDE.</Description>
-        <Archive sha1sum="8ef9bb5a8a86fff9f2502f4f8d42b0fc285dca35" type="tarxz">http://dl.dropbox.com/u/63729954/akonadi-facebook.tar.xz</Archive>
+        <Archive sha1sum="86ca2df3a67db9321c0585df089c278fecefa5e1" type="tarxz">http://anka.pardus-linux.org/2013/source/akonadi-facebook.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>akonadi-devel</Dependency>
             <Dependency>kdepimlibs-devel</Dependency>
