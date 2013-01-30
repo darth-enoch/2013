@@ -21,3 +21,6 @@ def build():
 
 def install():
     kde4.install()
+
+    # pykde4uic symlink
+    pisitools.dosym("/usr/lib/%s/site-packages/PyQt4/uic/pykdeuic4.py" % get.curPYTHON(), "/usr/bin/pykde4uic")
