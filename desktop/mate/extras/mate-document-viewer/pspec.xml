@@ -30,6 +30,7 @@
 	    <Dependency>libXt-devel</Dependency>
 	    <Dependency>gobject-introspection-devel</Dependency>
 	    <Dependency>libglade-devel</Dependency>
+	    <Dependency>texlive-bin-devel</Dependency>
 	</BuildDependencies>
 	<Patches>
 	    <!--<Patch level="1">4a00ce5444b2f7dea35625e1396550a90b030288.patch</Patch>-->
