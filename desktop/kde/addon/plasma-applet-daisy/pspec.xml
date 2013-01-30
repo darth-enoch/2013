@@ -19,6 +19,9 @@
             <Dependency>kde-workspace-devel</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">daisy-kde-4.8.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
