@@ -13,7 +13,7 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     # Fix sandbox violation
-    #pisitools.dosed("tools/pykdeuic4/CMakeLists.txt", "(\$\{BIN_INSTALL_DIR\}\/pykdeuic4)", r"%s/\1" % get.installDIR())
+    pisitools.dosed("tools/pykdeuic4/CMakeLists.txt", "(\$\{BIN_INSTALL_DIR\}\/pykdeuic4)", r"%s/\1" % get.installDIR())
     kde4.configure()
 
 def build():
