@@ -54,6 +54,7 @@
 	    <Dependency>libXt</Dependency>
 	    <Dependency>gobject-introspection</Dependency>
 	    <Dependency>libglade</Dependency>
+	    <Dependency>texlive-bin</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
