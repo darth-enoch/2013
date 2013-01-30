@@ -18,7 +18,7 @@
             <Dependency>imagemagick</Dependency>
             <Dependency>ghostscript</Dependency>
             <Dependency>libpaper-devel</Dependency>
-            <Dependency release="current">texlive-core</Dependency>
+            <Dependency>texlive-core</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">a2ps-print-emacs.patch</Patch>

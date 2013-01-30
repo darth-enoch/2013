@@ -37,10 +37,10 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     #remove empty directories
-    for lang in ["io", "lua", "ocaml", "php", "python23", "python24", "python25", "R", "sharp"]:
-        pisitools.removeDir("/usr/lib/graphviz/%s" % lang)
+    #for lang in ["lua", "ocaml", "php", "python23", "python24", "python25", "R", "sharp"]:
+        #pisitools.removeDir("/usr/lib/graphviz/%s" % lang)
         
-    pisitools.domove("usr/lib64/tcl8.5", "/usr/lib")
+    pisitools.domove("usr/lib64/tcl8.6", "/usr/lib")
     pisitools.removeDir("usr/lib64")
 
     pisitools.dohtml(".")

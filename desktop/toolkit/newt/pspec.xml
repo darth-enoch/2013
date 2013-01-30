@@ -15,14 +15,20 @@
         <Description>newt is a windowing toolkit for text mode, which provides many widgets and stackable windows.</Description>
         <Archive sha1sum="1acb13d949e9438019d4c718c620472c1c3fbfed" type="targz">https://fedorahosted.org/releases/n/e/newt/newt-0.52.14.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>tcl-devel</Dependency>
+            <Dependency versionFrom="8.6.0">tcl-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+	    <Patch level="1">mageia/newt-0.52.6-mdvconf.patch</Patch>	    
+	    <Patch level="1">mageia/newt-0.52.13-assorted-fixes.patch</Patch>
+	    <Patch level="1">mageia/newt-0.51.4-fix-wstrlen-for-non-utf8-strings.patch</Patch>
+	    <Patch level="1">anka/tcl-no-result.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
         <Name>newt</Name>
         <RuntimeDependencies>
-            <Dependency>tcl</Dependency>
+            <Dependency versionFrom="8.6.0">tcl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -46,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-30</Date>
+            <Version>0.52.14</Version>
+            <Comment>Build with new relaese Tcl</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-17</Date>
             <Version>0.52.14</Version>

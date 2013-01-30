@@ -25,6 +25,7 @@
             <Dependency>xfconf-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>
+            <Dependency>libunique</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -40,6 +41,7 @@
             <Dependency>xfconf</Dependency>
             <Dependency>gstreamer</Dependency>
             <Dependency>gst-plugins-base</Dependency>
+            <Dependency>libunique</Dependency>
         </RuntimeDependencies>
         <Files>
            <Path fileType="executable">/usr/bin</Path>
