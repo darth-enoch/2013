@@ -16,6 +16,7 @@ WorkDir = "%s" % get.srcNAME()
 shelltools.export("HOME", get.workDIR())
 
 def setup():
+    pisitools.dosed("kio_afc.cpp", "uuid", "udid")
     kde4.configure()
 
 def build():
