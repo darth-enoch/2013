@@ -21,7 +21,7 @@
     </Source>
     
     <Package>
-        <Name>artwork-pardus-release-old</Name>
+        <Name>artwork-pardus-release</Name>
         <Files>
             <Path fileType="data" permanent="true">/usr/share/wallpapers</Path>
         </Files>
