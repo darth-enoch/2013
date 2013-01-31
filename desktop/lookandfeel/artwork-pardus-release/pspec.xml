@@ -19,17 +19,7 @@
         <Archive sha1sum="dc04c68e4e042bd3efa9cca224ce127a14eb2bad" type="targz">http://anka.pardus-linux.org/2013/source/artwork-pardus-release-2013.1.tar.gz</Archive>
         <Archive sha1sum="6f91c8706e92ea44e60c76d71c2709c93cea4196" type="tarlzma">http://cekirdek.pardus.org.tr/~gokcen/files/sample-files-20110119.tar.lzma</Archive>
     </Source>
-
-    <Package>
-        <Name>artwork-pardus-release</Name>
-        <Files>
-            <Path fileType="data" permanent="true">/usr/share/wallpapers/Hasankeyf</Path>
-            <Path fileType="data" permanent="true">/usr/share/wallpapers/Pardus_Mood</Path>
-            <Path fileType="data" permanent="true">/usr/share/wallpapers/Dama.Dama</Path>
-            <Path fileType="data" permanent="true">/usr/share/wallpapers/Cervus.elaphus</Path>
-        </Files>
-    </Package>
-
+    
     <Package>
         <Name>artwork-pardus-release-old</Name>
         <Files>
@@ -51,11 +41,11 @@
 
     <History>
         <Update release="1">
-            <Date>2011-09-06</Date>
-            <Version>2011.2</Version>
+            <Date>2013-01-31</Date>
+            <Version>2013.1</Version>
             <Comment>First release</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
+            <Name>Demiray Muhterem</Name>
+            <Email>bilgi@bilgegunluk.com</Email>
         </Update>
     </History>
 </PISI>
