@@ -12,7 +12,7 @@ def setup():
     cmaketools.configure("-DENABLE_ASCII_MODE=OFF \
 			  -DENABLE_PACKAGING=OFF \
 			  -DDISABLE_MULTITHREADING=OFF \
-			  -DBUILD_CONTRIBS_LIB=ON")
+			  -DBUILD_CONTRIBS_LIB:BOOL=ON")
 
 def build():
     cmaketools.make()
