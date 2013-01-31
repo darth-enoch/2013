@@ -13,9 +13,9 @@
         <PartOf>desktop.enlightenment.base</PartOf>
         <Summary>A map manager for Enlightenment</Summary>
         <Description>Emap is a map manager for Enlightenment.</Description>
-        <Archive sha1sum="007b10d3930d19cf0e443c646c06e4265d709141" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/base/emap-0.1.0.tar.gz</Archive>
+        <Archive sha1sum="3c226a95b366c4e602a94054e75530e52e29690c" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/emap-20130131.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>edje-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
             <Dependency>ecore-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>emap</Name>
         <RuntimeDependencies>
-            <Dependency>edje</Dependency>
+            <Dependency>eina</Dependency>
             <Dependency>ecore</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -48,8 +48,8 @@
 
     <History>
         <Update release="1">
-            <Date>2012-12-12</Date>
-            <Version>0.1.0</Version>
+            <Date>2013-01-31</Date>
+            <Version>20130131</Version>
             <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
