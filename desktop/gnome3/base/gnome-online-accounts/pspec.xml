@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Provide online accounts information</Summary>
         <Description>The GNOME Online Accounts package contains a framework used to access the user's online accounts.</Description>
-        <Archive sha1sum="ac8f886f97c65d898c76a428f004d1beaf0702dc" type="tarxz">mirrors://gnome/gnome-online-accounts/3.5/gnome-online-accounts-3.5.1.tar.xz</Archive>
+        <Archive sha1sum="8143aa120a0975401a3f3a677492472198aeb808" type="tarxz">mirrors://gnome/gnome-online-accounts/3.7/gnome-online-accounts-3.7.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gcr-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
@@ -26,7 +26,7 @@
 	    <Dependency>gtk3-devel</Dependency>
         </BuildDependencies>
 	<Patches>
-	    <Patch level="1">1afba9aa98436551db4c3589eed943f49a106293.patch</Patch>
+	    <!--<Patch level="1">1afba9aa98436551db4c3589eed943f49a106293.patch</Patch>-->
 	</Patches>
     </Source>
 
@@ -70,6 +70,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-31</Date>
+            <Version>3.7.2</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-06-22</Date>
             <Version>3.5.1</Version>
