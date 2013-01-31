@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Utilities for creating and parsing messages using MIME</Summary>
         <Description>gmime contains gmime-uudecode and gmime-uuencode and will allow you to manipulate MIME messages. These utilities can also be used instead of uudecode and uuencode from the sharutils package.</Description>
-        <Archive sha1sum="1f5d8f38769d6057b3e40e8d783ecc62459b1906" type="tarxz">ftp://ftp.gnome.org/pub/GNOME/sources/gmime/2.6/gmime-2.6.10.tar.xz</Archive>
+        <Archive sha1sum="d00b54030517cc0be1d62d942950c7226bd07e46" type="tarxz">ftp://ftp.gnome.org/pub/GNOME/sources/gmime/2.6/gmime-2.6.13.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mono-devel</Dependency>
             <Dependency>gtk-sharp-devel</Dependency>
@@ -72,6 +72,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-31</Date>
+            <Version>2.6.13</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-03</Date>
             <Version>2.6.10</Version>
