@@ -7,9 +7,11 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
+    shelltools.system("sed -i 's|ncursesw/curses.h|curses.h|' RichString.[ch] configure")
     autotools.configure("--enable-taskstats \
                          --enable-unicode")
 
@@ -18,9 +20,5 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    # Remove empty dirs
-    pisitools.removeDir("/usr/include")
-    pisitools.removeDir("/usr/lib")
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README")

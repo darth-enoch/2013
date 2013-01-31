@@ -14,10 +14,9 @@
         <IsA>app:gui</IsA>
         <Summary>An interactive process viewer for Linux</Summary>
         <Description>htop is an interactive text-mode process viewer for Linux. It aims to be a better 'top'.</Description>
-        <Archive sha1sum="2a0bf90f160b3d019e26712c94db612d6ff9a429" type="targz">mirrors://sourceforge/htop/htop-0.8.3.tar.gz</Archive>
+        <Archive sha1sum="07893b93fe8109610f8e9976b3934ae4bb7a925d" type="targz">mirrors://sourceforge/htop/htop-1.0.2.tar.gz</Archive>
         <Patches>
             <Patch level="1">desktop_tr.patch</Patch>
-            <Patch level="1">htop-ncurses-include.patch</Patch>
         </Patches>
     </Source>
 
@@ -34,11 +33,11 @@
 
     <History>
         <Update release="1">
-            <Date>2010-10-12</Date>
-            <Version>0.8.3</Version>
+            <Date>2013-01-31</Date>
+            <Version>1.0.2</Version>
             <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
         </Update>
     </History>
 </PISI>
