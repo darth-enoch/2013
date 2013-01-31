@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>The GNOME Backgrounds package contains</Summary>
         <Description>The GNOME Backgrounds package contains a collection of graphics files which can be used as backgrounds in the GNOME Desktop environment. Additionally, the package creates the proper framework and directory structure so that you can add your own files to the collection.</Description>
-        <Archive sha1sum="7cb8247b292b2dbe60545e045ddc90d519ac982e" type="tarxz">mirrors://gnome/gnome-backgrounds/3.6/gnome-backgrounds-3.6.1.tar.xz</Archive>
+        <Archive sha1sum="42e0d049125e8e1a8c3985a43cb7cc75bb22bcaa" type="tarxz">mirrors://gnome/gnome-backgrounds/3.7/gnome-backgrounds-3.7.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnome3-common</Dependency>
         </BuildDependencies>
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-31</Date>
+            <Version>3.7.4</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-23</Date>
             <Version>3.6.1</Version>
