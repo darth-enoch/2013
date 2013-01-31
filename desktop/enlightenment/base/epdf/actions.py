@@ -8,14 +8,11 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
 
-WorkDir = "epdf"
-
 def setup():
     shelltools.system("./autogen.sh \
                         --enable-xpdf-headers \
                         --disable-static \
                         --prefix=/usr")
-
 
 def build():
     cmaketools.make()

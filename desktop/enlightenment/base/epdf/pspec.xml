@@ -11,10 +11,10 @@
         <License>GPLv2</License>
         <IsA>library</IsA>
         <PartOf>app-text</PartOf>
-	<PartOf>desktop.enlightenment.addon</PartOf>
+        <PartOf>desktop.enlightenment.addon</PartOf>
         <Summary>Libraries for envision</Summary>
         <Description>Pdf reader for Enlightenment.</Description>
-        <Archive sha1sum="08ddcca5756a4f47e6eb0608b8612f4f20c73485" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/base/epdf-0.0.1_09152012.tar.gz</Archive>
+        <Archive sha1sum="4111c3947ce553bdad5b7f1571efe90f0d1eb4f4" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/epdf-20130131.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>evas-devel</Dependency>
             <Dependency>eina</Dependency>
@@ -57,8 +57,8 @@
 
     <History>
         <Update release="1">
-            <Date>2012-12-12</Date>
-            <Version>0.0.1_09152012</Version>
+            <Date>2013-01-31</Date>
+            <Version>20130131</Version>
             <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
