@@ -57,6 +57,7 @@
             <Dependency>xfconf</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>libgnome-keyring</Dependency>
+            <Dependency>polkit-gnome</Dependency>
             <Dependency>libglade</Dependency>
         </RuntimeDependencies>
         <Files>
