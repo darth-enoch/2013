@@ -57,7 +57,7 @@
     <History>
         <Update release="2">
             <Date>2013-02-01</Date>
-            <Version>5_100_82_112</Version>
+            <Version>5.100.82.112</Version>
             <Comment>bump+fix for new kernel-line</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
