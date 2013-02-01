@@ -101,12 +101,10 @@
         <Summary>32-bit shared libraries for libdrm</Summary>
         <BuildType>emul32</BuildType>
         <BuildDependencies>
-            <Dependency>cairo-32bit</Dependency>
             <Dependency>libpciaccess-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">libdrm</Dependency>
-            <Dependency>cairo-32bit</Dependency>
             <Dependency>libpciaccess-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
