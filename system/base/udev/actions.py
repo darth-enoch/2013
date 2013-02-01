@@ -144,6 +144,9 @@ def install():
     #Create vol_id and scsi_id symlinks in /sbin probably needed by multipath-tools
     pisitools.dosym("/lib/udev/scsi_id", "/sbin/scsi_id")
     
+    #Create /sbin/systemd-udevd -> /sbin/udevd sysmlink, we need it for MUDUR, do not touch this sysmlink.
+    pisitools.dosym("/sbin/systemd-udevd", "/sbin/udevd")
+    
     #Create /etc/udev/rules.d for backward compatibility
     pisitools.dodir("/etc/udev/rules.d")
     pisitools.dodoc("README", "TODO")
