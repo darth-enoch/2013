@@ -17,7 +17,7 @@
         <Archive sha1sum="948bad76395834a1b45b65bd191d46145f5c0b9f" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnome-common</Dependency>
-            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">disable-docs.diff</Patch>-->
@@ -33,7 +33,7 @@
     <Package>
         <Name>polkit-gnome</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>gvfs</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -46,18 +46,6 @@
         <AdditionalFiles>
             <AdditionalFile target="/etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop" permission="0644" owner="root">polkit-gnome-authentication-agent-1.desktop</AdditionalFile>
         </AdditionalFiles>
-    </Package>
-
-    <Package>
-        <Name>polkit-gnome-devel</Name>
-        <Summary>Development files for polkit-gnome</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">polkit-gnome</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/lib/pkgconfig</Path>
-        </Files>
     </Package>
 
     <History>
