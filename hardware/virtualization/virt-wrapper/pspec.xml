@@ -15,6 +15,7 @@
         <Archive sha1sum="658ed1a96ccae29ff2378829dd27f94d8d9929e1" type="targz">http://cekirdek.pardus.org.tr/~fatih/dist/misc/virt-wrapper-0.1.1.tar.gz</Archive>
         <Patches>
             <Patch level="1">pass-options-arg.patch</Patch>
+            <Patch level="0">kmod.patch</Patch>
         </Patches>
     </Source>
 
