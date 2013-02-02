@@ -53,18 +53,6 @@
         </Files>
     </Package>
 
-    <Package>
-        <Name>gtk-sharp-docs</Name>
-        <Summary>Documents for gtk-sharp</Summary>
-        <RuntimeDependencies>
-            <Dependency>mono-tools</Dependency>
-            <Dependency release="current">gtk-sharp</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="data">/usr/lib/monodoc</Path>
-        </Files>
-    </Package>
-
     <History>
         <Update release="1">
             <Date>2011-03-09</Date>
