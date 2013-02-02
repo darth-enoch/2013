@@ -15,12 +15,15 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.autoreconf("-fiv")
-    autotools.configure("--disable-static --with-included-modules=basic-fc")
+    autotools.configure("--disable-static  --sysconfdir=/etc --with-included-modules=basic-fc")
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
+    
+    pisitools.dodir("/etc/pango")
+    shelltools.touch(get.installDIR() +"/etc/pango/pango.modules")
+    
     pisitools.dodoc("AUTHORS", "ChangeLog*", "COPYING", "README", "NEWS")
