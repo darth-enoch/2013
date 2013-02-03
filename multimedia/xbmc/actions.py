@@ -6,25 +6,26 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "xbmc-11.0"
 shelltools.export("HOME", get.workDIR())
 
+import os
+
 def setup():
+    shelltools.export("PATH", "%s:/opt/sun-jdk/bin" % os.environ.get("PATH"))
     shelltools.system("./bootstrap")
     pisitools.dosed("configure", "-ldts" , "-ldca")
     pisitools.dosed("xbmc/utils/SystemInfo.cpp","lsb_release -d","cat /etc/pardus-release")
     autotools.rawConfigure("--disable-ccache \
                             --disable-optimizations \
-                            --disable-external-python \
+                            --disable-avahi \
+                            --disable-hal \
                             --enable-goom \
                             --enable-gl \
-                            --enable-ffmpeg \
-                            --disable-liba52 \
-                            --disable-libdts \
-                            --disable-avahi \
+                            --enable-pulse \
+                            --enable-ffmpeg-libvorbis \
+                            --enable-libbluray \
                             --enable-rtmp \
                             --enable-vdpau \
-                            --disable-hal \
                             --prefix=/usr")
 
 def build():
@@ -33,4 +34,4 @@ def build():
 def install():
     autotools.install()
     pisitools.doman("docs/manpages/*")
-    pisitools.dodoc("README.linux","*.txt","LICENSE.GPL")
+    pisitools.dodoc("README","*.txt","LICENSE.GPL")

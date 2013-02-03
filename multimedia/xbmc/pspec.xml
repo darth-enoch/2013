@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A free and open source media-player and entertainment hub</Summary>
         <Description>XBMC is an award-winning free and open source (GPL) software media player and entertainment hub for digital media</Description>
-        <Archive sha1sum="d836a0a1e8ed239a339ec7e0c19f893e29df741d" type="targz">http://mirrors.xbmc.org/releases/source/xbmc-11.0.tar.gz</Archive>
+        <Archive sha1sum="c1da8f1ebfe4154d462a84698c14759e71ee73f1" type="targz">http://mirrors.xbmc.org/releases/source/xbmc-12.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libplist-devel</Dependency>
             <Dependency>libimobiledevice-devel</Dependency>
@@ -82,6 +82,11 @@
             <Dependency>yajl-devel</Dependency>
             <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
         </BuildDependencies>
+       <Patches>
+            <Patch level="1">mageia/0001-hack-workaround-for-old-incompatible-PVR-addon-datab.patch</Patch>
+            <Patch level="1">mageia/xbmc-bootstrap-return-value.patch</Patch>
+            <Patch level="1">mageia/xbmc-system-groovy-hack.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -170,7 +175,15 @@
             <COMAR script="service.py">System.Service</COMAR>
         </Provides>
     </Package>
+
     <History>
+      <Update release="2">
+            <Date>2013-02-01</Date>
+            <Version>12.0</Version>
+            <Comment>bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
       <Update release="1">
             <Date>2012-03-29</Date>
             <Version>11.0</Version>
