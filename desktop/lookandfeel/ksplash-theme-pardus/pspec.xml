@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>KDE splash theme for Pardus</Summary>
         <Description>ksplash-theme-pardus contains a modified and polished KSplash theme for Pardus.</Description>
-        <Archive sha1sum="bb83f1519f1c4f109d1ed4f4e292c1aac8a27dda" type="tarxz">http://pardus-anka.org/pub/source/ksplash-pardus-theme-20130108.tar.xz</Archive>
+        <Archive sha1sum="bb83f1519f1c4f109d1ed4f4e292c1aac8a27dda" type="tarxz">http://anka.pardus-linux.org/2013/source/ksplash-pardus-theme-20130108.tar.xz</Archive>
     </Source>
 
     <Package>
