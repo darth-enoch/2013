@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Touchpad management tool for KDE</Summary>
         <Description>Synaptiks is a touchpad management tool for KDE. It provides a simple configuration interface and can automatically switch off your touchpad on keyboard activity or if mouse devices are plugged.</Description>
-        <Archive sha1sum="a25be425f6472464e196773edd086736d8e978b5"  type="zip">https://github.com/lunaryorn/synaptiks/archive/0.8.1.zip</Archive>
+        <Archive sha1sum="31de7095f9c19f1c05f59bb2904d7980edc351dc"  type="tarbz2">http://anka.pardus-linux.org/2013/source/synaptiks-0.8.1.tar.bz2</Archive>
         <BuildDependencies>
              <Dependency>kdelibs-devel</Dependency>
              <Dependency>kde-runtime</Dependency>
