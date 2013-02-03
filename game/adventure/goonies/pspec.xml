@@ -15,10 +15,10 @@
         <Description>This remake of the movie game has the same simple gameplay as the original but with modern and of quality graphics and music. You are Sloth and must rescue each one of the 7 goonies to finish a level, but the Fratelli brothers and the various other enemies do not want you to succeed. Various bonuses will help you along the way.</Description>
         <Archive sha1sum="a2be53b74e9744ca72fdd1913f2dab1912170534" type="targz">http://braingames.jorito.net/goonies/downloads/goonies.src_1.4.1528.tgz</Archive>
         <BuildDependencies>
-            <Dependency>libsdl</Dependency>
-            <Dependency>sdl-mixer</Dependency>
-            <Dependency>sdl-image</Dependency>
-            <Dependency>sdl-sound</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-sound-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">datadir-maps.patch</Patch>
@@ -31,10 +31,10 @@
     <Package>
         <Name>goonies</Name>
         <RuntimeDependencies>
-            <Dependency>libsdl-devel</Dependency>
-            <Dependency>sdl-mixer-devel</Dependency>
-            <Dependency>sdl-image-devel</Dependency>
-            <Dependency>sdl-sound-devel</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-sound</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
