@@ -25,11 +25,11 @@
     <Package>
         <Name>loosecannon</Name>
         <RuntimeDependencies>
-            <Dependency>libsdl-devel</Dependency>
-            <Dependency>sdl-image-devel</Dependency>
-            <Dependency>openal-devel</Dependency>
-            <Dependency>freealut-devel</Dependency>
-            <Dependency>freeglut-devel</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>freealut</Dependency>
+            <Dependency>freeglut</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
