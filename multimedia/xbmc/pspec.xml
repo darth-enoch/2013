@@ -81,6 +81,7 @@
             <Dependency>libvdpau-devel</Dependency>
             <Dependency>yajl-devel</Dependency>
             <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
+            Dependency>tinyxml-devel</Dependency>
         </BuildDependencies>
        <Patches>
             <Patch level="1">0001-hack-workaround-for-old-incompatible-PVR-addon-datab.patch</Patch>
@@ -159,6 +160,7 @@
             <Dependency>libvdpau</Dependency>
             <Dependency>xinit</Dependency>
 	    <Dependency>libbluray</Dependency><!--bluray suppport-->
+	    <Dependency>tinyxml</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
