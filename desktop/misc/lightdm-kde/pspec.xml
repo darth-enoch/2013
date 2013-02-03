@@ -27,6 +27,9 @@
             <Dependency>kdelibs</Dependency>
             <Dependency>lightdm</Dependency>
         </RuntimeDependencies>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
     </Package>
 
     <History>
