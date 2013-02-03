@@ -81,9 +81,9 @@
             <Dependency>libvdpau-devel</Dependency>
             <Dependency>yajl-devel</Dependency>
             <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
-            Dependency>tinyxml-devel</Dependency>
+            <Dependency>tinyxml-devel</Dependency>
         </BuildDependencies>
-       <Patches>
+        <Patches>
             <Patch level="1">0001-hack-workaround-for-old-incompatible-PVR-addon-datab.patch</Patch>
             <Patch level="1">xbmc-bootstrap-return-value.patch</Patch>
             <Patch level="1">xbmc-system-groovy-hack.patch</Patch>
