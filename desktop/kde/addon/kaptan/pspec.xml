@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>kaptan</Name>
-        <Homepage>https://github.com/circass/pisi-work/tree/master/kaptan-5.0.5.1</Homepage>
+        <Homepage>http://pardus-anka.org</Homepage>
         <Packager>
             <Name>Renan Çakırerk</Name>
             <Email>renan@pardus.org.tr</Email>
@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Kaptan, Pardus workspace configuration wizard</Summary>
         <Description>Kaptan lets you configure your workspace on first login.</Description>
-        <Archive sha1sum="369d9532b27b6f3cf52485ea2e5413d511d09518" type="tarxz">https://github.com/circass/pisi-work/raw/master/kaptan-5.0.5.1.xz</Archive>
+        <Archive sha1sum="8bb018b372d4039378c9a997681a98ebdf6f3faf" type="tarxz">http://anka.pardus-linux.org/2013/source/kaptan-5.0.5.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>python-qt-devel</Dependency>
             <Dependency>python-kde-devel</Dependency>
@@ -46,6 +46,13 @@
     </Package>
 
     <History>
+         <Update release="3">
+            <Date>2013-02-03</Date>
+            <Version>5.0.5.1</Version>
+            <Comment>new cosmetics and add to kfaenza, remove milky icon set</Comment>
+            <Name>Demiray Muhterem</Name>
+            <Email>bilgi@bilgegunluk.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-10-19</Date>
             <Version>5.0.5.1</Version>
