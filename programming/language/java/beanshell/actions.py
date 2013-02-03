@@ -21,7 +21,7 @@ from pisi.actionsapi import pisitools
 #    autotools.make()
 
 def install():
-    pisitools.dobin("bsh-2.0b4.jar","/usr/share/java/bsh.jar")
+    pisitools.insinto("/usr/share/java", "bsh-2.0b4.jar", "bsh.jar")
 
 # Take a look at the source folder for these file as documentation.
 #    pisitools.dodoc("AUTHORS", "BUGS", "ChangeLog", "COPYING", "README")
