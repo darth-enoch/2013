@@ -19,7 +19,8 @@ def setup():
     libtools.libtoolize("--force")
     suffix = "32" if get.buildTYPE() == "emul32" else ""
     options = " ac_cv_header_sys_capability_h=yes \
-                --bindir=/sbin \
+                --bindir=/sbin%s \
+                --sbindir=/sbin%s \
                 --docdir=/usr/share/doc/udev \
                 --libdir=/usr/lib%s \
                 --libexecdir=/lib/udev \
@@ -47,7 +48,7 @@ def setup():
                 --enable-gudev \
                 --disable-selinux \
                 --disable-static \
-                --disable-introspection" % suffix
+                --disable-introspection" % ((suffix, )*3)
     options += " --disable-acl \
                  --disable-qrencode \
                  --without-python" if get.buildTYPE() == "emul32" else ""
@@ -136,6 +137,7 @@ def install():
     autotools.make("DESTDIR=%s %s" % (get.installDIR(),targets))
     if get.buildTYPE() == "emul32":
         pisitools.removeDir("/emul32")
+        pisitools.removeDir("/sbin32")
         return
     # Create needed directories
     #for d in ("", "net", "pts", "shm", "hugepages"):
