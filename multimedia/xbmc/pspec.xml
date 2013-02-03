@@ -83,9 +83,9 @@
             <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
         </BuildDependencies>
        <Patches>
-            <Patch level="1">mageia/0001-hack-workaround-for-old-incompatible-PVR-addon-datab.patch</Patch>
-            <Patch level="1">mageia/xbmc-bootstrap-return-value.patch</Patch>
-            <Patch level="1">mageia/xbmc-system-groovy-hack.patch</Patch>
+            <Patch level="1">0001-hack-workaround-for-old-incompatible-PVR-addon-datab.patch</Patch>
+            <Patch level="1">xbmc-bootstrap-return-value.patch</Patch>
+            <Patch level="1">xbmc-system-groovy-hack.patch</Patch>
         </Patches>
     </Source>
 
