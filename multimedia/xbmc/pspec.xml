@@ -81,7 +81,10 @@
             <Dependency>libvdpau-devel</Dependency>
             <Dependency>yajl-devel</Dependency>
             <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
+            <Dependency>libcrystalhd-devel</Dependency><!--crystalhd suppport-->
+            <Dependency>crystalhd-firmware</Dependency>
             <Dependency>tinyxml-devel</Dependency>
+            <Dependency>mysql-lib</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001-hack-workaround-for-old-incompatible-PVR-addon-datab.patch</Patch>
@@ -155,12 +158,14 @@
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>rtmpdump</Dependency>
             <Dependency>samba</Dependency>
-            <Dependency>mysql-lib</Dependency>
+            <Dependency>mysql-server</Dependency>
             <Dependency>python-gtk</Dependency>
             <Dependency>libvdpau</Dependency>
             <Dependency>xinit</Dependency>
-	    <Dependency>libbluray</Dependency><!--bluray suppport-->
-	    <Dependency>tinyxml</Dependency>
+            <Dependency>libbluray</Dependency><!--bluray suppport-->
+            <Dependency>libcrystalhd</Dependency><!--crystalhd suppport-->
+            <Dependency>crystalhd-firmware</Dependency>
+            <Dependency>tinyxml</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
