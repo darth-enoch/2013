@@ -95,6 +95,8 @@
             <Dependency>libprojectM-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
+            <Dependency>libcrystalhd-devel</Dependency><!--crystalhd suppport-->
+            <Dependency>crystalhd-firmware</Dependency>
             <Dependency>libopus-devel</Dependency>
             <Dependency>enca-devel</Dependency>
             <Dependency>mpc</Dependency>
@@ -234,6 +236,8 @@
             <Dependency>zvbi</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libbluray</Dependency><!--bluray suppport-->
+            <Dependency>libcrystalhd</Dependency><!--crystalhd suppport-->
+            <Dependency>crystalhd-firmware</Dependency>
             <Dependency>libopus</Dependency>
             <Dependency>enca</Dependency>
             <Dependency>mpc</Dependency>
