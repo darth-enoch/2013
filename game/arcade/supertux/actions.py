@@ -1,7 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Copyright 2006-2008 TUBITAK/UEKAE
+# Copyleft 2012 Pardus ANKA Community
+# Copyright 2005-2011 TUBITAK/UEAKE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
