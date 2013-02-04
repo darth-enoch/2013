@@ -7,8 +7,6 @@
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import kde4
 
-WorkDir = "akonadi-facebook"
-
 def setup():
     kde4.configure()
 
