@@ -12,22 +12,22 @@ from pisi.actionsapi import get
 from pisi.actionsapi import libtools
 
 shelltools.export("HOME", get.workDIR())
+suffix = "32" if get.buildTYPE() == "emul32" else ""
 
 def setup():
     shelltools.echo("docs/gtk-doc.make", "EXTRA_DIST=")
     autotools.autoreconf("-fi")
     libtools.libtoolize("--force")
-    suffix = "32" if get.buildTYPE() == "emul32" else ""
     options = " ac_cv_header_sys_capability_h=yes \
                 --bindir=/sbin%s \
                 --sbindir=/sbin%s \
                 --docdir=/usr/share/doc/udev \
                 --libdir=/usr/lib%s \
-                --libexecdir=/lib/udev \
+                --libexecdir=/lib%s/udev \
                 --with-distro=other \
-                --with-firmware-path=/lib/firmware/updates:/lib/firmware \
+                --with-firmware-path=/lib%s/firmware/updates:/lib%s/firmware \
                 --with-html-dir=/usr/share/doc/udev/html \
-                --with-rootlibdir=/lib \
+                --with-rootlibdir=/lib%s \
                 --with-rootprefix= \
                 --disable-audit \
                 --disable-coredump \
@@ -48,7 +48,7 @@ def setup():
                 --enable-gudev \
                 --disable-selinux \
                 --disable-static \
-                --disable-introspection" % ((suffix, )*3)
+                --disable-introspection" % ((suffix, )*7)
     options += " --disable-acl \
                  --disable-qrencode \
                  --without-python" if get.buildTYPE() == "emul32" else ""
@@ -134,10 +134,11 @@ def install():
                                         units/systemd-udev-settle.service' \
                 pkginclude_HEADERS='src/systemd/sd-daemon.h'"
 
-    autotools.make("DESTDIR=%s %s" % (get.installDIR(),targets))
+    autotools.make("DESTDIR=%s%s %s" % (get.installDIR(), suffix, targets))
     if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        pisitools.removeDir("/sbin32")
+        shelltools.move("%s%s/lib" % (get.installDIR(), suffix), "%s/lib%s" % (get.installDIR(), suffix))
+        shelltools.move("%s%s/usr/lib%s" % (get.installDIR(), suffix, suffix), "%s/usr/lib%s" % (get.installDIR(), suffix))
+        #shelltools.unlinkDir("%s%s" % (get.installDIR(), suffix))
         return
     # Create needed directories
     #for d in ("", "net", "pts", "shm", "hugepages"):
