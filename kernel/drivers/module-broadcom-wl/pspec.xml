@@ -18,8 +18,8 @@
             <Dependency>kernel-module-headers</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="0">broadcom-wl-fix-build-with-3.2.0.patch</Patch>
-            <Patch level="0">broadcom-wl-fix-build-with-3.4.0.patch</Patch>
+	    <Patch level="0">patch/broadcom-wl-fix-build-with-3.2.0.patch</Patch>
+            <Patch level="0">patch/broadcom-wl-fix-build-with-3.4.0.patch</Patch>
         </Patches>
     </Source>
 
