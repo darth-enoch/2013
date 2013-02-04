@@ -13,9 +13,9 @@
         <Summary>Pardus Branding files for YALI</Summary>
         <Description>yali-branding includes Pardus branding files for YALI(Yet Another Linux Installer).</Description>
         <Archive sha1sum="f72197c9ebf718eb3382ac2207783c7a7b155d68" type="targz">http://anka.pardus-linux.org/2013/source/yali-branding-pardus-2013.1.tar.gz</Archive>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">fixes-for-2011.1.diff</Patch>
-        </Patches>
+	  </Patches>-->
     </Source>
 
     <Package>
