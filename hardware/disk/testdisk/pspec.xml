@@ -15,7 +15,7 @@
         <Archive sha1sum="824311fa17335176160235b18b9773fb0b07869f" type="tarbz2">http://www.cgsecurity.org/testdisk-6.14-WIP.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>jpeg-devel</Dependency>
-            <Dependency>ntfsprogs-devel</Dependency>
+            <Dependency>ntfsprogs</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">photorec_611_exif_bound_checking_v2.patch</Patch>
