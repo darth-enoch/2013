@@ -29,10 +29,17 @@
         </BuildDependencies>
         <Patches>
             <Patch>desktop-translation.patch</Patch>
-            <Patch>no-doc.patch</Patch>
-            <Patch>install.patch</Patch>
-            <Patch level="1">debian/03_ffmpeg.diff</Patch>
+	    <Patch>install.patch</Patch>
+            <!--<Patch level="1">debian/03_ffmpeg.diff</Patch>-->
             <Patch level="1">debian/06_outdated_ffmpeg.patch</Patch>
+	    <Patch level="1">xvidcap-1.1.7-ffmpeg-options.patch</Patch>
+	    <Patch level="1">xvidcap-1.1.7-fix-headers.patch</Patch>
+	    <Patch level="1">xvidcap-1.1.7-shmstr.patch</Patch>
+	    <Patch>xvidcap-1.1.5-nawk.patch</Patch>
+	    <Patch level="1">xvidcap-1.1.7-mga-glib-disable_single_includes.patch</Patch>
+	    <Patch level="1">xvidcap-1.1.7-mga-undefined-references.patch</Patch>
+	    <Patch level="1">xvidcap-1.1.7-mga-external_ffmpeg.patch</Patch>
+	    <Patch>xvidcap-1.1.7-automake-1.13.patch</Patch>
         </Patches>
     </Source>
 
@@ -53,11 +60,11 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="doc">/usr/share/doc/xvidcap</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/xvidcap/</Path>
+            <Path fileType="man">/usr/share/man/</Path>
         </Files>
     </Package>
 
