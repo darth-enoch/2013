@@ -53,6 +53,7 @@
 
     <Package>
         <Name>dbus-python3</Name>
+        <PartOf>programming.language.python</PartOf>
         <Summary>D-Bus Python3 bindings</Summary>
         <RuntimeDependencies>
             <Dependency release="current">dbus-python-common</Dependency>

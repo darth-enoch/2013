@@ -12,9 +12,10 @@
         <IsA>library</IsA>
         <Summary>A cross-platform game library</Summary>
         <Description>Allegro is a cross-platform library intended for use in computer games and other types of multimedia programming.</Description>
-        <Archive sha1sum="f90e4edcaa90f5a95c7475461c87bc7da9cba0df" type="targz">http://sourceforge.net/projects/alleg/files/allegro-unstable/5.1.3/allegro-5.1.3.tar.gz</Archive>
+        <Archive sha1sum="bc53498cd6050b579cbbdf6750d4edc284a9966a" type="targz">http://sourceforge.net/projects/alleg/files/allegro-unstable/5.1.5/allegro-5.1.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>audiofile-devel</Dependency>
             <Dependency>libXxf86dga-devel</Dependency>
             <Dependency>libXcursor-devel</Dependency>
             <Dependency>libXpm-devel</Dependency>
@@ -24,6 +25,10 @@
             <Dependency>libpng-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libogg-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>jack-audio-connection-kit-devel</Dependency>
         </BuildDependencies>
         <!--<Patches>
             <Patch>allegro-4.4.1.1-optional_drivers.patch</Patch>
@@ -49,6 +54,7 @@
         <Name>allegro</Name>
         <RuntimeDependencies>
             <Dependency>alsa-lib</Dependency>
+            <Dependency>audiofile-devel</Dependency>
             <Dependency>libXxf86dga</Dependency>
             <Dependency>libXcursor</Dependency>
             <Dependency>libXpm</Dependency>
@@ -58,6 +64,10 @@
             <Dependency>libpng</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>mesa</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -80,6 +90,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-05</Date>
+            <Version>5.1.5</Version>
+            <Comment>bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-29</Date>
             <Version>5.1.3</Version>

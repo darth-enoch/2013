@@ -3,16 +3,16 @@
 <PISI>
     <Source>
         <Name>icon-theme-kfaenza</Name>
-        <Homepage>http://kde-look.org</Homepage>
+        <Homepage>http://www.pardus-anka.org</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Demiray Muhterem</Name>
+            <Email>bilgi@bilgegunluk.com</Email>
         </Packager>
-        <License>GPL</License>
+        <License>GPLv2</License>
         <IsA>data</IsA>
-        <Summary>Kfaenza icon theme</Summary>
-        <Description>Alternative KDE4 icon theme.</Description>
-	<Archive sha1sum="0146194a6d4f0d9beec8528f6c18c953c7de61cd" type="targz">http://omploader.org//vYjR0NQ/kfaenza-icon-theme-0.8.9.tar.gz</Archive>
+        <Summary>KDE icon theme for Pardus ANKA</Summary>
+        <Description>anka-pardus-kde contains a modified and polished KDE icon theme for Pardus ANKA.</Description>
+        <Archive sha1sum="b9a9acd7e5e502f7e893ed6ba3db7da7abd308ce" type="tarxz">http://anka.pardus-linux.org/2013/source/kfaenza-icon-theme-0.8.9.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -21,14 +21,15 @@
             <Path fileType="data">/usr/share/icons</Path>
         </Files>
     </Package>
-    
+
     <History>
+
         <Update release="1">
-            <Date>2012-12-25</Date>
+            <Date>2013-02-05</Date>
             <Version>0.8.9</Version>
-            <Comment>First release</Comment>
-            <Name>Serdar Soytetir</Name>
-            <Email>tulliana@gmail.com</Email>
+            <Comment>First release.</Comment>
+            <Name>Demiray Muhterem</Name>
+            <Email>bilgi@bilgegunluk.com</Email>
         </Update>
     </History>
 </PISI>

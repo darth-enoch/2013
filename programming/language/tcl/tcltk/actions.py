@@ -16,8 +16,7 @@ WorkDir="tk%s" % get.srcVERSION()
 def setup():
     shelltools.cd("unix")
     autotools.autoconf()
-    autotools.configure("--with-encoding=utf-8 \
-                         --enable-threads \
+    autotools.configure("--enable-threads \
                          --enable-man-compression=gzip \
                          --enable-man-symlinks \
                          --enable-64bit \

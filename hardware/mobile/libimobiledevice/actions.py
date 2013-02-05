@@ -9,7 +9,6 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
-from pisi.actionsapi import shelltools
 
 def setup():
     autotools.autoreconf("-fiv")
@@ -24,6 +23,5 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    shelltools.system("ln -s %s/usr/lib/libimobiledevice.so.3.0.1 %s/usr/lib/libimobiledevice.so.1" % (get.installDIR(), get.installDIR()))
 
     pisitools.dodoc("AUTHORS", "NEWS", "README")
