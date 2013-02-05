@@ -13,12 +13,10 @@ def build():
     cmaketools.make()
 
 def install():
-    pisitools.insinto("/usr/bin", "/var/pisi/openimageio-1.9.2-1/work/oiio/dist/*/bin/*")
-    pisitools.insinto("/usr/include", "/var/pisi/openimageio-1.9.2-1/work/oiio/dist/*/include/*")
-    pisitools.insinto("/usr/lib", "/var/pisi/openimageio-1.9.2-1/work/oiio/dist/*/lib/*")
-    pisitools.insinto("/usr/lib", "/var/pisi/openimageio-1.9.2-1/work/oiio/dist/*/python/*")
-    pisitools.insinto("/usr/share/doc", "/var/pisi/openimageio-1.9.2-1/work/oiio/dist/*/doc*")
-    
-    #autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pisitools.insinto("/usr/bin", "/var/pisi/openimageio*/work/dist/*/bin/*")
+    pisitools.insinto("/usr/include", "/var/pisi/openimageio*/work/dist/*/include/*")
+    pisitools.insinto("/usr/lib", "/var/pisi/openimageio*/work/dist/*/lib/*")
+    pisitools.insinto("/usr/lib", "/var/pisi/openimageio*/work/dist/*/python/*")
+    pisitools.insinto("/usr/share/doc", "/var/pisi/openimageio*/work/dist/*/doc*")
     
     pisitools.dodoc("CREDITS", "LICENSE", "README.*")
