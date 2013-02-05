@@ -18,8 +18,8 @@
         <Summary>Cross-platform, 3D and historically-based real-time strategy game</Summary>
         <Description>Cross-platform, 3D and historically-based real-time strategy game.As the military leader of an ancient civilisation,
 	 you must gather the resources you need to raise a military force capable of dominating your enemies.</Description>        
-        <Archive sha1sum="9c9ee04bf1327bfd9161f51b18180ec8d3c6547b" type="tarxz">http://releases.wildfiregames.com/0ad-r10803-alpha-unix-build.tar.xz</Archive>
-        <Archive sha1sum="98d17a118d0a5cfe79140ddb2a24bfd3a376c28a" type="tarxz">http://releases.wildfiregames.com/0ad-r10803-alpha-unix-data.tar.xz</Archive>
+        <Archive sha1sum="0a1b58eb3eeaff80dfded165b0c1ad0f00b6c0d1" type="tarxz">mirrors://sourceforge/zero-ad/files/releases/0ad-0.0.12-alpha-unix-build.tar.xz</Archive>
+        <Archive sha1sum="c202cc70c5c94e140115948fcea20baf47c8a157" type="tarxz">mirrors://sourceforge/zero-ad/files/releases/0ad-0.0.12-alpha-unix-data.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>enet-devel</Dependency>
             <Dependency>nasm</Dependency>
@@ -36,7 +36,11 @@
             <Dependency>libpng-devel</Dependency>
             <Dependency>libogg-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
+            <Dependency>spidermonkey-devel</Dependency>
         </BuildDependencies>
+	<Patches>	  
+	  <Patch level="1">unix-names-linking-boost.patch</Patch>
+	</Patches>
     </Source>
 
     <Package>
@@ -57,6 +61,7 @@
             <Dependency>libpng</Dependency>
             <Dependency>libogg</Dependency>
             <Dependency>libvorbis</Dependency>
+            <Dependency>spidermonkey</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -75,6 +80,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2012-02-14</Date>
+            <Version>0.0.12</Version>
+            <Comment>First release</Comment>
+            <Email>erdincgultekin@gmail.com</Email>
+            <Name>Erdinç Gültekin</Name>
+        </Update>
         <Update release="1">
             <Date>2012-02-14</Date>
             <Version>10803_alpha8</Version>
