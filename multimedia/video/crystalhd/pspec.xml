@@ -21,7 +21,7 @@
             <Path fileType="library">/usr/lib/libcrystalhd.so</Path>
             <Path fileType="library">/usr/lib/libcrystalhd.so.3</Path>
             <Path fileType="library">/usr/lib/libcrystalhd.so.3.6</Path>
-			<Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
     <Package>

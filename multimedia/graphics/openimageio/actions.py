@@ -13,10 +13,10 @@ def build():
     cmaketools.make()
 
 def install():
-    pisitools.insinto("/usr/bin", "/var/pisi/openimageio*/work/dist/*/bin/*")
-    pisitools.insinto("/usr/include", "/var/pisi/openimageio*/work/dist/*/include/*")
-    pisitools.insinto("/usr/lib", "/var/pisi/openimageio*/work/dist/*/lib/*")
-    pisitools.insinto("/usr/lib", "/var/pisi/openimageio*/work/dist/*/python/*")
-    pisitools.insinto("/usr/share/doc", "/var/pisi/openimageio*/work/dist/*/doc*")
+    pisitools.insinto("/usr/bin", "dist/*/bin/*")
+    pisitools.insinto("/usr/include", "dist/*/include/*")
+    pisitools.insinto("/usr/lib", "dist/*/lib/*")
+    pisitools.insinto("/usr/lib", "dist/*/python/*")
+    pisitools.insinto("/usr/share/doc", "dist/*/doc*")
     
     pisitools.dodoc("CREDITS", "LICENSE", "README.*")
