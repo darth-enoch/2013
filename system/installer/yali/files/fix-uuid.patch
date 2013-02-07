@@ -1,0 +1,10 @@
+--- yali/storage/operations.py~	2013-02-07 18:20:58.000000000 +0100
++++ yali/storage/operations.py	2013-02-07 18:21:14.000000000 +0100
+@@ -242,6 +242,7 @@
+         yali.baseudev.udev_settle()
+         self.device.updateSysfsPath()
+         info = udev_get_block_device(self.device.sysfsPath)
++        self.device.uuid = udev_device_get_uuid(info)
+         self.device.format.uuid = udev_device_get_uuid(info)
+ 
+     def cancel(self):
