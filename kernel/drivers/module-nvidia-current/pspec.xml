@@ -11,8 +11,8 @@
         <License>NVIDIA</License>
         <Summary>NVIDIA drivers for GeForce 6xxx and newer GPUs</Summary>
         <Description>NVIDIA graphics drivers provide optimized 2D/3D performance.</Description>
-        <Archive sha1sum="30a0577e6263ff9f1df3e054225777d5c959c94a" type="binary">ftp://download.nvidia.com/XFree86/Linux-x86/313.18/NVIDIA-Linux-x86-313.18.run</Archive>
-        <Archive sha1sum="7f16d483dc6f7ffec000a2f17aab12e985b08968" type="binary">ftp://download.nvidia.com/XFree86/Linux-x86_64/313.18/NVIDIA-Linux-x86_64-313.18.run</Archive>
+        <Archive sha1sum="e46000f2b464e431f2338c632138adbe29c5ce7b" type="binary">ftp://download.nvidia.com/XFree86/Linux-x86/313.09/NVIDIA-Linux-x86-313.09.run</Archive>
+        <Archive sha1sum="0baaeb125b22873e6850243bf563c1bdaa4d7a2b" type="binary">ftp://download.nvidia.com/XFree86/Linux-x86_64/313.09/NVIDIA-Linux-x86_64-313.09.run</Archive>
         <BuildDependencies>
             <Dependency>kernel-module-headers</Dependency>
         </BuildDependencies>
@@ -96,14 +96,7 @@
         </Provides>
     </Package>
 
-    <History>
-        <Update release="2">
-            <Date>2013-01-18</Date>
-            <Version>313.18</Version>
-            <Comment>Update to 313.18</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>yaralikurt15@hotmail.com</Email>
-        </Update>
+    <History>        
         <Update release="1">
             <Date>2012-12-30</Date>
             <Version>313.09</Version>
