@@ -24,6 +24,7 @@
             <Dependency>exiv2-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>glew-devel</Dependency>
+            <Dependency>freeglut</Dependency>
             <Dependency>freeglut-devel</Dependency>
             <Dependency>gmm</Dependency>
             <Dependency>GraphicsMagick-devel</Dependency>
