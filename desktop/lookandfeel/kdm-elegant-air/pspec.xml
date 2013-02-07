@@ -17,16 +17,19 @@
 
     <Package>
         <Name>kdm-elegant-air</Name>
-        <Replaces>
-            <Package>kdm-elegant-air</Package>
-        </Replaces>
         <Files>
             <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
 
     <History>
-
+        <Update release="2">
+            <Date>2013-02-07</Date>
+            <Version>1.0</Version>
+            <Comment>Cosmetic</Comment>
+            <Name>Ertan Güven</Name>
+            <Email>ertangvn@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2013-02-03</Date>
             <Version>1.0</Version>
