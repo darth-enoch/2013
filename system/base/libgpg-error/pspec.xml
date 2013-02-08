@@ -28,6 +28,7 @@
 
     <Package>
         <Name>libgpg-error-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development files for libgpg-error</Summary>
         <RuntimeDependencies>
             <Dependency release="current">libgpg-error</Dependency>

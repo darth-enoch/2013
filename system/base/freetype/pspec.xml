@@ -43,6 +43,7 @@
 
     <Package>
         <Name>freetype-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development files for freetype</Summary>
         <RuntimeDependencies>
             <Dependency release="current">freetype</Dependency>
@@ -74,7 +75,7 @@
     </Package>
     
     <History>
-	    <Update release="1">
+        <Update release="1">
             <Date>2012-11-24</Date>
             <Version>2.4.10</Version>
             <Comment>First release</Comment>

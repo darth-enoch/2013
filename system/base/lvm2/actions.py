@@ -28,10 +28,10 @@ def builddiet():
                          --disable-nls \
                          --disable-selinux \
                          --with-confdir=/etc \
-            --enable-applib     \
-            --enable-cmdlib     \
-            --enable-pkgconfig  \
-            --enable-udev_sync" % get.CFLAGS())
+                         --enable-applib     \
+                         --enable-cmdlib     \
+                         --enable-pkgconfig  \
+                         --enable-udev_sync" % get.CFLAGS())
 
     pisitools.dosed("lib/misc/configure.h","rpl_malloc","malloc")
     pisitools.dosed("lib/misc/configure.h","rpl_realloc","realloc")

@@ -16,7 +16,7 @@
         <Patches>
 <!--             <Patch>fuse-2.8.0-fix-str-fmt.patch</Patch> -->
 <!--             <Patch level="1">use-lpthread.patch</Patch> -->
-             <Patch level="0">skip_umount_test.patch</Patch>
+            <Patch level="0">skip_umount_test.patch</Patch>
         </Patches>
     </Source>
 
@@ -34,6 +34,7 @@
 
     <Package>
         <Name>fuse-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development files for fuse</Summary>
         <RuntimeDependencies>
             <Dependency release="current">fuse</Dependency>
@@ -51,6 +52,6 @@
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>     
+        </Update>
     </History>
 </PISI>

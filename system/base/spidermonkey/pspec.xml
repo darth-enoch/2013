@@ -24,11 +24,11 @@
             <Patch level="2">js-1.7.0-make.patch</Patch>
             <Patch level="1">js-shlib.patch</Patch>
             <Patch level="2">no-lib64.patch</Patch>-->
-	    <Patch level="2">spidermonkey-1.8.5-arm_resprect_cflags-1.patch</Patch>
-	    <Patch level="2">spidermonkey-1.8.5-fix-install-symlinks.patch</Patch>
-	    <Patch level="2">spidermonkey-1.8.5-fix-ppc64.patch</Patch>
-	    <!--<Patch level="2">spidermonkey-1.8.7-filter_desc.patch</Patch>
-	    <Patch level="2">spidermonkey-1.8.7-x32.patch</Patch>-->
+            <Patch level="2">spidermonkey-1.8.5-arm_resprect_cflags-1.patch</Patch>
+            <Patch level="2">spidermonkey-1.8.5-fix-install-symlinks.patch</Patch>
+            <Patch level="2">spidermonkey-1.8.5-fix-ppc64.patch</Patch>
+            <!--<Patch level="2">spidermonkey-1.8.7-filter_desc.patch</Patch>
+            <Patch level="2">spidermonkey-1.8.7-x32.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -46,6 +46,7 @@
 
     <Package>
         <Name>spidermonkey-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development files for spidermonkey</Summary>
         <RuntimeDependencies>
             <Dependency release="current">spidermonkey</Dependency>
