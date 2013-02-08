@@ -6,9 +6,8 @@
 
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
-
-WorkDir = "%s-source" % get.srcDIR()
 
 def setup():
     cmaketools.configure()

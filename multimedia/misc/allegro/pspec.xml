@@ -25,7 +25,7 @@
             <Dependency>libpng-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
-            <Dependency>mesa-glu</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
             <Dependency>libogg-devel</Dependency>
             <Dependency>libX11-devel</Dependency>
             <Dependency>jack-audio-connection-kit-devel</Dependency>

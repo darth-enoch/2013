@@ -17,15 +17,8 @@
             <Dependency>nasm</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- see bug #7378
-            <Patch level="1">a20_sync_with_null.patch</Patch>
-            -->
-            <!-- FIXME: has partition size mismatch
-            <Patch level="1">syslinux-3.73-fixisohybrid.patch</Patch>
-            -->
-            <!-- These seem to be removed, keep an eye on them
-            <Patch level="1">remove-win32-from-build.patch</Patch-->
             <Patch level="1">nopie.patch</Patch>
+            <Patch level="1">syslinux-5.00-fixisohybrid.patch</Patch>
         </Patches>
     </Source>
 
@@ -44,11 +37,22 @@
             <Path fileType="man">/usr/share/man</Path>
         </Files>
         <AdditionalFiles>
-	    <AdditionalFile target="/usr/lib/syslinux/anka-isolinux.cfg" permission="0644" owner="root">anka-isolinux.cfg</AdditionalFile>
+	    <AdditionalFile target="/usr/lib/syslinux/isolinux.cfg" permission="0644" owner="root">anka-iso/isolinux.cfg</AdditionalFile>
+	    <AdditionalFile target="/usr/lib/syslinux/std.cfg" permission="0644" owner="root">anka-iso/std.cfg</AdditionalFile>
+	    <AdditionalFile target="/usr/lib/syslinux/tr.cfg" permission="0644" owner="root">anka-iso/tr.cfg</AdditionalFile>
+	    <AdditionalFile target="/usr/lib/syslinux/en.cfg" permission="0644" owner="root">anka-iso/en.cfg</AdditionalFile>
+	    <AdditionalFile target="/usr/lib/syslinux/background.png" permission="0644" owner="root">anka-iso/background.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-07</Date>
+            <Version>5.00</Version>
+            <Comment>fix isohybrid</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2013-01-08</Date>
             <Version>5.00</Version>

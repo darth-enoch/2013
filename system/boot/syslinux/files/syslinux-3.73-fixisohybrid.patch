@@ -1,5 +1,5 @@
---- syslinux-3.82/utils/isohybrid	2009-06-09 19:21:50.000000000 +0200
-+++ syslinux-3.82/utils/isohybrid	2009-10-16 17:16:34.000000000 +0200
+--- syslinux-5.00-orig/utils/isohybrid.pl	2012-12-06 21:51:22.000000000 +0200
++++ syslinux-5.00/utils/isohybrid.pl	2013-02-07 18:55:28.423760149 +0200
 @@ -44,6 +44,7 @@
      'id'     => [0, 0xffffffff],
      'hd0'    => [0, 2],
@@ -55,14 +55,14 @@
 +print "ehead1=$ehead1 esect1=$esect1 ecyl1=$ecyl1\n";
 +
 +if ( $opt{'fat'} == 1 ) {
-+	$pentry = 2;
++       $pentry = 2;
 +}
 +
  for ( $i = 1 ; $i <= 4 ; $i++ ) {
 -    if ( $i == $pentry ) {
 +    if ( $opt{'fat'} == 1 && $i == 1 ) {
-+	$mbr .= pack("CCCCCCCCVV", 0x00, $bhead1, $bsect1, $bcyl1, 0xc,
-+		     $ehead1, $esect1, $ecyl1, $offset+1, $psize1);
++       $mbr .= pack("CCCCCCCCVV", 0x00, $bhead1, $bsect1, $bcyl1, 0xc,
++                    $ehead1, $esect1, $ecyl1, $offset+1, $psize1);
 +    } elsif ( $i == $pentry ) {
  	$mbr .= pack("CCCCCCCCVV", 0x80, $bhead, $bsect, $bcyl, $fstype,
 -		     $ehead, $esect, $ecyl, $offset, $psize);
@@ -89,8 +89,8 @@
  # Done...
  close(FILE);
  
---- syslinux-3.82/utils/isohybrid.in	2009-06-09 19:21:50.000000000 +0200
-+++ syslinux-3.82/utils/isohybrid.in	2009-10-16 17:16:34.000000000 +0200
+--- syslinux-5.00-orig/utils/isohybrid.in	2012-12-06 21:51:22.000000000 +0200
++++ syslinux-5.00/utils/isohybrid.in	2013-02-07 18:55:28.423760149 +0200
 @@ -44,6 +44,7 @@
      'id'     => [0, 0xffffffff],
      'hd0'    => [0, 2],

@@ -27,4 +27,7 @@ def build():
 def install():
     pisitools.dodoc("LICENSE.txt","license_dbghelp.txt","license_gpl-2.0.txt","license_lgpl-2.1.txt","README.txt",)
     pisitools.insinto("/opt/0ad","binaries/*")
+    pisitools.insinto("/usr/share/pixmaps/", "build/resources/0ad.png", "0ad.png")
+    pisitools.insinto("/usr/share/applications/", "build/resources/0ad.desktop", "0ad.desktop")
+    pisitools.insinto("/usr/share/applications/", "build/resources/0ad-editor.desktop", "0ad-editor.desktop")
 
