@@ -145,23 +145,6 @@
             <Path fileType="data">/usr/lib/pkgconfig/avahi-ui.pc</Path>
         </Files>
     </Package>
-    
-    <Package>
-        <Name>avahi-ui-gtk3</Name>
-        <Summary>Gtk3 bindings for avahi.</Summary>
-        <RuntimeDependencies>
-            <Dependency>gtk2-devel</Dependency>
-            <Dependency release="current">avahi-ui</Dependency>
-            <Dependency release="current">avahi-devel</Dependency>
-            <Dependency release="current">avahi-glib-devel</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/libavahi-ui-gtk3.so.0</Path>
-	    <Path fileType="library">/usr/lib/libavahi-ui-gtk3.so</Path>
-	    <Path fileType="library">/usr/lib/libavahi-ui-gtk3.so.0.1.4</Path>
-	    <Path fileType="library">/usr/lib/pkgconfig/avahi-ui-gtk3.pc</Path>
-        </Files>
-    </Package>
 
     <Package>
         <Name>avahi-ui-tools</Name>
@@ -174,9 +157,6 @@
             <Dependency release="current">avahi-glib</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>python-avahi</Package>
-        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/python*/site-packages</Path>
             <Path fileType="executable">/usr/bin/b*</Path>
@@ -198,9 +178,6 @@
             <Dependency release="current">avahi</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="19">avahi</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/libhowl.so*</Path>
         </Files>
@@ -226,9 +203,6 @@
             <Dependency release="current">avahi</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="19">avahi</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/libdns_sd.so*</Path>
         </Files>
@@ -251,9 +225,6 @@
     <Package>
         <Name>avahi-libs</Name>
         <Summary>Libraries needed to run programs that use avahi</Summary>
-        <Conflicts>
-            <Package releaseTo="19">avahi</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/libavahi-common.so*</Path>
             <Path fileType="library">/usr/lib/libavahi-client.so*</Path>
@@ -296,9 +267,6 @@
         <RuntimeDependencies>
             <Dependency>libdaemon</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="19">avahi</Package>
-        </Conflicts>
         <Files>
             <Path fileType="data">/etc/avahi/avahi-autoipd.action</Path>
             <Path fileType="executable">/usr/sbin/avahi-autoipd</Path>
@@ -315,9 +283,6 @@
             <Dependency release="current">avahi</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="19">avahi</Package>
-        </Conflicts>
         <Files>
             <Path fileType="data">/etc/avahi/avahi-dnsconfd.action</Path>
             <Path fileType="executable">/usr/sbin/avahi-dnsconfd</Path>
@@ -335,9 +300,6 @@
             <Dependency release="current">avahi</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="19">avahi</Package>
-        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="man">/usr/share/man/man1</Path>
@@ -360,210 +322,12 @@
     </Package>
 
     <History>
-        <Update release="28">
+        <Update release="1">
             <Date>2012-10-05</Date>
             <Version>0.6.31</Version>
-            <Comment>systemd service file</Comment>
+            <Comment>First release</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="27">
-            <Date>2012-08-20</Date>
-            <Version>0.6.31</Version>
-            <Comment>Version bump</Comment>
-            <Type>security</Type>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="26">
-            <Date>2011-03-21</Date>
-            <Version>0.6.29</Version>
-            <Comment>
-                - Version bump to 0.6.29,
-                - Fix daemon infinite loop triggered by an empty UDP packet (CVE-2011-1002) (bzp#17239).
-            </Comment>
-            <Type>security</Type>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="25">
-            <Date>2011-02-24</Date>
-            <Version>0.6.28</Version>
-            <Comment>add missing Conflict tags.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="24">
-            <Date>2011-01-10</Date>
-            <Version>0.6.28</Version>
-            <Comment>Enable mono bindings.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="23">
-            <Date>2010-11-27</Date>
-            <Version>0.6.28</Version>
-            <Comment>Update package name of pygtk.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="22">
-            <Date>2010-11-03</Date>
-            <Version>0.6.28</Version>
-            <Comment>Version bump, replace python-avahi.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="21">
-            <Date>2010-10-13</Date>
-            <Version>0.6.27</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökcen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="20">
-            <Date>2010-09-16</Date>
-            <Version>0.6.27</Version>
-            <Comment>Ship systemd files</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="19">
-            <Date>2010-08-24</Date>
-            <Version>0.6.27</Version>
-            <Comment>
-                - Ship more bindings,
-                - Split autoipd and dnsconfd daemons,
-                - Fix autoipd daemon's user/group.
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="18">
-            <Date>2010-08-19</Date>
-            <Version>0.6.27</Version>
-            <Comment>Version bump, split devel package.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="17" type="security">
-            <Date>2010-07-08</Date>
-            <Version>0.6.25</Version>
-            <Comment>Fix a security vulnerability causing DoS when a bad packet is received (CVE-2010-2244) (#13643).</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="16">
-            <Date>2010-03-31</Date>
-            <Version>0.6.25</Version>
-            <Comment>Add libcap dependency</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="15">
-            <Date>2009-04-16</Date>
-            <Version>0.6.25</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="14" type="security">
-            <Date>2009-03-05</Date>
-            <Version>0.6.24</Version>
-            <Comment>Fix Denial of Service vulnerability in server.c (CVE-2009-0758), (bug#9324).</Comment>
-            <Name>Pınar Yanardağ</Name>
-            <Email>pinar@pardus.org.tr</Email>
-        </Update>
-        <Update release="13">
-            <Date>2009-02-16</Date>
-            <Version>0.6.24</Version>
-            <Comment>Version bump to 0.6.24 which contains a huge number of bug fixes.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="12" type="security">
-            <Date>2008-12-14</Date>
-            <Version>0.6.23</Version>
-            <Comment>Fix DoS vulnerability in server.c (CVE-2008-5081).</Comment>
-            <Name>Pınar Yanardağ</Name>
-            <Email>pinar@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2008-10-05</Date>
-            <Version>0.6.23</Version>
-            <Comment>Fix reloading of avahi-dnsconfd in service script</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2008-09-28</Date>
-            <Version>0.6.23</Version>
-            <Comment>Remove broken bvnc.1 symlink as bvnc tool is not included in this package. Fixes #7151.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2008-08-27</Date>
-            <Version>0.6.23</Version>
-            <Comment>Fix __init__.py not coming problem by separating python-avahi</Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2008-08-26</Date>
-            <Version>0.6.23</Version>
-            <Comment>Version bump</Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-08-07</Date>
-            <Version>0.6.22</Version>
-            <Comment>Don't rename interface, required by Network-Manager/Ad-Hoc module</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-03-11</Date>
-            <Version>0.6.22</Version>
-            <Comment>Split qt bindings to a different source package to resolve circular dep. cups->avahi->qt4->cups. doxygen and pygtk deps are removed also.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-12-17</Date>
-            <Version>0.6.22</Version>
-            <Comment>Version bump.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-09-19</Date>
-            <Version>0.6.21</Version>
-            <Comment>Version bump.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-07-06</Date>
-            <Version>0.6.20</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-05-10</Date>
-            <Version>0.6.19</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-         </Update>
-         <Update release="1">
-            <Date>2007-03-29</Date>
-            <Version>0.6.17</Version>
-            <Comment>First release.</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
         </Update>
     </History>
 </PISI>
