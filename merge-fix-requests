@@ -38,4 +38,8 @@ Depoya Eklenme Durumu       Paketin Adı                     Paketçi  (İstekte
 --------------------------------------------------------------------------------------------------------------------------------------
 Merge Status                Package name                    Packager (Merge request owner)          Release No      Merge Committer
 --------------------------------------------------------------------------------------------------------------------------------------
+-                           0ad                             circass                                   2
+-                           xbmc                            circass                                   2
+-                           firefox                         circass                                   3
+-                           kernel                          circass                                   4             
 +                           gparted                         namso-01                                  2             obsoleteman
