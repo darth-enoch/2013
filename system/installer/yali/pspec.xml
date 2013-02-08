@@ -85,6 +85,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-08</Date>
+            <Version>2.4.1_pre20110530</Version>
+            <Comment>Fix uuid issue.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2013-01-18</Date>
             <Version>2.4.1_pre20110530</Version>
