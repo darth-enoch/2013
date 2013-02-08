@@ -19,6 +19,7 @@ def setup():
                          --disable-xmltoman \
                          --disable-qt3 \
                          --disable-doxygen-doc \
+                         --disable-gtk3 \
                          --disable-introspection \
                          --enable-mono \
                          --enable-compat-howl \
