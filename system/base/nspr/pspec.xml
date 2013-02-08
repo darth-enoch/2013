@@ -32,6 +32,7 @@
 
     <Package>
         <Name>nspr-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development files for nspr</Summary>
         <RuntimeDependencies>
             <Dependency release="current">nspr</Dependency>

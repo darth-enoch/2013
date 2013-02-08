@@ -34,6 +34,7 @@
 
     <Package>
         <Name>libgcrypt-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development files for libgcrypt</Summary>
         <RuntimeDependencies>
             <Dependency release="current">libgcrypt</Dependency>

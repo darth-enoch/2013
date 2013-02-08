@@ -32,6 +32,7 @@
 
     <Package>
         <Name>libee-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development files for libestr</Summary>
         <RuntimeDependencies>
             <Dependency release="current">libee</Dependency>

@@ -51,6 +51,7 @@
     </Package>
     <Package>
         <Name>libkmod-devel</Name>
+        <PartOf>system.devel</PartOf>
         <RuntimeDependencies>
             <Dependency version="current">libkmod</Dependency>
         </RuntimeDependencies>

@@ -11,7 +11,7 @@ from pisi.actionsapi import shelltools
 WorkDir = "."
 
 def build():
-    shelltools.system("echo -e \"book add book_1.01.pgn\"$'\\n'\"quit\" | gnuchess")
+    shelltools.system("gnuchess --addbook=book_1.02.pgn")
 
 def install():
-    pisitools.insinto("/usr/share/games/gnuchess/", "book.dat")
+    pisitools.insinto("/usr/share/games/gnuchess/", "book.bin")

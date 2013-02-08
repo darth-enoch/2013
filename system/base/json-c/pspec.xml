@@ -26,6 +26,7 @@
 
     <Package>
         <Name>json-c-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development files for json-c</Summary>
         <RuntimeDependencies>
             <Dependency release="current">json-c</Dependency>
@@ -35,14 +36,14 @@
             <Path fileType="data">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
-    
-     <Package>
+
+    <Package>
         <Name>json-c-32bit</Name>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for json-c</Summary>
         <BuildType>emul32</BuildType>
         <Files>
-	    <Path fileType="library">/usr/lib32</Path>
+            <Path fileType="library">/usr/lib32</Path>
         </Files>
     </Package>
 

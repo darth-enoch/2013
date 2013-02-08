@@ -20,8 +20,8 @@
 <!--             <Patch level="1">fix-build-error.patch</Patch> -->
 <!--             <Patch level="1">fix-underlinking.patch</Patch>  -->
 <!--             <Patch level="1">udev-rules.patch</Patch>  -->
-	    <Patch level="1">lvm2-enable-lvmetad-by-default.patch</Patch>
-	    <Patch level="1">lvm2-2_02_99-various-updates-and-fixes-for-systemd-units.patch</Patch>
+            <Patch level="1">lvm2-enable-lvmetad-by-default.patch</Patch>
+            <Patch level="1">lvm2-2_02_99-various-updates-and-fixes-for-systemd-units.patch</Patch>
         </Patches>
     </Source>
 
@@ -40,11 +40,12 @@
             <Path fileType="man">/usr/share/man/man8/dmsetup.8</Path>
             <Path fileType="data">/usr/lib/libdevmapper-event-lvm2raid.so</Path>
             <Path fileType="data">/usr/lib/device-mapper/libdevmapper-event-lvm2raid.so</Path>
-       </Files>
+        </Files>
     </Package>
 
     <Package>
         <Name>device-mapper-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development libraries and headers for device-mapper</Summary>
         <Description>Device-mapper-devel contains files needed to develop applications that use the device-mapper libraries.</Description>
         <RuntimeDependencies>
@@ -53,10 +54,10 @@
         <Files>
             <Path fileType="header">/usr/include/libdevmapper.h</Path>
             <Path fileType="data">/usr/lib/pkgconfig/devmapper.pc</Path>
-       </Files>
-   </Package>
+        </Files>
+    </Package>
 
-   <Package>
+    <Package>
         <Name>device-mapper-event</Name>
         <Summary>Device-mapper event daemon</Summary>
         <Description>This package contains the dmeventd daemon for monitoring the state of device-mapper devices.</Description>
@@ -67,11 +68,12 @@
             <Path fileType="executable">/usr/sbin/dmeventd</Path>
             <Path fileType="library">/usr/lib/libdevmapper-event.so*</Path>
             <Path fileType="man">/usr/share/man/man8/dmeventd.8</Path>
-       </Files>
-   </Package>
+        </Files>
+    </Package>
 
-   <Package>
+    <Package>
         <Name>device-mapper-event-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development libraries and headers for the device-mapper event daemon</Summary>
         <Description>This contains contains files needed to develop applications that use the device-mapper event library.</Description>
         <RuntimeDependencies>
@@ -80,8 +82,8 @@
         <Files>
             <Path fileType="header">/usr/include/libdevmapper-event.h</Path>
             <Path fileType="data">/usr/lib/pkgconfig/devmapper-event.pc</Path>
-       </Files>
-   </Package>
+        </Files>
+    </Package>
 
     <Package>
         <Name>lvm2</Name>
@@ -93,7 +95,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/sbin/lvmconf</Path>
-	    <Path fileType="executable">/usr/sbin/blkdeactivate</Path>
+            <Path fileType="executable">/usr/sbin/blkdeactivate</Path>
             <Path fileType="executable">/usr/sbin/fsadm</Path>
             <Path fileType="executable">/usr/sbin/lv*</Path>
             <Path fileType="executable">/usr/sbin/vg*</Path>
@@ -114,7 +116,7 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man/man5/lvm.conf.5</Path>
             <Path fileType="man">/usr/share/man/man8/fsadm.8</Path>
-	    <Path fileType="man">/usr/share/man/man8/blkdeactivate.8</Path>
+            <Path fileType="man">/usr/share/man/man8/blkdeactivate.8</Path>
             <Path fileType="man">/usr/share/man/man8/*pv*</Path>
             <Path fileType="man">/usr/share/man/man8/*lv*</Path>
             <Path fileType="man">/usr/share/man/man8/*vg*</Path>
@@ -123,6 +125,7 @@
 
     <Package>
         <Name>lvm2-devel</Name>
+        <PartOf>system.devel</PartOf>
         <Summary>Development libraries and headers</Summary>
         <Description>This package contains files needed to develop applications that use the lvm2 libraries.</Description>
         <RuntimeDependencies>
@@ -144,7 +147,7 @@
         <Description>device mapper contains ioctl library and utilities for use with logical volume management (LVM2) built with dietlibc</Description>
         <Files>
             <Path fileType="library">/usr/lib/dietlibc/lib-i386/libdevmapper.a</Path>
-       </Files>
+        </Files>
     </Package>
 
     <Package>
@@ -153,7 +156,7 @@
         <Description>device mapper contains statically linked libraries and utility for initramfs.</Description>
         <Files>
             <Path fileType="executable">/sbin/dmsetup.static</Path>
-       </Files>
+        </Files>
     </Package>
 
     <Package>
@@ -162,7 +165,7 @@
         <Description>Number of utilities for creating, checking, and repairing logical volumes - statically linked for initramfs.</Description>
         <Files>
             <Path fileType="executable">/sbin/lvm.static</Path>
-       </Files>
+        </Files>
     </Package>
 
     <History>
