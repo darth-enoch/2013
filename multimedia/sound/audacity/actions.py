@@ -24,6 +24,8 @@ def setup():
                          --enable-ladspa \
                          --with-lib-preference='system local' \
                          --with-libsndfile=system \
+                         --prefix=/usr \
+                         --docdir=/usr/share/doc/audacity \
                          --with-expat=system \
                          --with-libsamplerate \
                          --with-libvorbis \
@@ -34,7 +36,7 @@ def setup():
                          --with-soundtouch \
                          --with-libvamp \
                          --with-libtwolame \
-                         --with-ffmpeg \
+                         --without-ffmpeg \
                          --with-midi \
                          --with-taglib \
                          --with-portmixer")
