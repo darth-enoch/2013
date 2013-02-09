@@ -11,7 +11,7 @@
         <License>MIT</License>
         <Summary>X.Org X Server</Summary>
         <Description>X server is the main application that allows a graphical interface.</Description>
-        <Archive sha1sum="b29aef6ab4924e2b034ccb26b289e929d61a2555" type="tarbz2">mirrors://xorg/individual/xserver/xorg-server-1.13.0.tar.bz2</Archive>
+        <Archive sha1sum="b9a5e6b2880fa15df925a7ace15314d8637cc96f" type="tarbz2">mirrors://xorg/individual/xserver/xorg-server-1.13.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>font-util</Dependency>
             <Dependency>jpeg-devel</Dependency>
@@ -39,12 +39,18 @@
             <Dependency>xorg-app</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Fedoras package name is named as "xorg-x11-server" (same as the git repo)-->
+            <Patch level="1">fedora/0001-Always-install-vbe-and-int10-sdk-headers.patch</Patch>
+            <Patch level="1">fedora/0001-mieq-Bump-default-queue-size-to-512.patch</Patch>
+            <Patch level="1">fedora/0001-protocol-versions-Bump-minor-version-of-XI.patch</Patch>
+            <Patch level="1">fedora/0001-xf86crtc-don-t-use-display-for-vx-vy-for-gpu-screens.patch</Patch>
+            <Patch level="1">fedora/0001-xf86-return-NULL-for-compat-output-if-no-outputs.patch</Patch>
+            <Patch level="1">fedora/0001-xfree86-hotplug-cleanup-properly-if-the-screen-fails.patch</Patch>
+            <Patch level="1">fedora/xserver-1.12.2-xorg-touch-test.patch</Patch>
+            <Patch level="1">fedora/xserver-1.12-Xext-fix-selinux-build-failure.patch</Patch>
             <Patch level="1">fedora/xserver-1.4.99-ssh-isnt-local.patch</Patch>
             <Patch level="1">fedora/xserver-1.6.0-less-acpi-brokenness.patch</Patch>
             <Patch level="1">fedora/xserver-1.6.99-right-of.patch</Patch>
-            <Patch level="1">fedora/xserver-1.12.2-xorg-touch-test.patch</Patch>
-            <Patch level="1">fedora/xserver-1.12-xkb-fill-in-keycode-and-event-type-for-slow-keys-ena.patch</Patch>
+            <Patch level="1">fedora/xserver-autobind-hotplug.patch</Patch>
 
             <!--Ubuntu Patches -->
             <Patch level="1">ubuntu/001_fedora_extramodes.patch</Patch>
@@ -61,10 +67,6 @@
             <Patch level="1">ubuntu/208_switch_on_release.diff</Patch>
             <Patch level="1">ubuntu/226_fall_back_to_autoconfiguration.patch</Patch>
             <Patch level="1">ubuntu/227_null_ptr_midispcur.patch</Patch>
-            <Patch level="1">ubuntu/228_autobind_gpu.patch</Patch>
-            <Patch level="1">ubuntu/229_udev-fix.diff</Patch>
-            <Patch level="1">ubuntu/230-fix-compat-output-selection.patch</Patch>
-            <Patch level="1">ubuntu/231-scan-pci-after-probing-devices.patch</Patch>
 
             <Patch level="1">edid-quirk-for-apple-lcd.patch</Patch>
 
@@ -228,6 +230,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-05</Date>
+            <Version>1.13.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-25</Date>
             <Version>1.13.0</Version>
