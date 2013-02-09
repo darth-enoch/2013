@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A collection of screensavers for the X Window System</Summary>
         <Description>XScreenSaver is the standard screen saver collection shipped on most Linux and Unix systems running the X11 Window System.</Description>
-        <Archive sha1sum="cc44ddc538ad5b59ff851f70e8a48633763ff077" type="targz">http://www.jwz.org/xscreensaver/xscreensaver-5.21.tar.gz</Archive>
+        <Archive sha1sum="cc44ddc538ad5b59ff851f70e8a48633763ff077" type="targz">http://dl.dropbox.com/u/60245852/xscreensaver-5.21.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po" permission="0644" owner="root">tr.po</AdditionalFile>
         </AdditionalFiles>
