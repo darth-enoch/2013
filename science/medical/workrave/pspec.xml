@@ -32,6 +32,7 @@
 	    <Dependency>python-Cheetah</Dependency>
 	    <Dependency>libXt-devel</Dependency>
 	    <Dependency>libX11-devel</Dependency>
+	    <Dependency>libXScrnSaver-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -56,6 +57,7 @@
 	    <Dependency>python-Cheetah</Dependency>
 	    <Dependency>libXt</Dependency>
 	    <Dependency>libX11</Dependency>
+	    <Dependency>libXScrnSaver</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
