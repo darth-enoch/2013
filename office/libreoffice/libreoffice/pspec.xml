@@ -166,8 +166,11 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/usr/sbin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="man">/usr/man</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/CREDITS.odt</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/LICENSE*</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/NOTICE</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_en-US</Path>
             <Path fileType="data">/usr/share</Path>
         </Files>
         <AdditionalFiles>
