@@ -1,0 +1,25 @@
+References:
+https://bugzilla.novell.com/show_bug.cgi?id=217374
+https://bugzilla.mozilla.org/show_bug.cgi?id=356370
+
+Index: toolkit/mozapps/extensions/src/nsExtensionManager.js.in
+===================================================================
+RCS file: /cvsroot/mozilla/toolkit/mozapps/extensions/src/nsExtensionManager.js.in,v
+retrieving revision 1.144.2.60
+diff -u -p -6 -r1.144.2.60 nsExtensionManager.js.in
+--- toolkit/mozapps/extensions/src/nsExtensionManager.js.in	17 Sep 2006 22:17:11 -0000	1.144.2.60
++++ toolkit/mozapps/extensions/src/nsExtensionManager.js.in	29 Nov 2006 07:54:31 -0000
+@@ -4008,12 +4008,13 @@ ExtensionManager.prototype = {
+     for (var i = 0; i < allItems.length; ++i) {
+       var item = allItems[i];
+ 
+       // An item entry is valid only if it is not disabled, not about to 
+       // be disabled, and not about to be uninstalled.
+       var installLocation = this.getInstallLocation(item.id);
++      if (! installLocation) continue;
+       if (installLocation.name in StartupCache.entries &&
+           item.id in StartupCache.entries[installLocation.name] &&
+           StartupCache.entries[installLocation.name][item.id]) {
+         var op = StartupCache.entries[installLocation.name][item.id].op;
+         if (op == OP_NEEDS_INSTALL || op == OP_NEEDS_UPGRADE || 
+             op == OP_NEEDS_UNINSTALL || op == OP_NEEDS_DISABLE)

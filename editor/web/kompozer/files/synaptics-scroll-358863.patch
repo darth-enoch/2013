@@ -1,0 +1,14 @@
+For some reason, Firefox on Linux doesn't default to treating mouse buttons 6&7 as
+horizontal scrolling as it does on Windows and Mac OS X.  This changes the default
+preferences.  More discussion at bnc#358863, bmo#412256
+
+--- modules/libpref/src/Makefile.in.orig	2006-02-03 15:44:52.000000000 +0100
++++ modules/libpref/src/Makefile.in	2008-05-01 00:12:26.425900000 +0200
+@@ -83,6 +83,7 @@
+ 
+ DEFINES += -DOS_ARCH=$(OS_ARCH) \
+            -DMOZ_WIDGET_TOOLKIT=$(MOZ_WIDGET_TOOLKIT) \
++           -DHORIZSCROLL_AVAILABLE \
+            $(NULL)
+ 
+ PREF_JS_EXPORTS	= $(srcdir)/init/all.js

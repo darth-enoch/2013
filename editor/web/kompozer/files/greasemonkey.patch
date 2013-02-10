@@ -1,0 +1,28 @@
+Index: docshell/base/nsDocShell.cpp
+================================================================================
+--- docshell/base/nsDocShell.cpp
++++ docshell/base/nsDocShell.cpp
+@@ -5758,6 +5758,9 @@
+     if (onLocationChangeNeeded) {
+       FireOnLocationChange(this, request, mCurrentURI);
+     }
++
++    FireOnStateChange(this, request,
++                      STATE_TRANSFERRING|STATE_IS_NETWORK|STATE_IS_DOCUMENT, NS_OK);
+   
+     return NS_OK;
+ }
+--- xpfe/browser/src/nsBrowserStatusFilter.cpp
++++ xpfe/browser/src/nsBrowserStatusFilter.cpp
+@@ -152,8 +152,10 @@
+         if (aStateFlags & STATE_IS_REQUEST) {
+             if (!mUseRealProgressFlag && mTotalRequests)
+                 return OnProgressChange(nsnull, nsnull, 0, 0, mFinishedRequests, mTotalRequests);
++        } else if (aStateFlags & STATE_IS_DOCUMENT) {
++            return mListener->OnStateChange(aWebProgress, aRequest, aStateFlags,
++                                            aStatus);
+         }
+-
+         // no need to forward this state change
+         return NS_OK;
+     } else {
