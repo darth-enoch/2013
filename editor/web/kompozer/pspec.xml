@@ -15,6 +15,10 @@
         <Summary>KompoZer is a wysiwyg HTML editor using the Mozilla Composer codebase.</Summary>
         <Description>KompoZer is a wysiwyg HTML editor using the Mozilla Composer codebase. As Nvu's development has been stopped in 2005, KompoZer fixes many bugs and adds a few useful features.</Description>
         <Archive sha1sum="bd355c4e2583b19b45ce17ab4f0ef137a65ba223" type="tarbz2">http://sourceforge.net/projects/kompozer/files/current/0.8b3/kompozer-0.8b3-src.tar.bz2</Archive>
+        <AdditionalFiles>
+            <!--Our main configure script. Configure paramters are stored here.-->
+            <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
+        </AdditionalFiles>
 	<BuildDependencies>
 	    <Dependency>nss-devel</Dependency>
 	    <Dependency>nspr-devel</Dependency>
@@ -33,19 +37,7 @@
 	<Patches>
 	    <Patch level="1">seamonkey-libpng14.patch</Patch>
 	    <Patch level="1">kompozer-libpng15.patch</Patch>
-	    <Patch level="1">kompozer-0.8b1-CVE-2009-3560.diff</Patch>
 	    <Patch level="1">kompozer-0.8b3-gcc-4.7.patch</Patch>
-	    <Patch level="1">kompozer-0.8b3-NS_DEFCALL.patch</Patch>
-	    <Patch>mozilla-gcc4.3-fixes.patch</Patch>
-	    <Patch>configure.patch</Patch>
-	    <Patch>gcc-undefined-ops.patch</Patch>
-	    <Patch>greasemonkey.patch</Patch>
-	    <Patch>synaptics-scroll-358863.patch</Patch>
-	    <Patch>cjk-postscript-fonts.dif</Patch>
-	    <Patch level="0">mozconfig.patch</Patch>
-	    <Patch>em-356370.patch</Patch>
-	    <Patch level="1">startup.patch</Patch>
-	    <Patch level="1">x11-session.patch</Patch>
 	    <Patch>any_kernel_26_plus.patch</Patch>
 	</Patches>
     </Source>
