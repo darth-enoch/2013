@@ -12,8 +12,6 @@ from pisi.actionsapi import get
 
 import os
 
-#WorkDir = "supertuxkart-%sa" % get.srcVERSION()
-#WorkDir = "supertuxkart-%sb" % get.srcVERSION()
 enetsrc = "src/enet"
 
 def removegames(dest):
@@ -35,7 +33,7 @@ def setup():
     autotools.configure()
 
 def build():
-    autotools.make("SUPERTUXKART_DATADIR=/usr/share/supertuxkart")
+    autotools.make("V=1")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
