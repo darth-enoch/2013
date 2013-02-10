@@ -12,30 +12,27 @@
         <IsA>library</IsA>
         <Summary>High performance 3D engine</Summary>
         <Description>The Irrlicht Engine is an open source high performance realtime 3D engine.</Description>
-        <!--
-        <Archive sha1sum="2f064cb4c712e1d7aca90a116485b5b166ae6218" type="zip">mirrors://sourceforge/irrlicht/irrlicht-1.7.2.zip</Archive>
-        -->
-        <!-- taken from https://irrlicht.svn.sourceforge.net/svnroot/irrlicht/trunk -->
-        <Archive sha1sum="befee44a7b94a0ecc205a5068223f51597227a96" type="targz">http://cekirdek.pardus.org.tr/~onur/distfiles/irrlicht-1.8.0_pre3643.tar.gz</Archive>
+        <Archive sha1sum="a24c2183e3c7dd909f92699c373a68382958b09d" type="zip">mirrors://sourceforge/irrlicht/irrlicht-1.8.zip</Archive>
         <BuildDependencies>
-            <Dependency>libaesgm-devel</Dependency>
             <Dependency>libXxf86vm-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">optflags.patch</Patch>
-            <Patch level="1">irrlicht-1.5.1-glext.patch</Patch>
-            <Patch level="1">irrlicht-1.7.1-libaesgm.patch</Patch>
-            <Patch level="1">irrlicht-1.7.2-fastatof-improvements.patch</Patch>
-            <Patch level="1">irrXML-shared-library.patch</Patch>
+           <Patch level="0">mageia/irrlicht-1.8-IrrFontTool-makefile.patch</Patch>          
+           <Patch level="0">mageia/irrlicht-1.8-GUIEditor-makefile.patch</Patch>
+           <Patch level="1">mageia/irrlicht-1.5.1-glext.patch</Patch>
+           <Patch level="1">aes.patch</Patch>
+           <Patch level="1">irrlicht-1.8-directionlight.patch</Patch>
+           <Patch level="1">irrlicht-1.8-glviewport.patch</Patch>
+           <Patch level="0">irrlicht-1.8-use-system-libs.patch</Patch>
+           <Patch level="1">usebobs.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
         <Name>irrlicht</Name>
         <RuntimeDependencies>
-            <Dependency>libaesgm</Dependency>
             <Dependency>libXxf86vm</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>jpeg</Dependency>
@@ -69,6 +66,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-10</Date>
+            <Version>1.8</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-04-16</Date>
             <Version>1.8.0_pre20110415</Version>
