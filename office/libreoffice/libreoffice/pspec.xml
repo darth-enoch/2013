@@ -171,7 +171,12 @@
             <Path fileType="doc">/usr/share/doc/libreoffice/LICENSE*</Path>
             <Path fileType="doc">/usr/share/doc/libreoffice/NOTICE</Path>
             <Path fileType="doc">/usr/share/doc/libreoffice/README_en-US</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/application-registry</Path>
+            <Path fileType="data">/usr/share/mime-info</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/mimelnk</Path>
         </Files>
         <AdditionalFiles>
         </AdditionalFiles>
@@ -186,6 +191,7 @@
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/libreoffice/sdk</Path>
             <Path fileType="data">/usr/share/idl</Path>
+            <Path fileType="data">/usr/share/libreoffice</Path>
             <Path fileType="doc">/usr/share/doc/libreoffice/sdk</Path>
         </Files>
     </Package>
