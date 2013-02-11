@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>conky</Name>
+        <Summary xml:lang="tr">Orjinali Torsmo'nun çatallanmasıyla oluşmuş bir sistem izleyicisi.</Summary>
+        <Description xml:lang="tr">Orjinali Torsmo'nun çatallanmasıyla oluşmuş bir sistem izleyicisi.</Description>
+    </Source>
+</PISI>
