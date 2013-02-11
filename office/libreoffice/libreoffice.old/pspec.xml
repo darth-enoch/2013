@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>libreoffice</Name>
+        <Name>libreoffice-old</Name>
         <Homepage>http://www.documentfoundation.org</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -121,7 +121,7 @@
     </Source>
 
     <Package>
-        <Name>libreoffice</Name>
+        <Name>libreoffice-old</Name>
         <RuntimeDependencies>
             <Dependency>agg</Dependency>
             <Dependency>atk</Dependency>
