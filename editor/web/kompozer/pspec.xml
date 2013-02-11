@@ -33,6 +33,10 @@
 	    <Dependency>zip</Dependency>
 	    <Dependency>unzip</Dependency>
 	    <Dependency>xulrunner-devel</Dependency>
+	    <Dependency>libXft-devel</Dependency>
+	    <Dependency>gnome-vfs-devel</Dependency>
+	    <Dependency>pangox-compat-devel</Dependency>
+	    <Dependency>libXinerama-devel</Dependency>
         </BuildDependencies>
 	<Patches>
 	    <Patch level="1">seamonkey-libpng14.patch</Patch>

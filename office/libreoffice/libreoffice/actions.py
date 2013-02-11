@@ -11,133 +11,109 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-import os
-import re
-import glob
-import locale
+#NoStrip = ["%s/lib/libreoffice/basis-link/share" % AppDir, "%s/lib/libreoffice/share" % AppDir]
 
-WorkDir = "%s-bootstrap-%s" % (get.srcNAME(), get.srcVERSION())
-AppDir = "/opt/LibreOffice"
-NoStrip = ["%s/lib/libreoffice/basis-link/share" % AppDir, "%s/lib/libreoffice/share" % AppDir]
-
-def getJobCount():
-    # If jobs field in pisi.conf is greater than 1, use 'this value - 1' as number of cpus. There is also a max-jobs configure opt. but it's buggy now
-    return max(int(get.makeJOBS().strip().replace("-j", "")) - 1, 1)
+shelltools.export("HOME", get.workDIR())
+shelltools.export("LDFLAGS", "%s -L/usr/lib/nss" % get.LDFLAGS())
+shelltools.export("ARCH_FLAGS", get.CXXFLAGS())
+shelltools.export("LINKFLAGSOPTIMIZE", get.LDFLAGS())
+shelltools.export("PYTHON", get.curPYTHON())
 
 def setup():
-
-    # Remove previous Linux build scripts if any
-    for f in glob.glob("Linux*Set.sh"):
-        shelltools.unlink(f)
-
-    autotools.autoconf("-f")
-
-    #TODO: packaging internal stuff like altlinuxhyph, mythes etc. and removing all --without-system-* would be a good job
-
-    #libdir is needed to set exec_prefix
-    #enable-cairo to make HW Acceleration enabled
-    #disable kde4 until the horizontal scrollbar issue is fixed and kde4 implementation of lo is stable
-    shelltools.system('./configure \
-                       --prefix=%s \
-                       --libdir=%s/lib \
-                       --sysconfdir=/etc \
-                       --with-lang="de en-US es fr hu it nl pt-BR ru sv tr" \
-                       --disable-gnome-vfs \
-                       --disable-graphite \
-                       --disable-kde \
-                       --disable-odk \
+    shelltools.system('./autogen.sh \
+                       --with-vendor="Pardus Anka" \
+                       --with-unix-wrapper="libreoffice" \
+                       --with-ant-home="/usr/share/ant" \
+                       --with-jdk-home="/opt/sun-jdk" \
+                       --prefix=/usr --exec-prefix=/usr --sysconfdir=/etc \
+                       --libdir=/usr/lib --mandir=/usr/share/man \
+                       --enable-dependency-tracking \
+                       --disable-verbose \
                        --disable-rpath \
-                       --enable-binfilter \
-                       --enable-cairo \
-                       --enable-dbus \
-                       --enable-epm=\"no\" \
-                       --enable-ext-barcode \
-                       --enable-ext-ct2n \
-                       --enable-ext-diagram \
-                       --enable-ext-google-docs \
-                       --enable-ext-lightproof \
-                       --enable-ext-nlpsolver \
-                       --enable-ext-oooblogger \
-                       --enable-ext-pdfimport \
-                       --enable-ext-presenter-console \
-                       --enable-ext-presenter-minimizer \
-                       --enable-ext-report-builder \
-                       --enable-ext-scripting-beanshell \
-                       --enable-ext-scripting-javascript \
-                       --enable-ext-scripting-python \
-                       --enable-ext-typo \
-                       --enable-ext-watch-window \
-                       --enable-ext-wiki-publisher \
-                       --enable-gtk \
-                       --enable-gio \
-                       --disable-kde4 \
-                       --enable-lockdown \
-                       --enable-opengl \
-                       --enable-symbols \
-                       --enable-vba \
-                       --with-about-bitmap=\"%s/src/openabout_pardus.png\" \
-                       --with-ant-home=/usr/share/ant \
-                       --with-extension-integration \
-                       --with-external-dict-dir=/usr/share/hunspell \
-                       --with-hsqldb-jar=/usr/share/java/hsqldb.jar \
-                       --with-intro-bitmap=\"%s/src/openintro_pardus.png\" \
-                       --with-jdk-home=/opt/sun-jdk \
-                       --with-openldap \
-                       --with-system-headers \
+                       --disable-crashdump \
+                       --disable-ccache \
+                       --disable-epm \
+                       --disable-online-update \
+                       --disable-pch \
+                       --with-system-jars \
                        --with-system-libs \
-                       --with-system-mozilla \
-                       --with-system-odbc \
-                       --with-system-sane-header \
-                       --with-system-servlet-api \
-                       --with-system-xrender-headers \
-                       --with-vendor=\"Pardus\" \
-                       --without-git \
-                       --without-system-altlinuxhyph \
-                       --without-system-beanshell \
-                       --without-system-lucene \
-                       --without-system-mdds \
-                       --without-system-mythes \
-                       --without-system-saxon \
+                       --with-system-mythes \
+                       --with-system-headers \
+                       --with-lang="ALL" \
+                       --enable-graphite \
+                       --enable-cups \
+                       --enable-dbus \
+                       --enable-evolution2 \
+                       --enable-gio \
+                       --disable-gnome-vfs \
+                       --disable-kde \
+                       --enable-kde4 \
+                       --enable-gtk3 \
+                       --enable-largefile \
+                       --enable-lockdown \
+                       --enable-mergelibs \
+                       --enable-opengl \
+                       --enable-odk \
+                       --enable-randr \
+                       --enable-randr-link \
+                       --enable-extension-integration \
+                       --enable-scripting-beanshell \
+                       --enable-scripting-javascript \
+                       --enable-ext-wiki-publisher \
+                       --enable-ext-nlpsolver \
+                       --disable-ext-report-builder \
+                       --disable-ext-mysql-connector \
+                       --with-system-mysql \
+                       --enable-python=system \
+                       --enable-cairo-canvas \
+                       --with-system-cairo \
                        --without-fonts \
+                       --without-afms \
+                       --without-ppds \
+                       --with-system-libexttextcat \
+                       --without-system-jfreereport \
+                       --without-system-apache-commons \
+                       --with-helppack-integration \
+                       --with-system-beanshell \
+                       --with-system-clucene \
+                       --with-system-cppunit \
+                       --with-system-graphite \
+                       --with-system-libcmis \
+                       --with-system-libwpg \
+                       --with-system-libwps \
+                       --with-system-libvisio \
+                       --with-system-mdds \
+                       --with-system-redland \
+                       --with-system-ucpp \
+                       --with-system-dicts \
+                       --with-system-libexttextcat \
+                       --with-system-nss \
+                       --without-system-hsqldb \
+                       --without-system-mozilla \
                        --without-myspell-dicts \
-                       --with-num-cpus=%s' % (AppDir, AppDir, os.path.join(get.workDIR(),WorkDir), os.path.join(get.workDIR(),WorkDir), getJobCount()))
-
+                       --without-system-npapi-headers \
+                       --with-external-dict-dir=/usr/share/hunspell \
+                       --with-external-hyph-dir=/usr/share/hyphen \
+                       --with-external-thes-dir=/usr/share/mythes \
+                       --with-alloc=system \
+                       --with-system-sane \
+                       --without-system-servlet-api \
+                       --without-system-vigra \
+                       --without-sun-templates \
+                       --disable-fetch-external \
+                       --with-parallelism=%s \
+                       --with-external-tar="%s"' % (get.makeJOBS().replace("-j", ""), get.workDIR()))
+        
 def build():
-    oldLocale = locale.setlocale(locale.LC_ALL)
-    locale.setlocale(locale.LC_ALL, 'C') # Turkish build is broken
-
     autotools.make()
 
-    locale.setlocale(locale.LC_ALL, oldLocale) # Restore default locale
+def check():
+    autotools.make("unitcheck")
+    autotools.make("slowcheck")
 
 def install():
-    shelltools.export("HOME", get.workDIR())
-
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    #dosym main executables
-    for bin in ("lobase", "localc", "lodraw", "loimpress", "lomath", "loweb", "lowriter", "soffice", "unopkg"):
-        pisitools.dosym("libreoffice", "/usr/bin/%s" % bin)
-
-    # Icons
-    for icon in glob.glob("sysui/desktop/icons/hicolor/48x48/apps/*.png"):
-        pisitools.insinto("/usr/share/pixmaps", icon, "libreoffice-%s" % os.path.basename(icon))
-    pisitools.insinto("/usr/share/pixmaps", "sysui/desktop/icons/hicolor/48x48/mimetypes/oasis-web-template.png", "libreoffice-web.png")
-
-    #Put pyuno to python directory and add python modules directory to sys.path in uno.py
-    unoPath = "%s/lib/libreoffice/basis-link/program/uno.py" % AppDir
-    unopy = open(get.installDIR() + unoPath).read()
-    pisitools.dodir("/usr/lib/%s/site-packages/" % get.curPYTHON())
-    newunopy = open("%s/usr/lib/%s/site-packages/uno.py" % (get.installDIR(), get.curPYTHON()), "w")
-    newunopy.write("import sys\nsys.path.append('%s/lib/libreoffice/basis-link/program')\n%s" % (AppDir, unopy))
-    newunopy.close()
-    pisitools.remove(unoPath)
-    pisitools.domove("%s/lib/libreoffice/basis-link/program/unohelper.py" % AppDir, "/usr/lib/%s/site-packages" % get.curPYTHON())
-
-    pisitools.dodoc("ChangeLog","COPYING*")
-
-    #install our own sofficerc file
-    pisitools.insinto("%s/lib/libreoffice/program" % AppDir, "sofficerc.pardus", "sofficerc")
-
-    # Remove installation junk
-    pisitools.remove("/gid*")
+    autotools.rawInstall("DESTDIR=%s distro-pack-install -o build -o check" % get.installDIR())
+    
+    for i in ["readmes/README_*", "CREDITS*", "LICENSE*", "NOTICE*"]:
+        pisitools.domove("/usr/lib/libreoffice/%s" % i, "/usr/share/doc/libreoffice")
+    pisitools.removeDir("/usr/lib/libreoffice/readmes")

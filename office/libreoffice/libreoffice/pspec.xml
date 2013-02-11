@@ -8,830 +8,2041 @@
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
-        <License>LGPLv2.1</License>
+        <License>LGPLv3</License>
         <Icon>ooo-gulls</Icon>
         <IsA>app:gui</IsA>
         <Summary>LibreOffice office suite</Summary>
         <Description>LibreOffice is an open source, multi-platform office productivity suite. It includes key desktop applications such as a word processor, a spreadsheet application, a presentation creator-viewer, a formula editor and a drawing program, with a user interface and feature set similar to other office suites. Sophisticated and flexible, LibreOffice also works transparently with a variety of file formats, including those of Microsoft Office.</Description>
-        <Archive sha1sum="d7150e76fb15a364eda8b9a7b353d720fc62787e" type="tarlzma">http://cekirdek.pardus.org.tr/~bertan/packages/libreoffice-bootstrap-3.4.3.2.tar.lzma</Archive>
+        <Archive sha1sum="d74f7987edd9784c927def3c7f7d43f6a0a72d5c" type="tarxz">http://download.documentfoundation.org/libreoffice/src/4.0.0/libreoffice-4.0.0.3.tar.xz</Archive>
+        <Archive sha1sum="f71be664dbe78f49883a7871477b670e076a5f64" type="tarxz">http://download.documentfoundation.org/libreoffice/src/4.0.0/libreoffice-help-4.0.0.3.tar.xz</Archive>
+        <Archive sha1sum="35b052f6424c4704d65ed1de6a514e9dc6207982" type="tarxz">http://download.documentfoundation.org/libreoffice/src/4.0.0/libreoffice-translations-4.0.0.3.tar.xz</Archive>
+
+        <Archive sha1sum="0619ed3a89644bef318df67db12045b2b590585b" type="binary">http://dev-www.libreoffice.org/extern/185d60944ea767075d27247c3162b3bc-unowinreg.dll</Archive>
+        <Archive sha1sum="1acea86fd399ed7817879d36370d3d1f8b109050" type="binary">http://dev-www.libreoffice.org/src/35c94d2df8893241173de1d16b6034c0-swingExSrc.zip</Archive>
+        <Archive sha1sum="8a90669029e107b61953b90ba11545fef586c2ca" type="binary">http://dev-www.libreoffice.org/src/798b2ffdc8bcfe7bca2cf92b62caf685-rhino1_5R5.zip</Archive>
+        <Archive sha1sum="b92930010622906778f713fb8f0153fa0683d018" type="binary">http://dev-www.libreoffice.org/src/39bb3fcea1514f1369fcfc87542390fd-sacjava-1.3.zip</Archive>
+        <Archive sha1sum="3478ebc27bb76025f4b5c2ae6a9bac6090e2cb09" type="binary">http://dev-www.libreoffice.org/src/d8bd5eed178db6e2b18eeed243f85aa8-flute-1.1.6.zip</Archive>
+        <Archive sha1sum="7168b0f40aa5c72267899601c116d2348d2f56ec" type="binary">http://dev-www.libreoffice.org/src/17410483b5b5f267aa18b7e00b65e6e0-hsqldb_1_8_0.zip</Archive>
+        <Archive sha1sum="b19ad429273abb116432eae3af955ecaf1ab5b17" type="binary">http://dev-www.libreoffice.org/src/ace6ab49184e329db254e454a010f56d-libxml-1.1.7.zip</Archive>
+        <Archive sha1sum="2d49e11b0b711970f494294dc3698f05eb294853" type="binary">http://dev-www.libreoffice.org/src/a7983f859eafb2677d7ff386a023bc40-xsltml_2.1.2.zip</Archive>
+        <Archive sha1sum="908c4053f8f4e6214426a41b1e4134e7bc86098e" type="binary">http://dev-www.libreoffice.org/src/ea91f2fb4212a21d708aced277e6e85a-vigra1.4.0.tar.gz</Archive>
+        <Archive sha1sum="43a7ff11dd15370d456b20a093e1ee81279163a0" type="binary">http://dev-www.libreoffice.org/src/eeb2c7ddf0d302fba4bfc6e97eac9624-libbase-1.1.6.zip</Archive>
+        <Archive sha1sum="e393beea80d36ff27b732882c706826988a64f5c" type="binary">http://dev-www.libreoffice.org/src/3bdf40c0d199af31923e900d082ca2dd-libfonts-1.1.6.zip</Archive>
+        <Archive sha1sum="47b58e0ef2d856df26372a7061ae43fae6e08051" type="binary">http://dev-www.libreoffice.org/src/97b2d4dba862397f446b217e2b623e71-libloader-1.1.6.zip</Archive>
+        <Archive sha1sum="3232dd31859be4f7eb443c33e8e3287f394789a0" type="binary">http://dev-www.libreoffice.org/src/3404ab6b1792ae5f16bbd603bd1e1d03-libformula-1.1.7.zip</Archive>
+        <Archive sha1sum="65dfba9970bb862d09c1f9e636b86b22f05d3936" type="binary">http://dev-www.libreoffice.org/src/db60e4fde8dd6d6807523deb71ee34dc-liblayout-0.2.10.zip</Archive>
+        <Archive sha1sum="528dc8fa11343fa2a5d584dd2f8d5e2238ed78ba" type="binary">http://dev-www.libreoffice.org/src/ada24d37d8d638b3d8a9985e80bc2978-source-9.0.0.7-bj.zip</Archive>
+        <Archive sha1sum="8f949ae74a6d66278a595bd063f13e0ad196d14a" type="binary">http://dev-www.libreoffice.org/src/1f24ab1d39f4a51faf22244c94a6203f-xmlsec1-1.2.14.tar.gz</Archive>
+        <Archive sha1sum="1acd76cd63f7b19f6a0252eb029c3cb13a25aa9b" type="binary">http://dev-www.libreoffice.org/src/ba2930200c9f019c2d93a8c88c651a0f-flow-engine-0.9.4.zip</Archive>
+        <Archive sha1sum="5ecb895ffc1eff2c381fa78d2197d0c57422b3df" type="binary">http://dev-www.libreoffice.org/src/f94d9870737518e3b597f9265f4e9803-libserializer-1.1.6.zip</Archive>
+        <Archive sha1sum="a637c0c3ad3be32d6814972e1c45e547c5f6359d" type="binary">http://dev-www.libreoffice.org/src/8ce2fcd72becf06c41f7201d15373ed9-librepository-1.1.6.zip</Archive>
+        <Archive sha1sum="efc1ab026e8e9ac4cd150cb4cf1b7e4663cddc84" type="binary">http://dev-www.libreoffice.org/src/2ae988b339daec234019a7066f96733e-commons-lang-2.3-src.tar.gz</Archive>
+        <Archive sha1sum="d490a9bb30ea9e8b95c250f4d96842e0ce0c60d7" type="binary">http://dev-www.libreoffice.org/src/af3c3acf618de6108d65fcdc92b492e1-commons-codec-1.3-src.tar.gz</Archive>
+        <Archive sha1sum="32d2298c78132a629ed2ac6c9830b4d52770ce02" type="binary">http://dev-www.libreoffice.org/src/2a177023f9ea8ec8bd00837605c5df1b-jakarta-tomcat-5.0.30-src.tar.gz</Archive>
+        <Archive sha1sum="9408c7ebfba2e64065bc09016192e8513ba949a0" type="binary">http://dev-www.libreoffice.org/src/3c219630e4302863a9a83d0efde889db-commons-logging-1.1.1-src.tar.gz</Archive>
+        <Archive sha1sum="5c604f102e0716597b3d2659ac3e77f80a02f22d" type="binary">http://dev-www.libreoffice.org/src/2c9b0f83ed5890af02c0df1c1776f39b-commons-httpclient-3.1-src.tar.gz</Archive>
         <AdditionalFiles>
-            <AdditionalFile target="src/openabout_pardus.png" permission="0644">splashes/openabout_pardus.png</AdditionalFile>
-            <AdditionalFile target="src/openintro_pardus.png" permission="0644">splashes/openintro_pardus.png</AdditionalFile>
-            <!-- Our own configuration file for splash screen with white progress bar -->
-            <AdditionalFile target="sofficerc.pardus" permission="0644">sofficerc.pardus</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency>agg-devel</Dependency>
-            <Dependency>ant</Dependency>
+            <Dependency>hyphen</Dependency>
+            <Dependency>cppunit</Dependency>
+            <Dependency>sun-jdk</Dependency>
+            <Dependency>valgrind</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>nss-devel</Dependency>
             <Dependency>atk-devel</Dependency>
-            <Dependency>boost-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <!-- Disabled for now http://cgit.freedesktop.org/libreoffice/build/commit/?id=ce7a60eb7af5b6f56dfc32e7765338343d39f5e2 -->
-            <Dependency>cppunit-devel</Dependency>
-            <Dependency>cups-devel</Dependency>
-            <Dependency>db4-java</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>freetype-devel</Dependency>
-            <Dependency>gconf-devel</Dependency>
-            <Dependency>gperf</Dependency>
-            <Dependency>gst-ffmpeg</Dependency>
-            <Dependency>gst-plugins-base-devel</Dependency>
-            <Dependency>gst-plugins-good</Dependency>
-            <Dependency>gst-plugins-ugly</Dependency>
-            <Dependency>gstreamer-devel</Dependency>
-            <Dependency>gtk2-devel</Dependency>
-            <Dependency>hsqldb-lib</Dependency>
-            <Dependency>hunspell-devel</Dependency>
-            <Dependency>icu4c-devel</Dependency>
-            <Dependency>imagemagick-devel</Dependency>
+            <Dependency>beanshell</Dependency>
+            <Dependency>ucpp-devel</Dependency>
+            <Dependency>neon-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
-            <Dependency>junit</Dependency>
-            <Dependency>kdelibs-devel</Dependency>
-            <Dependency>libICE-devel</Dependency>
+            <Dependency>cups-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>lcms2-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
-            <Dependency>libXaw-devel</Dependency>
-            <Dependency>libXext-devel</Dependency>
-            <Dependency>libXinerama-devel</Dependency>
-            <Dependency>libXrandr-devel</Dependency>
             <Dependency>libXt-devel</Dependency>
-            <Dependency>libwpd-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>icu4c-devel</Dependency>
             <Dependency>libwpg-devel</Dependency>
+            <Dependency>libzip-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
+            <Dependency>libwpd-devel</Dependency>
+            <Dependency>mythes-devel</Dependency>
+            <Dependency>libcdr-devel</Dependency>
             <Dependency>libwps-devel</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>lpsolve-devel</Dependency>
-            <Dependency>mdbtools-devel</Dependency>
-            <Dependency>mesa-devel</Dependency>
-            <Dependency>neon-devel</Dependency>
-            <Dependency>nspr-devel</Dependency>
-            <Dependency>nss-devel</Dependency>
-            <Dependency>openclipart</Dependency>
-            <Dependency>openldap-client</Dependency>
-            <Dependency>orbit2-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>perl-Archive-Zip</Dependency>
-            <Dependency>poppler-devel</Dependency>
-            <Dependency>qt-devel</Dependency>
-            <Dependency>recode-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libcmis-devel</Dependency>
             <Dependency>redland-devel</Dependency>
-            <Dependency>sun-jdk</Dependency>
-            <Dependency>tomcat-servlet-api</Dependency>
-            <Dependency>unixODBC-devel</Dependency>
-            <Dependency>vigra-devel</Dependency>
-            <!-- We use with-system-mozilla -->
-            <Dependency>xulrunner-devel</Dependency>
-            <Dependency>gnome-vfs-devel</Dependency>
-            <Dependency>libXmu-devel</Dependency>
-            <Dependency>sane-backends-devel</Dependency>
-            <Dependency>raptor2-devel</Dependency>
+            <Dependency>poppler-devel</Dependency>
+            <Dependency>clucene-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libvisio-devel</Dependency>
+            <Dependency>hunspell-devel</Dependency>
+            <Dependency>libmspub-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
+            <Dependency>liborcus-devel</Dependency>
+            <Dependency>postgresql-lib</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>graphite2-devel</Dependency>
+            <Dependency>gstreamer-devel</Dependency>
+            <Dependency>openldap-client</Dependency>
+            <Dependency>libXrender-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>liblangtag-devel</Dependency>
+            <Dependency>libXinerama-devel</Dependency>
+            <Dependency>libexttextcat-devel</Dependency>
+            <Dependency>gst-plugins-base-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fix-footnote-crash.patch</Patch>
-            <Patch level="1">pardus-default-ExternalMailer.diff</Patch>
-            <Patch level="1">fix-kde4-includedir.diff</Patch>
-            <Patch level="1">fix-db-check-for-pardus.diff</Patch>
-            <Patch level="1">fix-ct2n-extension-build-NULL.patch</Patch>
-            <!-- Do not use HOME for temporary file creation, that breaks sandbox -->
-            <Patch level="1">use-tmp-for-temporary-files.diff</Patch>
-
-            <!-- Fedora Patches -->
-            <Patch level="1">fedora/openoffice.org-2.0.2.rh188467.printingdefaults.patch</Patch>
-            <Patch level="1">fedora/openoffice.org-2.4.0.ooo86080.unopkg.bodge.patch</Patch>
-            <Patch level="1">fedora/openoffice.org-3.0.0.ooo88341.sc.verticalboxes.patch</Patch>
-            <Patch level="1">fedora/openoffice.org-3.1.0.oooXXXXX.solenv.allowmissing.patch</Patch>
-            <Patch>fedora/openoffice.org-3.1.0.ooo101274.opening-a-directory.patch</Patch>
-            <Patch>fedora/openoffice.org-3.1.1.ooo105784.vcl.sniffscriptforsubs.patch</Patch>
-            <Patch level="1">fedora/openoffice.org-3.3.0.ooo108637.sfx2.uisavedir.patch</Patch>
-            <Patch>fedora/openoffice.org-3.3.0.ooo113273.desktop.resolvelinks.patch</Patch>
-
-            <Patch level="1">fedora/libreoffice-installfix.patch</Patch>
-            <Patch level="1">fedora/0001-helgrind-Related-rhbz-655686-get-order-of-shutdown-c.patch</Patch>
-            <Patch level="1">fedora/0001-Resolves-rhbz-695509-crash-in-RefreshDocumentLB.patch</Patch>
-            <Patch level="1">fedora/0001-bubble-down-configure-test-findings-on-visibility.patch</Patch>
-            <Patch>fedora/vbahelper.visibility.patch</Patch>
-            <Patch level="1">fedora/0001-rhbz-702635-set-correct-page-number-when-exporting-s.patch</Patch>
-            <Patch level="1">fedora/0001-handle-NULL-display-gracefully.patch</Patch>
-            <Patch level="1">fedora/0001-Related-rhbz-652604-better-survive-exceptions-thrown.patch</Patch>
-            <Patch level="1">fedora/0001-Resolves-rhbz-713154-pdf-export-dialog-too-tall-to-f.patch</Patch>
-            <Patch level="1">fedora/0001-Related-rhbz-702833-addEventListener-without-removeE.patch</Patch>
-            <Patch level="1">fedora/0001-Related-rhbz-711087-band-aid.patch</Patch>
-            <Patch level="1">fedora/0001-rhbz-667082-do-not-crash-importing-section-containin.patch</Patch>
-            <Patch level="1">fedora/0001-Related-rhbz-718976-crash-in-SwTxtSizeInfo-GetMultiC.patch</Patch>
-            <Patch level="1">fedora/0001-Resolves-rhbz-715549-use-fontconfig-s-detected-forma.patch</Patch>
+            <Patch level="1">gentoo/libreoffice-3.7-system-pyuno.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
-        <Name>libreoffice</Name>
+        <Name>libreoffice-common</Name>
         <RuntimeDependencies>
-            <Dependency>agg</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>nss</Dependency>
             <Dependency>atk</Dependency>
-            <Dependency>boost</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>cups</Dependency>
-            <Dependency>db4-java</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>freetype</Dependency>
-            <Dependency>gconf</Dependency>
-            <Dependency>gperf</Dependency>
-            <Dependency>gst-ffmpeg</Dependency>
-            <Dependency>gst-plugins-base</Dependency>
-            <Dependency>gst-plugins-good</Dependency>
-            <Dependency>gst-plugins-ugly</Dependency>
-            <Dependency>gstreamer</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>hsqldb-lib</Dependency>
-            <Dependency>hunspell</Dependency>
-            <Dependency>icu4c</Dependency>
+            <Dependency>neon</Dependency>
             <Dependency>jpeg</Dependency>
-            <Dependency>libICE</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>cairo</Dependency>
             <Dependency>libSM</Dependency>
-            <Dependency>libXaw</Dependency>
-            <Dependency>libXext</Dependency>
-            <Dependency>libXinerama</Dependency>
-            <Dependency>libXrandr</Dependency>
             <Dependency>libXt</Dependency>
-            <Dependency>libwpd</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>boost</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>hyphen</Dependency>
             <Dependency>libwpg</Dependency>
+            <Dependency>libzip</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libwpd</Dependency>
+            <Dependency>mythes</Dependency>
+            <Dependency>libcdr</Dependency>
             <Dependency>libwps</Dependency>
+            <Dependency>sun-jre</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>lpsolve</Dependency>
-            <Dependency>mdbtools</Dependency>
-            <Dependency>mesa</Dependency>
-            <Dependency>neon</Dependency>
-            <Dependency>nspr</Dependency>
-            <Dependency>nss</Dependency>
-            <Dependency>openldap-client</Dependency>
-            <Dependency>orbit2</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>poppler</Dependency>
-            <Dependency>qt</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libcmis</Dependency>
             <Dependency>redland</Dependency>
-            <Dependency>sun-jre</Dependency>
-            <Dependency>tomcat-servlet-api</Dependency>
-            <Dependency>unixODBC</Dependency>
-            <Dependency>vigra</Dependency>
-            <Dependency>xulrunner</Dependency>
+            <Dependency>poppler</Dependency>
+            <Dependency>clucene</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libvisio</Dependency>
+            <Dependency>hunspell</Dependency>
+            <Dependency>libmspub</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>liborcus</Dependency>
+            <Dependency>beanshell</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>graphite2</Dependency>
+            <Dependency>gstreamer</Dependency>
             <Dependency>libXrender</Dependency>
+            <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>liblangtag</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libexttextcat</Dependency>
+            <Dependency>postgresql-lib</Dependency>
+            <Dependency>openldap-client</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
-            <Path fileType="executable">/opt/LibreOffice/bin</Path>
-            <Path fileType="data">/opt/LibreOffice/share</Path>
-            <Path fileType="library">/opt/LibreOffice/lib</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/gallery</Path>
-            <Path fileType="man">/opt/LibreOffice/man</Path>
-            <Path fileType="man">/opt/LibreOffice/share/man</Path>
-            <Path fileType="executable">/opt/LibreOffice/sbin</Path>
-            <Path fileType="data">/usr/share</Path>
-            <Path fileType="data">/usr/bin</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-        </Files>
-        <AdditionalFiles>
-            <!-- Main desktop files for ooo mimetypes and menu icons -->
-            <!-- These files are grabbed from ooo-build, the reason to add as additional files instead of installing directly from tarball is 
-            difficulty of desktop file translation (using intltool) and making any change to a desktop file -->
-            <AdditionalFile target="/usr/share/applications/ooo-database.desktop" permission="0644" owner="root">desktops/database.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/applications/ooo-drawing.desktop" permission="0644" owner="root">desktops/drawing.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/applications/ooo-formula.desktop" permission="0644" owner="root">desktops/formula.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/applications/ooo-presentation.desktop" permission="0644" owner="root">desktops/presentation.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/applications/ooo-spreadsheet.desktop" permission="0644" owner="root">desktops/spreadsheet.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/applications/ooo-textdoc.desktop" permission="0644" owner="root">desktops/textdoc.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/applications/ooo-web.desktop" permission="0644" owner="root">desktops/web.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/applications/ooo-extension-manager.desktop" permission="0644" owner="root">desktops/ooo-extension-manager.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/applications/ooo-start-center.desktop" permission="0645" owner="root">desktops/startcenter.desktop</AdditionalFile>
-
-            <!-- Wrapper for all lo programs -->
-            <AdditionalFile target="/usr/bin/libreoffice" permission="0755" owner="root">libreoffice.py</AdditionalFile>
-
-            <!-- mimetype for openxml formats -->
-            <AdditionalFile target="/usr/share/mime/packages/ooo-2.0-openxml.xml" permission="0644" owner="root">mimetypes/ooo-2.0-openxml.xml</AdditionalFile>
-        </AdditionalFiles>
-    </Package>
-
-    <Package>
-        <Name>libreoffice-clipart</Name>
-        <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>openclipart</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <!-- Galleries with number >= 70 are generated from openclipart images -->
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/gallery/sg[7-9][0-9].???</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>libreoffice-kde</Name>
-        <Summary>KDE support for LibreOffice</Summary>
-        <Description>libreoffice-kde provides context menu options for "Create New" entry of Dolphin.</Description>
-        <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="data">/usr/share/templates</Path>
-            <!-- Add kde plugins to that package -->
-            <Path fileType="library">/opt/LibreOffice/lib/libreoffice/basis?.?/program/*kde*</Path>
+            <Path fileType="executable">/usr/bin/loffice</Path>
+            <Path fileType="executable">/usr/bin/lofromtemplate</Path>
+            <Path fileType="executable">/usr/bin/loweb</Path>
+            <Path fileType="executable">/usr/bin/soffice</Path>
+            <Path fileType="executable">/usr/bin/unopkg</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/idxcaption.xsl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/idxcontent.xsl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/main_transform.xs</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/en</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/Scripts</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/autocorr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/autotext</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/backup</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/basic</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/config</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/database</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/gallery</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/psprint</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/store</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/temp</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/template</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/uno_packages</Path>
+            <Path fileType="data">/usr/lib/libreoffice/presets/wordbook</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/addin</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/classes</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/plugin</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*en-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/services</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/shell</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/types</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/wizards</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/Scripts</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autocorr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/en-US</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/basic</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/config</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/dtd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/extensions</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/fonts</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/gallery</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/psprint</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/template</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/uno_packages</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/wordbook</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/xdg</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/xpdfimport</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/xslt</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/ure/bin</Path>
+            <Path fileType="library">/usr/lib/libreoffice/ure/lib</Path>
+            <Path fileType="data">/usr/lib/libreoffice/ure/share</Path>
+            <Path fileType="data">/usr/lib/libreoffice/ure-link</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/CREDITS.odt</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/LICENSE*</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/NOTICE</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_en-US</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/application-registry</Path>
+            <Path fileType="data">/usr/share/mime-info</Path>
+            <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/mimelnk</Path>
         </Files>
         <AdditionalFiles>
-            <!-- KDE4 templates for 'Create New...' context menu of Dolphin -->
-            <AdditionalFile target="/usr/share/templates/oowriter.desktop" permission="0644" owner="root">kdefiles/oowriter.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/templates/.source/oowriter.odt" permission="0644" owner="root">kdefiles/oowriter.odt</AdditionalFile>
-            <AdditionalFile target="/usr/share/templates/ooimpress.desktop" permission="0644" owner="root">kdefiles/ooimpress.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/templates/.source/ooimpress.odp" permission="0644" owner="root">kdefiles/ooimpress.odp</AdditionalFile>
-            <AdditionalFile target="/usr/share/templates/oocalc.desktop" permission="0644" owner="root">kdefiles/oocalc.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/templates/.source/oocalc.ods" permission="0644" owner="root">kdefiles/oocalc.ods</AdditionalFile>
-
-            <!-- mimetype files for flat opendocument files: fodt, fodp... -->
-            <AdditionalFile target="/usr/share/mimelnk/application/mimetypes/ooo-2.0-vnd.oasis.opendocument.graphics.desktop" permission="0644" owner="root">mimetypes/ooo-2.0-vnd.oasis.opendocument.graphics.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/mimelnk/application/mimetypes/ooo-2.0-vnd.oasis.opendocument.presentation.desktop" permission="0644" owner="root">mimetypes/ooo-2.0-vnd.oasis.opendocument.presentation.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/mimelnk/application/mimetypes/ooo-2.0-vnd.oasis.opendocument.spreadsheet.desktop" permission="0644" owner="root">mimetypes/ooo-2.0-vnd.oasis.opendocument.spreadsheet.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/mimelnk/application/mimetypes/ooo-2.0-vnd.oasis.opendocument.text.desktop" permission="0644" owner="root">mimetypes/ooo-2.0-vnd.oasis.opendocument.text.desktop</AdditionalFile>
-
-            <!-- mimetype files for ms office 2007 formats -->
-            <AdditionalFile target="/usr/share/mimelnk/application/mimetypes/ooo-2.0-vnd.openxmlformats-officedocument.presentationml.presentation.desktop" permission="0644" owner="root">mimetypes/ooo-2.0-vnd.openxmlformats-officedocument.presentationml.presentation.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/mimelnk/application/mimetypes/ooo-2.0-vnd.openxmlformats-officedocument.spreadsheetml.sheet.desktop" permission="0644" owner="root">mimetypes/ooo-2.0-vnd.openxmlformats-officedocument.spreadsheetml.sheet.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/mimelnk/application/mimetypes/ooo-2.0-vnd.openxmlformats-officedocument.wordprocessingml.document.desktop" permission="0644" owner="root">mimetypes/ooo-2.0-vnd.openxmlformats-officedocument.wordprocessingml.document.desktop</AdditionalFile>
-
-            <!--mimetype file for .oxt extension format -->
-            <AdditionalFile target="/usr/share/mimelnk/application/mimetypes/ooo-2.0-vnd.openofficeorg.extension.desktop" permission="0644" owner="root">mimetypes/ooo-2.0-vnd.openofficeorg.extension.desktop</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
     <Package>
-        <Name>libreoffice-python</Name>
-        <Summary>Python support for LibreOffice</Summary>
-        <Description>libreoffice-python is Python binding for the LibreOffice UNO component model. Allows scripts both external to LibreOffice and within the internal LibreOffice scripting module to be written in python.</Description>
+        <Name>libreoffice-sdk</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib/python*/site-packages</Path>
-            <Path fileType="library">/opt/LibreOffice/lib/libreoffice/basis?.?/program/libpyuno.so</Path>
-            <Path fileType="library">/opt/LibreOffice/lib/libreoffice/basis?.?/program/officehelper.py</Path>
-            <Path fileType="library">/opt/LibreOffice/lib/libreoffice/basis?.?/program/pythonloader.py</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/pythonloader.unorc</Path>
-            <Path fileType="library">/opt/LibreOffice/lib/libreoffice/basis?.?/program/pythonloader.uno.so</Path>
-            <Path fileType="library">/opt/LibreOffice/lib/libreoffice/basis?.?/program/pyuno.so</Path>
-            <Path fileType="library">/opt/LibreOffice/lib/libreoffice/basis?.?/program/pythonscript.py</Path>
-            <Path fileType="library">/opt/LibreOffice/lib/libreoffice/basis?.?/share/Scripts/python</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Office/Scripting/Scripting-python.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/extensions/script-provider-for-python</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/libreoffice/sdk</Path>
+            <Path fileType="data">/usr/share/idl</Path>
+            <Path fileType="data">/usr/share/libreoffice</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/sdk</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-en</Name>
-        <IsA>locale:en</IsA>
-        <Summary>English LibreOffice help files</Summary>
+        <Name>libreoffice-base</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/en</Path>
+            <Path fileType="executable">/usr/bin/lobase</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/en/sdatabase.*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/classes/hsqldb.jar</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libabplo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libdbplo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libhsqldb.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/librptlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/librptuilo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/librptxmllo.so</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/abpen-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/cnren-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/dbpen-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/rpten-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/rptuien-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/sdbclen-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/sdberren-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/base.xcd</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/sbase</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-base.desktop</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libreoffice-calc</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/localc</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/en/scalc.*</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libanalysislo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libcalclo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libdatelo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libforlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libforuilo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libpricinglo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libsclo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libscdlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libscfiltlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libscuilo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libsolverlo.so</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/analysisen-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/dateen-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/foren-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/foruien-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/pricingen-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/scen-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/solveren-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/vbaobj.uno.so</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/calc.xcd</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/pagein-calc</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/scalc</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-calc.desktop</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libreoffice-draw</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/lodraw</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/en/sdraw.*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/draw.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/pagein-draw</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/sdraw</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-draw.desktop</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libreoffice-impress</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/loimpress</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/en/simpress.*</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libanimcorelo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libplacewarelo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/PresenterScreen.uno.so</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/config/soffice.cfg/simpress</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/config/soffice.cfg/simpress/effects.xml</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/config/soffice.cfg/simpress/transitions.xml</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/impress.xcd</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/pagein-impress</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/simpress</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-impress.desktop</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libreoffice-math</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/lomath</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/en/smath.*</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/program/libsmlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/program/libsmdlo.so</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/smen-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/math.xcd</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/smath</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-math.desktop</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-de</Name>
-        <IsA>locale:de</IsA>
-        <Summary>German LibreOffice help files</Summary>
+        <Name>libreoffice-writter</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/de</Path>
+            <Path fileType="executable">/usr/bin/lowritter</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/en/swriter.*</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libhwplo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/liblwpftlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libmswordlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libswdlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libswuilo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libt602filterlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libwpftwriterlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/libwriterfilterlo.so</Path>
+            <Path fileType="library">/usr/lib/libreoffice/program/vbaswobj.uno.so</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/t602filteren-US.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/writer.xcd</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/pagein-writer</Path>
+            <Path fileType="executable">/usr/lib/libreoffice/program/swriter</Path>
+            <Path fileType="data">/usr/share/applications/libreoffice-writer.desktop</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libreoffice-af</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/af</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*af.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/af</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*af.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*af.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_af</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-es</Name>
-        <IsA>locale:es</IsA>
-        <Summary>Spanish LibreOffice help files</Summary>
+        <Name>libreoffice-am</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/es</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/am</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*am.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/am</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*am.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*am.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_am</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-fr</Name>
-        <IsA>locale:fr</IsA>
-        <Summary>French LibreOffice help files</Summary>
+        <Name>libreoffice-ar</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/fr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/ar</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ar.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ar</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ar.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ar.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ar</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-it</Name>
-        <IsA>locale:it</IsA>
-        <Summary>Italian LibreOffice help files</Summary>
+        <Name>libreoffice-as</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/it</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/as</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*as.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/as</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*as.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*as.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_as</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-hu</Name>
-        <IsA>locale:hu</IsA>
-        <Summary>Hungarian LibreOffice help files</Summary>
+        <Name>libreoffice-ast</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/hu</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/ast</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ast.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ast</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ast.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ast.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ast</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-nl</Name>
-        <IsA>locale:nl</IsA>
-        <Summary>Dutch LibreOffice help files</Summary>
+        <Name>libreoffice-be</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/nl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/be</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*be.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/be</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*be.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*be.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_be</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-pt_BR</Name>
-        <IsA>locale:pt_BR</IsA>
-        <Summary>Brazilian Portuguese LibreOffice help files</Summary>
+        <Name>libreoffice-bg</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/pt-BR</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/bg</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*bg.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/bg</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*bg.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*bg.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_bg</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-ru</Name>
-        <IsA>locale:ru</IsA>
-        <Summary>Russion LibreOffice help files</Summary>
+        <Name>libreoffice-bn</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/ru</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/bn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*bn.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/bn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*bn.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*bn.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_bn</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-sv</Name>
-        <IsA>locale:sv</IsA>
-        <Summary>Swedish LibreOffice help files</Summary>
+        <Name>libreoffice-bn-IN</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/sv</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/bn-IN</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*bn-IN.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/bn-IN</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*bn-IN.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*bn-IN.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_bn-IN</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-help-tr</Name>
-        <IsA>locale:tr</IsA>
-        <Summary>Turkish LibreOffice help files</Summary>
+        <Name>libreoffice-bo</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/help/tr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/bo</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*bo.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/bo</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*bo.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*bo.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_bo</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-extension-pdfimport</Name>
-        <Summary>PDF Importer for LibreOffice Draw</Summary>
-        <Description>libreoffice-extension-pdfimpor imports PDF into drawing documents to preserve layout and enable basic editing of PDF documents.</Description>
+        <Name>libreoffice-br</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/extensions/pdfimport</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/br</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*br.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/br</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*br.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*br.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_br</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-extension-converttexttonumber</Name>
-        <Summary>A text-to-number converter extension for LibreOffice Calc</Summary>
-        <Description>libreoffice-extension-converttexttonumber replaces numbers and dates, formatted as text, with real numbers. As a result of the replacement, the text cells will become real numbers, and then will be counted in formulas Calc. This extension adds the tool bar 'CT2N' to Calc only.</Description>
+        <Name>libreoffice-brx</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/extensions/ConvertTextToNumber</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/brx</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*brx.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/brx</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*brx.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*brx.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_brx</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-extension-nlpsolver</Name>
-        <Summary>Non-linear programming solver extension for LibreOffice Calc</Summary>
-        <Description>libreoffice-extension-nlpsolver incorporates two Evolutionary Algorithms which are able to handle floating point and integer variables as well as nonlinear constraints.</Description>
+        <Name>libreoffice-bs</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/extensions/NLPSolver</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/bs</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*bs.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/bs</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*bs.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*bs.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_bs</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-extension-presenter-screen</Name>
-        <Summary>Presenter Screen for LibreOffice Impress</Summary>
-        <Description>libreoffice-extension-presenter-screen provides information on a second screen, that typically is not visible to the audience when delivering a presentation. e.g. slide notes.</Description>
+        <Name>libreoffice-ca</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/extensions/presenter-screen</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/ca</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ca.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ca</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ca.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ca.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ca</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-extension-presentation-minimizer</Name>
-        <Summary>Shrink the file size of LibreOffice presentations</Summary>
-        <Description>libreoffice-extension-presentation-minimizer is used to reduce the file size of the current presentation. Images will be compressed, and data that is no longer needed will be removed.</Description>
+        <Name>libreoffice-ca-XV</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/extensions/presentation-minimizer</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/ca-XV</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ca-XV.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ca-XV</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ca-XV.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ca-XV.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ca-XV</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-extension-report-builder</Name>
-        <Summary>Create database reports</Summary>
-        <Description>libreoffice-extension-report-builder creates database reports from LibreOffice Base. The report builder can define group and page headers as well as group, page footers and calculation fields to accomplish complex database reports.</Description>
+        <Name>libreoffice-cs</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/extensions/report-builder</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/cs</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*cs.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/cs</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*cs.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*cs.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_cs</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-extension-wiki-publisher</Name>
-        <Summary>Create Wiki articles on MediaWiki servers</Summary>
-        <Description>libreoffice-extension-wiki-publisher enables you to create Wiki articles on MediaWiki servers without having to know the syntax of the MediaWiki markup language. Publish your new and existing documents transparently with LibreOffice Writer to a wiki page.</Description>
+        <Name>libreoffice-cy</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/extensions/wiki-publisher</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/cy</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*cy.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/cy</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*cy.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*cy.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_cy</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-de</Name>
-        <IsA>locale:de</IsA>
-        <Summary>German language files for LibreOffice</Summary>
+        <Name>libreoffice-da</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>hunspell-dict-de</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_de.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*de.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_de-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/de</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/basic/Depot/*_de.xba</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/config/soffice.cfg/modules/*/accelerator/de</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/de</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-de.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/de</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_de.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-de.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/de</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/de/lyt-aqua.otp</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/de/lyt-brown.otp</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/de</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/de</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/ooode.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_de*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_de*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_de*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_de*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/da</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*da.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/da</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*da.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*da.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_da</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-de-extras</Name>
-        <IsA>locale:de</IsA>
-        <Summary>Extra German presentation backgrounds for LibreOffice</Summary>
+        <Name>libreoffice-de</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/de</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/de</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*de.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/de</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*de.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*de.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_de</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-es</Name>
-        <IsA>locale:es</IsA>
-        <Summary>Spanish language files for LibreOffice</Summary>
+        <Name>libreoffice-dgo</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>hunspell-dict-es</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_es.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*es.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_es-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/es</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/basic/Depot/*_es.xba</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/config/soffice.cfg/modules/*/accelerator/es</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/es</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-es.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/es</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_es.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-es.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/es</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/es</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/es</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/es</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/*es.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_es*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_es*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_es*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_es*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/dgo</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*dgo.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/dgo</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*dgo.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*dgo.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_dgo</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-fr</Name>
-        <IsA>locale:fr</IsA>
-        <Summary>French language files for LibreOffice</Summary>
+        <Name>libreoffice-dz</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>hunspell-dict-fr</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_fr.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*fr.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_fr-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/fr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/basic/Depot/*_fr.xba</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/config/soffice.cfg/modules/*/accelerator/fr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/fr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-fr.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/fr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_fr.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-fr.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/fr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/fr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/fr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/fr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/*fr.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_fr*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_fr*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_fr*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_fr*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/dz</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*dz.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/dz</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*dz.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*dz.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_dz</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-hu</Name>
-        <IsA>locale:hu</IsA>
-        <Summary>Hungarian language files for LibreOffice</Summary>
+        <Name>libreoffice-el</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <!--<Dependency>hunspell-dict-hu</Dependency>-->
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_hu.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*hu.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_hu-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/hu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/hu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-hu.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/hu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_hu.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-hu.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/hu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/hu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/hu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/hu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_hu*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/*hu.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_hu*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_hu*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_hu*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/el</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*el.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/el</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*el.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*el.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_el</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-it</Name>
-        <IsA>locale:it</IsA>
-        <Summary>Italian language files for LibreOffice</Summary>
+        <Name>libreoffice-en-GB</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>hunspell-dict-it</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_it.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*it.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_it-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/it</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/basic/Depot/*_it.xba</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/config/soffice.cfg/modules/*/accelerator/it</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/it</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-it.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/it</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_it.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-it.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/it</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/it</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/it</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/it</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/*it.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_it*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_it*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_it*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_it*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/en-GB</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*en-GB.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/en-GB</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*en-GB.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*en-GB.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_en-GB</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-nl</Name>
-        <IsA>locale:nl</IsA>
-        <Summary>Dutch language files for LibreOffice</Summary>
+        <Name>libreoffice-en-ZA</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>hunspell-dict-nl</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_nl.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*nl.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_nl-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/nl</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/basic/Depot/*_nl.xba</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/config/soffice.cfg/modules/*/accelerator/nl</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/nl</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-nl.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/nl</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_nl.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-nl.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/nl</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/nl</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/nl</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/nl</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/*nl.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_nl*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_nl*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_nl*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_nl*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/en-ZA</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*en-ZA.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/en-ZA</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*en-ZA.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*en-ZA.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_en-ZA</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-pt_BR</Name>
-        <IsA>locale:pt_BR</IsA>
-        <Summary>Brazilian Portuguese language files for LibreOffice</Summary>
+        <Name>libreoffice-eo</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>hunspell-dict-pt</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_pt-BR.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*pt-BR.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_pt-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/pt-BR</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/basic/Depot/*_pt.xba</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/config/soffice.cfg/modules/*/accelerator/pt*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/pt-BR</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_pt-BR.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-pt-BR.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/pt-BR</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-pt-BR.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/pt-BR</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/pt-BR</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/pt-BR</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/pt-BR</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/*pt-BR.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_pt-BR*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_pt-BR*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_pt-BR*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_pt-BR*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/eo</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*eo.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/eo</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*eo.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*eo.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_eo</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-ru</Name>
-        <IsA>locale:ru</IsA>
-        <Summary>Russian language files for LibreOffice</Summary>
+        <Name>libreoffice-es</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>hunspell-dict-ru</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_ru.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*ru.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_ru-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/ru</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/basic/Depot/*_ru.xba</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/config/soffice.cfg/modules/*/accelerator/ru</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/ru</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-ru.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/ru</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_ru.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-ru.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/ru</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/ru</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/ru</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/ru</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/*ru.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_ru*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_ru*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_ru*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_ru*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/es</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*es.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/es</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*es.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*es.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_es</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-sv</Name>
-        <IsA>locale:sv</IsA>
-        <Summary>Swedish language files for LibreOffice</Summary>
+        <Name>libreoffice-et</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
-            <Dependency>hunspell-dict-sv</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_sv.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*sv.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_sv-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/sv</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/basic/Depot/*_sv.xba</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/config/soffice.cfg/modules/*/accelerator/sv</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/sv</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-sv.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/sv</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_sv.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-sv.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/sv</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/sv</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/sv</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/sv</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/*sv.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_sv*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_sv*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_sv*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_sv*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/et</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*et.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/et</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*et.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*et.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_et</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libreoffice-langpack-tr</Name>
-        <IsA>locale:tr</IsA>
-        <Summary>Turkish language files for LibreOffice</Summary>
+        <Name>libreoffice-eu</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libreoffice</Dependency>
+            <Dependency>libreoffice-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/presets/config/*_tr.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/program/resource/*tr.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autocorr/acor_tr-*.dat</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/autotext/tr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/basic/Depot/*_tr.xba</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/config/soffice.cfg/modules/*/accelerator/tr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/layout/tr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/modules/org/openoffice/Setup/Langpack-tr.xcu</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/tr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/res/*_tr.*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/registry/Langpack-tr.xcd</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/samples/tr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/tr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/template/wizard/letter/tr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/basis?.?/share/wordbook/tr</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/program/resource/*tr.res</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/licenses/LICENSE_tr*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/readmes/README_tr*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/LICENSE_tr*</Path>
-            <Path fileType="data">/opt/LibreOffice/lib/libreoffice/share/readme/README_tr*</Path>
+            <Path fileType="data">/usr/lib/libreoffice/help/eu</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*eu.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/eu</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*eu.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*eu.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_eu</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-fa</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/fa</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*fa.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/fa</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*fa.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*fa.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_fa</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-fi</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/fi</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*fi.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/fi</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*fi.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*fi.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_fi</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-fr</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/fr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*fr.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/fr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*fr.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*fr.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_fr</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ga</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ga</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ga.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ga</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ga.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ga.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ga</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-gd</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/gd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*gd.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/gd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*gd.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*gd.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_gd</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-gl</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/gl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*gl.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/gl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*gl.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*gl.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_gl</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-gu</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/gu</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*gu.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/gu</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*gu.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*gu.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_gu</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-he</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/he</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*he.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/he</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*he.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*he.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_he</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-hi</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/hi</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*hi.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/hi</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*hi.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*hi.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_hi</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-hr</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/hr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*hr.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/hr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*hr.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*hr.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_hr</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-hu</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/hu</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*hu.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/hu</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*hu.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*hu.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_hu</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-id</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/id</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*id.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/id</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*id.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*id.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_id</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-is</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/is</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*is.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/is</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*is.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*is.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_is</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-it</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/it</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*it.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/it</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*it.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*it.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_it</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ja</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ja</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ja.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ja</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ja.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ja.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ja</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ka</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ka</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ka.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ka</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ka.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ka.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ka</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-kk</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/kk</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*kk.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/kk</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*kk.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*kk.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_kk</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-km</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/km</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*km.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/km</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*km.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*km.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_km</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-kn</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/kn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*kn.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/kn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*kn.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*kn.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_kn</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ko</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ko</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ko.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ko</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ko.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ko.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ko</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-kok</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/kok</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*kok.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/kok</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*kok.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*kok.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_kok</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ks</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ks</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ks.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ks</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ks.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ks.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ks</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ku</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ku</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ku.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ku</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ku.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ku.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ku</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-lb</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/lb</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*lb.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/lb</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*lb.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*lb.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_lb</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-lo</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/lo</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*lo.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/lo</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*lo.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*lo.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_lo</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-lt</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/lt</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*lt.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/lt</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*lt.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*lt.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_lt</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-lv</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/lv</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*lv.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/lv</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*lv.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*lv.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_lv</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-mai</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/mai</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*mai.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/mai</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*mai.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*mai.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_mai</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-mk</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/mk</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*mk.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/mk</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*mk.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*mk.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_mk</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ml</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ml</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ml.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ml</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ml.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ml.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ml</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-mn</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/mn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*mn.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/mn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*mn.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*mn.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_mn</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-mni</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/mni</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*mni.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/mni</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*mni.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*mni.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_mni</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-mr</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/mr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*mr.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/mr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*mr.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*mr.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_mr</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-my</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/my</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*my.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/my</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*my.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*my.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_my</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-nb</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/nb</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*nb.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/nb</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*nb.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*nb.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_nb</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ne</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ne</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ne.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ne</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ne.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ne.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ne</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-nl</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/nl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*nl.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/nl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*nl.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*nl.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_nl</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-nn</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/nn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*nn.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/nn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*nn.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*nn.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_nn</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-nr</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/nr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*nr.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/nr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*nr.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*nr.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_nr</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-nso</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/nso</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*nso.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/nso</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*nso.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*nso.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_nso</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-oc</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/oc</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*oc.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/oc</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*oc.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*oc.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_oc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-om</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/om</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*om.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/om</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*om.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*om.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_om</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-or</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/or</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*or.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/or</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*or.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*or.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_or</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-pa-IN</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/pa-IN</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*pa-IN.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/pa-IN</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*pa-IN.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*pa-IN.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_pa-IN</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-pl</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/pl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*pl.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/pl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*pl.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*pl.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_pl</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-pt</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/pt</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*pt.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/pt</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*pt.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*pt.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_pt</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-pt-BR</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/pt-BR</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*pt-BR.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/pt-BR</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*pt-BR.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*pt-BR.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_pt-BR</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-qtz</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/qtz</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*qtz.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/qtz</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*qtz.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*qtz.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_qtz</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ro</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ro</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ro.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ro</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ro.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ro.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ro</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ru</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ru</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ru.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ru</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ru.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ru.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ru</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-rw</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/rw</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*rw.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/rw</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*rw.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*rw.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_rw</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sa-IN</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sa-IN</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sa-IN.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sa-IN</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sa-IN.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sa-IN.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sa-IN</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sat</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sat</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sat.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sat</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sat.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sat.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sat</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sd</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sd.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sd.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sd.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sd</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sh</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sh</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sh.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sh</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sh.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sh.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sh</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-si</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/si</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*si.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/si</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*si.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*si.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_si</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sid</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sid</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sid.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sid</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sid.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sid.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sid</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sk</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sk</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sk.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sk</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sk.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sk.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sk</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sl</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sl.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sl</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sl.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sl.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sl</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sq</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sq</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sq.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sq</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sq.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sq.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sq</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sr</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sr.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sr.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sr.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sr</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ss</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ss</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ss.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ss</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ss.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ss.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ss</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-st</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/st</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*st.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/st</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*st.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*st.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_st</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sv</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sv</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sv.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sv</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sv.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sv.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sv</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-sw-TZ</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/sw-TZ</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*sw-TZ.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/sw-TZ</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*sw-TZ.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*sw-TZ.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_sw-TZ</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ta</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ta</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ta.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ta</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ta.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ta.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ta</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-te</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/te</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*te.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/te</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*te.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*te.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_te</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-tg</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/tg</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*tg.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/tg</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*tg.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*tg.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_tg</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-th</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/th</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*th.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/th</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*th.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*th.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_th</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-tn</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/tn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*tn.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/tn</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*tn.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*tn.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_tn</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-tr</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/tr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*tr.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/tr</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*tr.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*tr.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_tr</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ts</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ts</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ts.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ts</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ts.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ts.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ts</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-tt</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/tt</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*tt.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/tt</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*tt.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*tt.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_tt</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ug</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ug</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ug.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ug</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ug.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ug.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ug</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-uk</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/uk</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*uk.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/uk</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*uk.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*uk.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_uk</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-uz</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/uz</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*uz.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/uz</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*uz.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*uz.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_uz</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-ve</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/ve</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*ve.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/ve</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*ve.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*ve.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_ve</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-vi</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/vi</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*vi.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/vi</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*vi.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*vi.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_vi</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-xh</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/xh</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*xh.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/xh</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*xh.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*xh.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_xh</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-zh-CN</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/zh-CN</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*zh-CN.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/zh-CN</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*zh-CN.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*zh-CN.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_zh-CN</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-zh-TW</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/zh-TW</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*zh-TW.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/zh-TW</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*zh-TW.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*zh-TW.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_zh-TW</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libreoffice-zu</Name>
+        <RuntimeDependencies>
+            <Dependency>libreoffice-common</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/libreoffice/help/zu</Path>
+            <Path fileType="data">/usr/lib/libreoffice/program/resource/*zu.res</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/autotext/zu</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/*zu.xcd</Path>
+            <Path fileType="data">/usr/lib/libreoffice/share/registry/res/*zu.xcd</Path>
+            <Path fileType="doc">/usr/share/doc/libreoffice/README_zu</Path>
         </Files>
     </Package>
 
     <History>
         <Update release="1">
-            <Date>2011-09-28</Date>
-            <Version>3.4.3.2</Version>
+            <Date>2013-02-08</Date>
+            <Version>4.0.0.3</Version>
             <Comment>First release</Comment>
-            <Name>Bertan Gündoğdu</Name>
-            <Email>bertan@pardus.org.tr</Email>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
         </Update>
     </History>
 </PISI>
