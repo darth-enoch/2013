@@ -13,13 +13,13 @@
         <IsA>app:gui</IsA>
         <Summary>Quran study software</Summary>
         <Description>Zekr is an open source Quran study software that is designed to ease access to the content of the Quran. It provides translations, recitation, search and some other features.</Description>
-        <Archive sha1sum="5586cab800692f016c27c15ba6649bb02070ffef" type="targz" target="i686">http://cekirdek.pardus.org.tr/~gozbulak/dist/zekr/zekr-1.0.0-linux.tar.gz</Archive>
-        <Archive sha1sum="c5dab4446739e88df927ceb0041c708f4d9ae332" type="targz" target="x86_64">http://cekirdek.pardus.org.tr/~gozbulak/dist/zekr/zekr-1.0.0-linux_64.tar.gz</Archive>
+        <Archive sha1sum="0f69564bf82e1f9e276baecdb3d2f17f6d7aad4e" type="targz" target="i686">http://sourceforge.net/projects/zekr/files/Zekr/zekr-1.1.0/zekr-1.1.0-linux.tar.gz</Archive>
+        <Archive sha1sum="22c2f084d4aa6313c9f2e9934a53074181a6dae0" type="targz" target="x86_64">http://sourceforge.net/projects/zekr/files/Zekr/zekr-1.1.0/zekr-1.1.0-linux_64.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ant</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">use_webkitgtk.patch</Patch>
+	    <Patch level="0">use-webkitgtk.patch</Patch>
         </Patches>
     </Source>
 
@@ -113,11 +113,11 @@
 
     <History>
         <Update release="1">
-            <Date>2011-04-28</Date>
-            <Version>1.0.0</Version>
+            <Date>2013-02-11</Date>
+            <Version>1.1.0</Version>
             <Comment>First release</Comment>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>
