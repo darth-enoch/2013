@@ -77,61 +77,13 @@
     </Package>
 
     <History>
-        <Update release="8">
-            <Date>2012-04-21</Date>
-            <Version>2.0</Version>
-            <Comment>Sync with git</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2012-03-17</Date>
-            <Version>2.0</Version>
-            <Comment>Sync with git</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2012-02-10</Date>
-            <Version>2.0</Version>
-            <Comment>Sync with git</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-01-23</Date>
-            <Version>2.0</Version>
-            <Comment>Sync with git</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-11-26</Date>
-            <Version>2.0</Version>
-            <Comment>Sync with git</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-10-14</Date>
-            <Version>2.0</Version>
-            <Comment>Sync with git version</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-06-27</Date>
-            <Version>2.0</Version>
-            <Comment>Sync with git version</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2011-04-21</Date>
+            <Date>2012-04-21</Date>
             <Version>2.0</Version>
             <Comment>First release</Comment>
             <Name>Anıl Özbek</Name>
             <Email>ozbekanil@gmail.com</Email>
+        </Update>
         </Update>
     </History>
 </PISI>
