@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>minecraft</Name>
+        <Summary xml:lang="tr">Blok yerleştirmeyle ilgili bir oyun</Summary>
+        <Description xml:lang="tr">Minecraft, hayal edeceğiniz her şeyi inşa etmek için blokları kullanabileceğiniz bir oyundur. Gece canavarlar çıkıp bir tarafınızı ısırmadan bir barınak inşa etmeye bakın.</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Minecraft
+GenericName=Mining Game
+GenericName[tr]=Madencilik Oyunu
+Comment=A game about placing blocks
+Comment[tr]=Blokları yerleştirmeye çalıştığınız bir oyun
+Icon=minecraft
+Exec=minecraft
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;LogicGame;
