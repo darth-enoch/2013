@@ -23,7 +23,7 @@
         <Name>appmenu-qt</Name>
         <RuntimeDependencies>
             <Dependency>libdbusmenu-qt</Dependency>
-            <Dependency versionFrom="4.8.0_20110908">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/qt4</Path>
