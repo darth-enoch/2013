@@ -12,7 +12,10 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    kde4.configure()
+    kde4.configure("-DImageMagick_Magick++_INCLUDE_D=/usr/include/ImageMagick/Magick++ \
+                    -DImageMagick_MagickCore_INCLUDE=/usr/include/ImageMagick/magick \
+                    -DImageMagick_Magick++_LIBRARY=/usr/lib/libMagick++-Q16HDRI.so \
+                    -DImageMagick_MagickCore_LIBRARY=/usr/lib/libMagickCore-Q16HDRI.so")
 
 def build():
     kde4.make()
