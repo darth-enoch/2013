@@ -14,10 +14,12 @@
         <Archive sha1sum="27c1c7d53db58ad305a0d5062d6012eaac953fd3" type="tarxz">mirrors://gnome/gtk+/3.7/gtk+-3.7.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
+            <Dependency>gettext-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>colord-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
@@ -28,7 +30,6 @@
             <Dependency>libXcomposite-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
@@ -52,10 +53,12 @@
         <Name>gtk3</Name>
         <RuntimeDependencies>
             <Dependency>cups</Dependency>
+            <Dependency>gettext</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>colord</Dependency>
             <Dependency>libXext</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libXrender</Dependency>
@@ -67,6 +70,7 @@
             <Dependency>atk</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gobject-introspection</Dependency>
             <Dependency>at-spi2-atk</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -185,6 +189,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-11</Date>
+            <Version>3.7.2</Version>
+            <Comment>rebuild add dep.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-23</Date>
             <Version>3.7.2</Version>
