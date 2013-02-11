@@ -5,8 +5,8 @@
         <Name>freefont</Name>
         <Homepage>http://savannah.gnu.org/projects/freefont/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>GPLv3</License>
         <IsA>data:font</IsA>
