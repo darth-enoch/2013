@@ -96,7 +96,7 @@ def setup():
                        --with-external-hyph-dir=/usr/share/hyphen \
                        --with-external-thes-dir=/usr/share/mythes \
                        --with-alloc=system \
-                       --with-system-sane \
+                       --without-system-sane \
                        --without-system-servlet-api \
                        --without-system-vigra \
                        --without-sun-templates \
