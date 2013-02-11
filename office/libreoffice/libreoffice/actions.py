@@ -28,7 +28,7 @@ def setup():
                        --prefix=/usr --exec-prefix=/usr --sysconfdir=/etc \
                        --libdir=/usr/lib --mandir=/usr/share/man \
                        --enable-dependency-tracking \
-                       --disable-verbose \
+                       --enable-verbose \
                        --disable-rpath \
                        --disable-crashdump \
                        --disable-ccache \
