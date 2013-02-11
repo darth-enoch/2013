@@ -25,6 +25,7 @@
             <Dependency>mesa-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>pnglite-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">ext-libs.patch</Patch>
@@ -40,6 +41,7 @@
             <Dependency>mesa</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>pnglite</Dependency>
+            <Dependency>mesa-glu</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

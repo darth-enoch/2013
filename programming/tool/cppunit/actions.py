@@ -11,14 +11,15 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fi")
-
     autotools.configure("--disable-static --disable-html-docs --disable-doxygen")
 
 def build():
     autotools.make()
 
+def check():
+    autotools.make("check")
+
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("ChangeLog","COPYING","THANKS","TODO")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "THANKS", "TODO")

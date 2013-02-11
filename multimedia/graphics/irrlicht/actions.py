@@ -11,8 +11,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "trunk"
-
 includedir = "/usr/include/irrlicht"
 librarydir = "/usr/lib"
 mainsrcdir = "source/Irrlicht"
@@ -30,7 +28,7 @@ else:
 
 
 def setup():
-    for i in ["jpeglib", "zlib", "libpng", "aesGladman"]:
+    for i in ["jpeglib", "zlib", "libpng"]:
         unwanteddir = "%s/%s" % (mainsrcdir, i)
         if shelltools.isDirectory(unwanteddir):
             shelltools.unlinkDir(unwanteddir)
@@ -50,12 +48,12 @@ def install():
         pisitools.dosym( "%s.so.%s" % (i, srcversionname), "/usr/lib/%s.so.%s" % (i, abiversion))
 
     pisitools.dodoc("doc/*.txt", "*.txt")
+    #pisitools.insinto("/usr/lib", "lib/Win32-gcc/libIrrlicht.a")
 
     if snapshotbuild:
         # snapshots need some touch for doc generation
-        shelltools.cd("scripts/doc/irrlicht/")
-        shelltools.system("./makedocumentation.sh")
-        pisitools.dohtml("../../../doctemp/html/*")
+       shelltools.cd("scripts/doc/irrlicht/")
+       shelltools.system("./makedocumentation.sh")
+       pisitools.dohtml("../../../doctemp/html/*")
     else:
-        pisitools.dohtml("doc/html/*")
-
+       pisitools.dohtml("doc/html/*")
