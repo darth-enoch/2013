@@ -26,7 +26,7 @@ def build():
     kerneltools.build(debugSymbols=False)
 
     # When bumping major version build man files and put them into files/man
-    autotools.make("V=1 WERROR=0 -C tools/perf perf HAVE_CPLUS_DEMANGLE=1")
+    autotools.make("WERROR=0 -C tools/perf perf HAVE_CPLUS_DEMANGLE=1")
 
     # Build cpupowertools
     autotools.make("-C tools/power/cpupower CPUFREQ_BENCH=false")

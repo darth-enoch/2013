@@ -95,18 +95,18 @@ Signed-off-by: Miklos Szeredi <mszeredi@suse.cz>
  create mode 100644 fs/overlayfs/readdir.c
  create mode 100644 fs/overlayfs/super.c
 
-Index: linux-3.6-rc7-master/fs/Kconfig
+Index: linux-3.8-rc5-master/fs/Kconfig
 ===================================================================
---- linux-3.6-rc7-master.orig/fs/Kconfig	2012-09-28 13:34:44.000000000 +0200
-+++ linux-3.6-rc7-master/fs/Kconfig	2012-09-28 13:36:53.000000000 +0200
-@@ -70,6 +70,7 @@ source "fs/quota/Kconfig"
+--- linux-3.8-rc5-master.orig/fs/Kconfig
++++ linux-3.8-rc5-master/fs/Kconfig
+@@ -67,6 +67,7 @@ source "fs/quota/Kconfig"
  
  source "fs/autofs4/Kconfig"
  source "fs/fuse/Kconfig"
 +source "fs/overlayfs/Kconfig"
  
- config CUSE
- 	tristate "Character device in Userspace support"
+ config GENERIC_ACL
+ 	bool
 Index: linux-3.6-rc7-master/fs/Makefile
 ===================================================================
 --- linux-3.6-rc7-master.orig/fs/Makefile	2012-09-28 13:34:44.000000000 +0200
