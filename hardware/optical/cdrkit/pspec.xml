@@ -23,8 +23,8 @@
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-	<Conflicts>
-	    <Package>cdrtools</Package>
+        <Conflicts>
+            <Package>cdrtools</Package>
         </Conflicts>
     </Package>
 
