@@ -44,14 +44,6 @@
         </Files>
     </Package>
 
-    <Package>
-        <Name>hdf5-examples</Name>
-        <Summary>Example files for hdf5</Summary>
-        <Files>
-            <Path fileType="doc">/usr/share/doc/hdf5/examples</Path>
-        </Files>
-    </Package>
-
     <History>
         <Update release="1">
             <Date>2012-12-09</Date>
