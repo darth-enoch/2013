@@ -15,8 +15,7 @@
         <IsA>library</IsA>
         <Summary>A C++ scene graph API on OpenGL for real time graphics</Summary>
         <Description>The Open Scene Graph is a cross-platform C++/OpenGL library for the real-time visualization. Uses range from visual simulation, scientific modeling, virtual reality through to games.</Description>
-        <!--<Archive sha1sum="13c7e39f6d62047ad944d8d28a0f0eb60384ce33" type="zip">http://www.openscenegraph.org/downloads/stable_releases/OpenSceneGraph-3.0.1/source/OpenSceneGraph-3.0.1.zip</Archive>-->
-        <Archive sha1sum="7325504070a262aa6eb952bc36d98843a4ed4cf7" type="zip">http://www.openscenegraph.org/downloads/stable_releases/OpenSceneGraph-2.8.5/source/OpenSceneGraph-2.8.5.zip</Archive>
+        <Archive sha1sum="13c7e39f6d62047ad944d8d28a0f0eb60384ce33" type="zip">http://www.openscenegraph.org/downloads/stable_releases/OpenSceneGraph-3.0.1/source/OpenSceneGraph-3.0.1.zip</Archive>
         <BuildDependencies>
             <Dependency>fltk-devel</Dependency>
             <Dependency>freeglut-devel</Dependency>
@@ -44,10 +43,12 @@
             <Dependency>jpeg-devel</Dependency>
             <Dependency>gdal-devel</Dependency>
         </BuildDependencies>
-        <!--<Patches>
+        <Patches>
 	    <Patch level="1">openscenegraph-3.0.1-libav-0.7.patch</Patch>
 	    <Patch level="0">openscenegraph-3.0.1-xinelib12x.patch</Patch>
-        </Patches>-->
+            <Patch level="1">openscenegraph-3.0.1-libav-9.patch</Patch>
+            <Patch level="1">OpenSceneGraph-3.0.1.diff</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -97,11 +98,11 @@
 
     <History>
         <Update release="1">
-            <Date>2011-08-18</Date>
-            <Version>2.8.5</Version>
+            <Date>2013-02-11</Date>
+            <Version>3.0.1</Version>
             <Comment>First release</Comment>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>
