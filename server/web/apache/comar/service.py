@@ -6,7 +6,7 @@ serviceDesc = _({"en": "Apache Web Server",
 
 serviceConf = "apache2"
 
-PIDFILE = "/var/run/apache2.pid"
+PIDFILE = "/var/run/apache2/apache2.pid"
 
 @synchronized
 def start():

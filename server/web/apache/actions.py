@@ -13,7 +13,8 @@ from pisi.actionsapi import get
 WorkDir = "httpd-%s" % get.srcVERSION()
 
 def config_layout():
-    return """<Layout Pardus>
+    return """
+<Layout Pardus>
     prefix:          /usr
     exec_prefix:     /usr
     bindir:          /usr/bin
@@ -32,10 +33,10 @@ def config_layout():
     manualdir:       /usr/share/doc/version/manual
     sysconfdir:      /etc/apache2
     localstatedir:   /var
-    runtimedir:      /var/run
+    runtimedir:      /var/run/apache2
     logfiledir:      /var/log/apache2
     proxycachedir:   /var/cache/apache2
-    </Layout>"""
+</Layout>"""
 
 def modules_config():
     disabled = ['bucketeer', 'example', 'optional-fn-export', 'optional-fn-import',
@@ -144,3 +145,5 @@ def install():
 
 
     pisitools.dodoc("ABOUT_APACHE", "CHANGES", "LAYOUT", "LICENSE", "README*")
+    
+    pisitools.removeDir("/var/run")
