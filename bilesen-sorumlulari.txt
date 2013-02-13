@@ -33,11 +33,11 @@ desktop
 ./desktop/fluxbox
 ./desktop/font                                  sezaiyeniay
 ./desktop/gnome
-./desktop/gnome3
+./desktop/gnome3                                namso-01
 ./desktop/kde                                   aydemir                               
 ./desktop/lookandfeel
 ./desktop/lxde
-./desktop/mate
+./desktop/mate                                  namso-01
 ./desktop/misc
 ./desktop/razor-qt
 ./desktop/toolkit
@@ -120,7 +120,7 @@ network
 
 office
 ./office
-./office/calligra
+./office/calligra                                 namso-01
 ./office/dictionary
 ./office/docbook
 ./office/libreoffice
