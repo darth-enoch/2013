@@ -33,7 +33,7 @@ def config_layout():
     manualdir:       /usr/share/doc/version/manual
     sysconfdir:      /etc/apache2
     localstatedir:   /var
-    runtimedir:      /var/run/apache2
+    runtimedir:      /run/apache2
     logfiledir:      /var/log/apache2
     proxycachedir:   /var/cache/apache2
 </Layout>"""
@@ -146,4 +146,4 @@ def install():
 
     pisitools.dodoc("ABOUT_APACHE", "CHANGES", "LAYOUT", "LICENSE", "README*")
     
-    pisitools.removeDir("/var/run")
+    #pisitools.removeDir("/var/run")
