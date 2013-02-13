@@ -8,7 +8,7 @@
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
-        <ExcludeArch>x86_32</ExcludeArch>
+        <ExcludeArch>x86_64</ExcludeArch>
         <License>LGPLv2.1</License>
         <IsA>app:console</IsA>
         <Summary>An emulator which lets you run Microsoft Windows applications</Summary>

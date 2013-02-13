@@ -24,15 +24,14 @@ def setup():
     autotools.autoreconf("-vif")
     options = "--without-capi \
                --with-curses \
-               --without-esd \
+               --without-hal \
+               --with-dbus \
                --with-opengl \
-               --with-pulse \
+               --with-alsa \
                --with-x"
 
     if get.buildTYPE() == "emul32":
-        options += " --libdir=/usr/lib32 \
-                     --without-freetype \
-                     --with-wine64=%s/work/wine-%s" % (get.pkgDIR(), get.srcVERSION())
+        options += " --with-wine64=%s/work/wine-%s" % (get.pkgDIR(), get.srcVERSION())
     elif get.ARCH() == "x86_64":
         options += " --enable-win64"
 
