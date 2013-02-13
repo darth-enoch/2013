@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A non-linear video editor</Summary>
         <Description>OpenShot Video Editor is a free, open-source, non-linear video editor, based on Python, GTK, and MLT. It can edit video and audio files, composite and transition video files, and mix multiple layers of video and audio together and render the output in many different formats.</Description>
-        <Archive sha1sum="2d96855349eab66ccc45e9fe1f69bd0f0309f17d" type="targz">https://launchpad.net/openshot/1.4/1.4.2/+download/openshot-1.4.2.tar.gz</Archive>
+        <Archive sha1sum="328fa9839a2bbfe7732349f0b7f3052686448190" type="targz">https://launchpad.net/openshot/1.4/1.4.3/+download/openshot-1.4.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-gtk-devel</Dependency>
         </BuildDependencies>
@@ -44,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="1">
+            <Date>2013-02-13</Date>
+            <Version>1.4.3</Version>
+            <Comment>update</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-27</Date>
             <Version>1.4.2</Version>
