@@ -39,11 +39,11 @@ desktop
 ./desktop/lxde
 ./desktop/mate                                  namso-01
 ./desktop/misc
-./desktop/razor-qt
+./desktop/razor-qt                              ErtanGuven
 ./desktop/toolkit
 ./desktop/xfce
 
-editor
+editor                                          ErtanGuven
 ./editor/web
 
 game
