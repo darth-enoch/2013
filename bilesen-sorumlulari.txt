@@ -17,6 +17,16 @@ Not: Bu bir taslaktır  eksikler hatalar olabilir lütfen müdahale etmekten çe
 ENGLISH
 --------
 
+Our aim is to divide the sections in the Pardus-Anka repository among developers or potential developers according to one’s interest and experience. The person responsible for a particular section will be managing everything concerning that particular section: decision making, updating package dependencies and patches in collaboration with subsection managers. The division of labor in the Pardus-Anka project consists of four main responsibilities:
+
+1 - Repository responsible person: Responsible for the release of stable ISOs. The repository responsible person makes important decisions about the distribution in cooperation with all section managers.
+2 - Section manager: Making decisions for a particular section and updating package dependencies in collaboration with subsection managers.
+3 - Subsection manager: Responsible for the stability and updates of packages concerning a particular subsection. The responsible person is always in close contact with the packagers.
+4 - Packagers: Responsible for the stability and updates of assigned packages, forwarding patches to the subsection manager and localization of packages.
+
+A developer, besides being responsible for a particular section, can also manage any other subsection and/or manage packages at the same time. However, it is not our intention to burden a developer with more then he/she can chew on. It is more desirable that a developer is responsible for only one (sub)section.
+
+Note: This is only a draft version. Please, feel free to comment.
 
 
 DAĞITIM SORUMLUSU
