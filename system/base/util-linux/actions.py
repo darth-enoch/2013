@@ -11,7 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="util-linux-%s" % get.srcVERSION().replace("_","-")
+#WorkDir="util-linux-%s" % get.srcVERSION().replace("_","-")
 
 def setup():
     shelltools.export("CFLAGS", "%s -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64" % get.CFLAGS())
