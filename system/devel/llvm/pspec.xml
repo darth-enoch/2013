@@ -117,6 +117,7 @@
 
     <Package>
         <Name>llvm-docs</Name>
+        <PartOf>system.doc</PartOf>
         <IsA>data:doc</IsA>
         <Summary>Documentation for LLVM</Summary>
         <Files>
