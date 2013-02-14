@@ -65,7 +65,7 @@
         </BuildDependencies>
         <Patches>
 <!--             <Patch level="1">fedora/kdelibs-4.9.1-FindKipi-libkipi2.patch</Patch> -->
-            <Patch level="1">fedora/kdelibs-4.9.2-FindSamba_samba4.patch</Patch>           
+            <Patch level="1">fedora/kdelibs-4.9.2-FindSamba_samba4.patch</Patch>
             <!-- Pardus patches-->
             <Patch level="1">pardus/default-useragent.diff</Patch>
     
@@ -91,6 +91,7 @@
     
             <!-- FIXME -->
             <!--<Patch level="1">pardus/change-default-wallpaper.diff</Patch>-->
+            <Patch level="1">set-env-var-home.patch</Patch>
         </Patches>
     </Source>
     <Package>
@@ -189,6 +190,6 @@
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
+        </Update>
     </History>
 </PISI>
