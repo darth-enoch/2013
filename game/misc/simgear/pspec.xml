@@ -21,6 +21,7 @@
             <Dependency>jpeg-devel</Dependency>
             <Dependency>freeglut-devel</Dependency>
             <Dependency>boost-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,6 +34,7 @@
             <Dependency>mesa</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>freeglut</Dependency>
+            <Dependency>openal</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
