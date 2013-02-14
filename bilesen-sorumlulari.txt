@@ -35,7 +35,7 @@ desktop
 ./desktop/gnome
 ./desktop/gnome3                                namso-01
 ./desktop/kde                                   aydemir                               
-./desktop/lookandfeel
+./desktop/lookandfeel                           ErtanGuven
 ./desktop/lxde                                  circass
 ./desktop/mate                                  namso-01
 ./desktop/misc
@@ -157,7 +157,7 @@ science
 ./science/astronomy
 ./science/biology
 ./science/chemistry
-./science/electronics
+./science/electronics                           ErtanGuven
 ./science/gis
 ./science/mathematics
 ./science/medical
