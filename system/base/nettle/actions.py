@@ -25,8 +25,8 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
     if get.buildTYPE() == "emul32":
-        pisitools.remove("/usr/lib32/*.a")
+        #pisitools.remove("/usr/lib32/*.a")
         return
 
-    pisitools.remove("/usr/lib/*.a")
+    #pisitools.remove("/usr/lib/*.a")
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "README", "nettle.pdf")
