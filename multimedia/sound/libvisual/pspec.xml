@@ -29,6 +29,19 @@
     </Package>
 
     <Package>
+        <Name>libvisual-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for libvisual</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">libvisual</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
+
+    <Package>
         <Name>libvisual-devel</Name>
         <Summary>Development files for libvisual</Summary>
         <RuntimeDependencies>
@@ -37,12 +50,20 @@
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/lib32/pkgconfig</Path>
             <!-- FIXME: Remove this if not necessary -->
             <Path fileType="man">/usr/share/man/man3</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-14</Date>
+            <Version>4.16</Version>
+            <Comment>Add emul32</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2010-10-12</Date>
             <Version>0.4.0</Version>
