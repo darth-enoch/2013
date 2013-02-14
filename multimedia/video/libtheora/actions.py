@@ -15,7 +15,9 @@ def setup():
     #disable doxygen for sandbox violations
     shelltools.export("ac_cv_prog_HAVE_DOXYGEN", "false")
     shelltools.export("ac_cv_prog_HAVE_PDFLATEX", "false")
-
+    if get.buildTYPE() == "emul32":
+        pisitools.dosed("configure.ac", "(.*OC_X86_64_ASM.*)", r"#\1")
+        shelltools.system("./autogen.sh")
     autotools.configure("--enable-shared \
                          --enable-encode \
                          --disable-dependency-tracking \
