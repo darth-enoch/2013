@@ -528,6 +528,17 @@
                 <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
+         <Component>
+            <Name>programming.docs</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>programming</Group>
+            <Maintainer>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
+            </Maintainer>
+        </Component>
         <Component>
             <Name>programming.environment.eric</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
