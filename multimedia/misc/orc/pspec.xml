@@ -10,7 +10,6 @@
         </Packager>
         <License>BSD</License>
         <License>BSD-2</License>
-        <PartOf>multimedia.misc</PartOf>
         <IsA>app:console</IsA>
         <Summary>The Oil Runtime Compiler</Summary>
         <Description>Optimized Inner Loop Runtime Compiler</Description>
@@ -21,23 +20,45 @@
         <Name>orc</Name>
         <Files>
             <Path fileType="executable">/usr/bin/</Path>
-	    <Path fileType="library">/usr/lib/</Path>
-	    <Path fileType="data">/usr/share/</Path>
+        <Path fileType="library">/usr/lib/</Path>
+        <Path fileType="data">/usr/share/</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>orc-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for orc</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">orc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
         </Files>
     </Package>
 
     <Package>
         <Name>orc-devel</Name>
-	<Summary>orc için geliştirme dosyaları</Summary>
-	<RunTimeDependencies>
-	  <Dependency release="current">orc</Dependency>
-	</RunTimeDependencies>
+    <Summary>orc için geliştirme dosyaları</Summary>
+    <RunTimeDependencies>
+      <Dependency release="current">orc</Dependency>
+    </RunTimeDependencies>
         <Files>
-	    <Path fileType="header">/usr/include/</Path>
+        <Path fileType="header">/usr/include/</Path>
+        <Path fileType="data">/usr/lib/pkgconfig</Path>
+        <Path fileType="data">/usr/lib32/pkgconfig</Path>
         </Files>
     </Package>    
 
     <History>
+        <Update release="2">
+            <Date>2013-02-14</Date>
+            <Version>4.16</Version>
+            <Comment>Add emul32</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-29</Date>
             <Version>4.16</Version>
