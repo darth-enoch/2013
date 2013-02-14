@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>Lightweight, easy to configure DNS forwarder and DHCP server</Summary>
         <Description>dnsmasq is a DNS forwarder and DHCP server that can serve the names of local machines which are not in the global DNS. The DHCP server integrates with the DNS server and allows machines with DHCP-allocated addresses to appear in the DNS with names configured in each host.</Description>
-        <Archive type="tarxz" sha1sum="2da466c89fc5d2bb3d367e0a1c2a62b25ff787a1">http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.63.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="ccbe4845c316cd208b53e63d6ede97bbf0587c12">http://www.thekelleys.org.uk/dnsmasq/dnsmasq-2.65.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="dnsmasq.py">dnsmasq.py</AdditionalFile>
         </AdditionalFiles>
@@ -21,7 +21,9 @@
             <Dependency>dbus</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">dbus_pardus_methods.patch</Patch>
+            <!--<Patch level="1">dbus_pardus_methods.patch</Patch>-->
+            <Patch level="1">dnsmasq-2.65-redhat-real-fix-CVE-2013-0198.patch</Patch>
+            <Patch level="1">dnsmasq-2.65-Handle-wrong-interface-for-locally-routed-packets.patch</Patch>
         </Patches>
     </Source>
 
@@ -50,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>203-01-14</Date>
+            <Version>2.65</Version>
+            <Comment>New release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-23</Date>
             <Version>2.63</Version>
