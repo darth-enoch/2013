@@ -65,6 +65,55 @@
     </Package>
 
     <Package>
+        <Name>gst-plugins-base-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for gst-plugins-base</Summary>
+        <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>orc-32bit</Dependency>
+            <Dependency>zlib-32bit</Dependency>
+            <Dependency>glib2-32bit</Dependency>
+            <Dependency>libXv-32bit</Dependency>
+            <Dependency>cairo-32bit</Dependency>
+            <Dependency>pango-32bit</Dependency>
+            <Dependency>libSM-32bit</Dependency>
+            <Dependency>libogg-32bit</Dependency>
+            <Dependency>libICE-32bit</Dependency>
+            <Dependency>libX11-32bit</Dependency>
+            <Dependency>libxml2-32bit</Dependency>
+            <Dependency>libXext-32bit</Dependency>
+            <Dependency>alsa-lib-32bit</Dependency>
+            <Dependency>libtheora-32bit</Dependency>
+            <Dependency>gstreamer-32bit</Dependency>
+            <Dependency>libvorbis-32bit</Dependency>
+            <Dependency>libvisual-32bit</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">gst-plugins-base</Dependency>
+            <Dependency>orc-32bit</Dependency>
+            <Dependency>zlib-32bit</Dependency>
+            <Dependency>glib2-32bit</Dependency>
+            <Dependency>libXv-32bit</Dependency>
+            <Dependency>cairo-32bit</Dependency>
+            <Dependency>pango-32bit</Dependency>
+            <Dependency>libSM-32bit</Dependency>
+            <Dependency>libogg-32bit</Dependency>
+            <Dependency>libICE-32bit</Dependency>
+            <Dependency>libX11-32bit</Dependency>
+            <Dependency>libxml2-32bit</Dependency>
+            <Dependency>libXext-32bit</Dependency>
+            <Dependency>alsa-lib-32bit</Dependency>
+            <Dependency>libtheora-32bit</Dependency>
+            <Dependency>gstreamer-32bit</Dependency>
+            <Dependency>libvorbis-32bit</Dependency>
+            <Dependency>libvisual-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
+
+    <Package>
         <Name>gst-plugins-base-devel</Name>
         <Summary>Development files for gst-plugins-base</Summary>
         <RuntimeDependencies>
@@ -80,6 +129,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-14</Date>
+            <Version>0.10.36</Version>
+            <Comment>Add emul32</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-09</Date>
             <Version>0.10.36</Version>
