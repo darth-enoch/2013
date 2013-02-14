@@ -12,9 +12,9 @@
         <IsA>app:console</IsA>
         <Summary>A dhcp client only</Summary>
         <Description>An RFC2131 and RFC1541 compliant DHCP client daemon. dhcpcd gets an IP address and other information from a corresponding DHCP server, configures the network interface automatically, and tries to renew the lease time according to RFC2131 or RFC1541 depending on the command line option.</Description>
-        <Archive sha1sum="6cb403f9ebc50b4eb9aa46ff3f4788c39edd949c" type="tarbz2">http://roy.marples.name/downloads/dhcpcd/dhcpcd-5.6.1.tar.bz2</Archive>
+        <Archive sha1sum="2f9f2f432e43181497c4909725e29239c9ff004a" type="tarbz2">http://roy.marples.name/downloads/dhcpcd/dhcpcd-5.6.7.tar.bz2</Archive>
         <Patches>
-            <Patch level="1">fix-compat-hook-paths.patch</Patch>
+            <Patch level="0">fix-compat-hook-paths.patch</Patch>
             <Patch level="1">zyxel-blacklist.patch</Patch>
         </Patches>
     </Source>
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>203-01-14</Date>
+            <Version>5.6.7</Version>
+            <Comment>New release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-23</Date>
             <Version>5.6.1</Version>
