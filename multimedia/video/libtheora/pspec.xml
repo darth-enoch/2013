@@ -42,8 +42,12 @@
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for libtheora</Summary>
         <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>libogg-32bit</Dependency>
+        </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">libtheora</Dependency>
+            <Dependency>libogg-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
