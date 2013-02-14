@@ -31,7 +31,7 @@
         <RuntimeDependencies>
             <Dependency>dbus</Dependency>
             <Dependency>glib2</Dependency>
-            <Dependency>python3</Dependency>
+            <Dependency>python</Dependency>
             <Dependency>dbus-glib</Dependency>
         </RuntimeDependencies>
         <Files>
