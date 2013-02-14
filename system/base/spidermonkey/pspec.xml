@@ -30,7 +30,6 @@
             <Patch level="2">spidermonkey-1.8.7-filter_desc.patch</Patch>
             <Patch level="2">spidermonkey-1.8.7-x32.patch</Patch>
             <Patch level="0">spidermonkey-1.8.7-freebsd-pthreads.patch</Patch>
-            <!--<Patch level="1">spidermonkey-1.8.7-symbol-versions.patch</Patch>-->
         </Patches>
     </Source>
 
