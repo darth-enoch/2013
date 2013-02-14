@@ -48,6 +48,7 @@ Merge Status                Package name                    Packager (Merge requ
 -                           firefox                         circass                                   3
 -                           kernel                          circass                                   4             
                             xorg-server                     marcin-                                   2
+                            xorg-app                        marcin-                                   2
                             mesa                            marcin-                                   2
                             mesa-glu                        marcin-                                   2
 +                           gparted                         namso-01                                  2             obsoleteman
