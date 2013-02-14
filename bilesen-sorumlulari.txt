@@ -36,12 +36,12 @@ desktop
 ./desktop/gnome3                                namso-01
 ./desktop/kde                                   aydemir                               
 ./desktop/lookandfeel
-./desktop/lxde
+./desktop/lxde                                  circass
 ./desktop/mate                                  namso-01
 ./desktop/misc
 ./desktop/razor-qt                              ErtanGuven
 ./desktop/toolkit
-./desktop/xfce
+./desktop/xfce                                  circass
 
 editor                                          ErtanGuven
 ./editor/web
@@ -58,7 +58,7 @@ game
 ./game/rpg
 ./game/simulation
 ./game/sports
-./game/strategy
+./game/strategy                                 circass                                                                       
 
 hardware
 ./hardware/bluetooth
@@ -66,6 +66,7 @@ hardware
 ./hardware/disk
 ./hardware/emulator
 ./hardware/firewire
+./hardware/firmware                             circass
 ./hardware/graphics
 ./hardware/info
 ./hardware/irda
@@ -77,12 +78,12 @@ hardware
 ./hardware/scanner
 ./hardware/security
 ./hardware/smartcard
-./hardware/sound
+./hardware/sound                                circass
 ./hardware/virtualization
 
 kernel
 ./kernel/drivers
-./kernel/kernel
+./kernel/kernel                                 circass
 
 multimedia
 ./multimedia
@@ -100,7 +101,7 @@ multimedia
 network
 ./network
 ./network/analyzer
-./network/chat
+./network/chat                                  circass
 ./network/connection
 ./network/download
 ./network/fax
@@ -120,7 +121,7 @@ network
 
 office
 ./office
-./office/calligra                                 namso-01
+./office/calligra                               namso-01
 ./office/dictionary
 ./office/docbook
 ./office/libreoffice
