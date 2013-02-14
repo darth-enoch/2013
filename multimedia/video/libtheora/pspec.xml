@@ -71,7 +71,7 @@
     <History>
         <Update release="2">
             <Date>2013-02-14</Date>
-            <Version>4.16</Version>
+            <Version>1.1.1</Version>
             <Comment>Add emul32</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
