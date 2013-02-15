@@ -64,7 +64,7 @@ def install():
     ###  Libraries
     # OpenGl library
     pisitools.dolib("libGL.so.%s" % version, libdir)
-    pisitools.dosym("libGL.so.%s" % version, "%s/libGL.so.1.2" % libdir)
+    pisitools.dosym("libGL.so.%s" % version, "%s/libGL.so.1.2.0" % libdir)
 
     # OpenCL
     pisitools.dolib("libOpenCL.so.1.0.0", libdir)
