@@ -66,27 +66,14 @@
         </Files>
     </Package>
 
-    <Package>
-        <Name>gstreamer-next-32bit</Name>
-        <PartOf>emul32</PartOf>
-        <Summary>32-bit shared libraries for gstreamer</Summary>
-        <BuildType>emul32</BuildType>
-        <BuildDependencies>
-            <Dependency>glib2-32bit</Dependency>
-            <Dependency>libxml2-32bit</Dependency>
-        </BuildDependencies>
-        <RuntimeDependencies>
-            <Dependency release="current">gstreamer-next</Dependency>
-            <Dependency>glib2-32bit</Dependency>
-            <Dependency>libxml2-32bit</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib32</Path>
-        </Files>
-    </Package>
-
-
     <History>
+      <Update release="3">
+            <Date>2013-02-15</Date>
+            <Version>1.0.5</Version>
+            <Comment>without emul32</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
       <Update release="2">
             <Date>2013-01-25</Date>
             <Version>1.0.5</Version>

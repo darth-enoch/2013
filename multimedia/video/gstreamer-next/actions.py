@@ -16,25 +16,20 @@ def setup():
     autotools.autoreconf("-vfi")
     #shelltools.system("./autogen.sh --disable-gtk-doc --disable-docbook")
 
-    options = '--with-package-name="GStreamer package for Pardus" \
-               --with-package-origin="http://www.pardus-anka.org" \
-               --enable-nls \
-               --enable-debug \
-               --disable-dependency-tracking \
-               --disable-examples \
-               --disable-tests \
-               --disable-failing-tests \
-               --disable-static \
-               --disable-rpath \
-               --enable-valgrind \
-               --enable-introspection\
-               --enable-gtk-doc\
-	       --enable-docbook'
-
-    if get.buildTYPE() == "emul32":
-        shelltools.export("PKG_CONFIG_PATH", "/usr/lib32/pkgconfig")
-
-    autotools.configure(options)
+    autotools.configure("--with-package-name='GStreamer package for Pardus' \
+                         --with-package-origin='http://www.pardus-anka.org' \
+                         --enable-nls \
+                         --enable-debug \
+                         --disable-dependency-tracking \
+                         --disable-examples \
+                         --disable-tests \
+                         --disable-failing-tests \
+                         --disable-static \
+                         --disable-rpath \
+                         --enable-valgrind \
+                         --enable-introspection\
+                         --enable-gtk-doc\
+	                 --enable-docbook")
 
 def build():
     autotools.make()
