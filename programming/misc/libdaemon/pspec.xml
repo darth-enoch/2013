@@ -35,8 +35,28 @@
             <Path fileType="man">/usr/share/man/man3</Path>
         </Files>
     </Package>
+    
+    <Package>
+        <Name>libdaemon-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for libdaemon</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">libdaemon</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-15</Date>
+            <Version>0.14</Version>
+            <Comment>add emul32</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2010-10-12</Date>
             <Version>0.14</Version>
