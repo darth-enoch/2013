@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Password Checking Library</Summary>
         <Description>CrackLib tests passwords to determine whether they match certain security-oriented characteristics, with the purpose of stopping users from choosing passwords that are easy to guess.</Description>
-        <Archive sha1sum="29224f51db85e1946c209f6ef6c38da699a9c7cc" type="targz">http://sourceforge.net/projects/cracklib/files/cracklib/2.8.19/cracklib-2.8.19.tar.gz</Archive>
+        <Archive sha1sum="d91d977a1909e0cc3f5cb30754ba5e5e90655ab0" type="targz">mirrors://sourceforge/cracklib/cracklib-2.8.22.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>python</Dependency>
@@ -21,10 +21,10 @@
         <Patches>
             <!--
             <Patch>turkish.patch</Patch>
-            -->
             <Patch level="1">python-linkage.patch</Patch>
             <Patch level="1">sandbox.patch</Patch>
             <Patch level="1">python-path.patch</Patch>
+	    -->
         </Patches>
     </Source>
 
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-15</Date>
+            <Version>2.8.22</Version>
+            <Comment>New version</Comment>
+            <Name>Ertan Güven</Name>
+            <Email>ertangvn@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-23</Date>
             <Version>2.8.19</Version>
