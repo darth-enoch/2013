@@ -28,6 +28,7 @@
             <Dependency>libvisual-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>orc-devel</Dependency>
+            <Dependency>gnome-vfs-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Patch>ltmain_as-needed.patch</Patch>
@@ -52,6 +53,7 @@
             <Dependency>libvisual</Dependency>
             <Dependency>libtheora</Dependency>
             <Dependency>orc</Dependency>
+            <Dependency>gnome-vfs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

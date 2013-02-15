@@ -13,16 +13,28 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.autoreconf("-vfi")
-    options = "--disable-static \
-               --disable-rpath \
-               --disable-examples \
-               --disable-gnome-vfs \
-               --enable-libvisual \
-               --enable-experimental \
-               --with-package-name='Pardus gstreamer-plugins-base package' \
-               --with-package-origin='http://www.pardus-anka.org'"
-    if get.buildTYPE() == "emul32": options += " --enable-introspection=no"
-    autotools.configure(options)
+    autotools.configure("--disable-static \
+                         --disable-rpath \
+                         --disable-examples \
+                         --enable-gnome-vfs \
+                         --enable-libvisual \
+                         --enable-experimental \
+                         --enable-introspection=no \
+                         --with-package-name='Pardus gstreamer-plugins-base package' \
+                         --with-package-origin='http://www.pardus-anka.org'")
+                         
+    if get.buildTYPE() == "emul32":
+        options = "--disable-static \
+                   --disable-rpath \
+                   --disable-examples \
+                   --disable-gnome-vfs \
+                   --enable-libvisual \
+                   --enable-experimental \
+                   --enable-introspection=no \
+                   --with-package-name='Pardus gstreamer-plugins-base package' \
+                   --with-package-origin='http://www.pardus-anka.org'"
+        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
+        autotools.configure(options)
 
 def build():
     autotools.make()
