@@ -37,58 +37,99 @@ def setup():
 
     shelltools.export("CFLAGS", filteredCFLAGS)
     shelltools.export("CXXFLAGS", filteredCXXFLAGS)
+    pisitools.dosed("mkspecs/common/gcc-base-unix.conf", "\-Wl,\-rpath,")
+    pisitools.dosed("mkspecs/common/gcc-base.conf", "\-O2", filteredCFLAGS)
+    pisitools.dosed("mkspecs/common/gcc-base.conf", "^(QMAKE_LFLAGS\s+\+=)", r"\1 %s" % get.LDFLAGS())
 
-    #-no-pch makes build ccache-friendly
-    autotools.rawConfigure("-no-pch \
-                            -v \
-                            -stl \
-                            -fast \
-                            -qdbus \
-                            -qvfb \
-                            -glib \
-                            -no-sql-sqlite2 \
-                            -system-sqlite \
-                            -system-zlib \
-                            -system-libpng \
-                            -system-libjpeg \
-                            -system-libtiff \
-                            -system-libmng \
-                            -plugin-sql-sqlite \
-                            -plugin-sql-odbc \
-                            -plugin-sql-mysql \
-                            -plugin-sql-psql \
-                            -plugin-sql-ibase \
-                            -I/usr/include/mysql/ \
-                            -I/usr/include/firebird/ \
-                            -I/usr/include/postgresql/server/ \
-                            -release \
-                            -no-separate-debug-info \
-                            -phonon \
-                            -no-phonon-backend \
-                            -webkit \
-                            -no-rpath \
-                            -openssl-linked \
-                            -dbus-linked \
-                            -xmlpatterns \
-                            -opensource \
-                            -reduce-relocations \
-                            -prefix %s \
-                            -libdir %s \
-                            -docdir %s \
-                            -examplesdir %s \
-                            -demosdir %s\
-                            -plugindir %s \
-                            -translationdir %s \
-                            -sysconfdir %s \
-                            -datadir %s \
-                            -importdir %s \
-                            -headerdir %s \
-                            -confirm-license " % (qt4.prefix, qt4.libdir, qt4.docdir, qt4.examplesdir, qt4.demosdir, qt4.plugindir, qt4.translationdir, qt4.sysconfdir, qt4.datadir, qt4.importdir, qt4.includedir))
+    if not get.buildTYPE() == "emul32":
+        #-no-pch makes build ccache-friendly
+        options = "-no-pch \
+                   -v \
+                   -stl \
+                   -fast \
+                   -qdbus \
+                   -qvfb \
+                   -glib \
+                   -no-sql-sqlite2 \
+                   -system-sqlite \
+                   -system-zlib \
+                   -system-libpng \
+                   -system-libjpeg \
+                   -system-libtiff \
+                   -system-libmng \
+                   -plugin-sql-sqlite \
+                   -plugin-sql-odbc \
+                   -plugin-sql-mysql \
+                   -plugin-sql-psql \
+                   -plugin-sql-ibase \
+                   -I/usr/include/mysql/ \
+                   -I/usr/include/firebird/ \
+                   -I/usr/include/postgresql/server/ \
+                   -release \
+                   -no-separate-debug-info \
+                   -phonon \
+                   -no-phonon-backend \
+                   -webkit \
+                   -no-rpath \
+                   -openssl-linked \
+                   -dbus-linked \
+                   -xmlpatterns \
+                   -opensource \
+                   -reduce-relocations \
+                   -prefix %s \
+                   -libdir %s \
+                   -docdir %s \
+                   -examplesdir %s \
+                   -demosdir %s\
+                   -plugindir %s \
+                   -translationdir %s \
+                   -sysconfdir %s \
+                   -datadir %s \
+                   -importdir %s \
+                   -headerdir %s \
+                   -confirm-license " % (qt4.prefix, qt4.libdir, qt4.docdir, qt4.examplesdir, qt4.demosdir, qt4.plugindir, qt4.translationdir, qt4.sysconfdir, qt4.datadir, qt4.importdir, qt4.includedir)
+    else:
+        pisitools.dosed("mkspecs/linux-g++-64/qmake.conf", "-m64", "-m32")
+        shelltools.export("LDFLAGS", "-m32 %s" % get.LDFLAGS())
+        options = "-no-pch \
+                   -v \
+                   -prefix /usr \
+                   -libdir /usr/lib32 \
+                   -plugindir /usr/lib32/qt/plugins \
+                   -importdir /usr/lib32/qt/imports \
+                   -datadir /usr/share/qt \
+                   -translationdir /usr/share/qt/translations \
+                   -sysconfdir /etc \
+                   -system-sqlite \
+                   -no-phonon \
+                   -no-phonon-backend \
+                   -webkit \
+                   -graphicssystem raster \
+                   -openssl-linked \
+                   -nomake demos \
+                   -nomake examples \
+                   -nomake docs \
+                   -nomake tools \
+                   -optimized-qmake \
+                   -no-rpath \
+                   -dbus-linked \
+                   -reduce-relocations \
+                   -no-openvg \
+                   -confirm-license \
+                   -opensource "
+
+    autotools.rawConfigure(options)
 
 def build():
+    shelltools.export("LD_LIBRARY_PATH", "%s/lib:%s" % (get.curDIR(), get.ENV("LD_LIBRARY_PATH")))
     autotools.make()
 
 def install():
+    if get.buildTYPE() == "emul32":
+        qt4.install("INSTALL_ROOT=%s32" % get.installDIR())
+        shelltools.move("%s32/usr/lib32" % get.installDIR(), "%s/usr" % get.installDIR())
+        return
+        
     qt4.install()
     pisitools.dodir(qt4.bindir)
 
