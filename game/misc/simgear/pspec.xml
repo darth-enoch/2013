@@ -22,6 +22,7 @@
             <Dependency>freeglut-devel</Dependency>
             <Dependency>boost-devel</Dependency>
             <Dependency>openal-devel</Dependency>
+            <Dependency>openthreads-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -35,6 +36,7 @@
             <Dependency>jpeg</Dependency>
             <Dependency>freeglut</Dependency>
             <Dependency>openal</Dependency>
+            <Dependency>openthreads</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
