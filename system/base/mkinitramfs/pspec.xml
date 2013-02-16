@@ -41,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-13</Date>
+            <Version>1.0.7</Version>
+            <Comment>Change loopbackimage address and name.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2013-01-13</Date>
             <Version>1.0.7</Version>
