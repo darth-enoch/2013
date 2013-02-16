@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>An alternate POSIX capabilities library</Summary>
         <Description>libcap-ng is a library that makes using POSIX capabilities easier.</Description>
-        <Archive sha1sum="fafa72c4d39ca41900b447c6e554b415ab8dd53a" type="targz">http://people.redhat.com/sgrubb/libcap-ng/libcap-ng-0.7.tar.gz</Archive>
+        <Archive sha1sum="b4c61c664d9b90810f2e947c46a41ed8abb9e292" type="targz">http://people.redhat.com/sgrubb/libcap-ng/libcap-ng-0.7.3.tar.gz</Archive>
         <BuildDependencies>
             <!-- This is only a build dependency -->
             <Dependency>attr</Dependency>
@@ -23,7 +23,7 @@
 
             <!-- FIXME: Drop this once upstream fixed the broken xattr.h
             header in kernel. -->
-            <Patch level="1">fix-missing-include.patch</Patch>
+            <!--<Patch level="1">fix-missing-include.patch</Patch>--> <!--yeni sürümde hataya yol açıyor.-->
         </Patches>
     </Source>
 
@@ -76,6 +76,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-11</Date>
+            <Version>0.7.3</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-23</Date>
             <Version>0.7</Version>
