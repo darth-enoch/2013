@@ -11,7 +11,7 @@
         <IsA>app:console</IsA>
         <Summary>Assembler and linker tools</Summary>
         <Description>Contains commands like as, ld, nm, objdump, ar, ranlib for compiling assembly code to the machine language, and for linking and manipulating the binary object files.</Description>
-        <Archive sha1sum="d4a62c749c8a27702ee5b8c51398c96387e7b225" type="tarxz">http://www.kernel.org/pub/linux/devel/binutils/binutils-2.23.51.0.8.tar.xz</Archive>
+        <Archive sha1sum="7d10b69a7df2926ed2f10d5bd8e9530da7162ed2" type="tarxz">http://www.kernel.org/pub/linux/devel/binutils/binutils-2.23.51.0.9.tar.xz</Archive>
         <Patches>
             <!-- Enable dtags -->
             <Patch level="1">ld-dtags.diff</Patch>
@@ -75,6 +75,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-16</Date>
+            <Version>2.23.51.0.9</Version>
+            <Comment>New release.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2013-01-16</Date>
             <Version>2.23.51.0.8</Version>
