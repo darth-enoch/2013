@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "glibc-2.16.0"
+WorkDir = "glibc-2.17"
 
 defaultflags = "-O3 -g -U_FORTIFY_SOURCE -fno-strict-aliasing -fomit-frame-pointer -mno-tls-direct-seg-refs"
 # this is getting ridiculous, also gdb3 breaks resulting binary
