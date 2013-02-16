@@ -10,7 +10,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-ver = "1.12.2"
+ver = "1.13.1"
 
 def setup():
     autotools.configure()
