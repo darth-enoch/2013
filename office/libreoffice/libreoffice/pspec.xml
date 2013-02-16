@@ -96,6 +96,7 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>liblangtag-devel</Dependency>
+            <Dependency>perl-Archive-Zip</Dependency>
             <Dependency>libXinerama-devel</Dependency>
             <Dependency>libexttextcat-devel</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>

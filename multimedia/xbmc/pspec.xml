@@ -85,6 +85,8 @@
             <Dependency>crystalhd-firmware</Dependency>
             <Dependency>tinyxml-devel</Dependency>
             <Dependency>mysql-lib</Dependency>
+            <Dependency>taglib-devel</Dependency>
+            <Dependency>doxygen</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001-hack-workaround-for-old-incompatible-PVR-addon-datab.patch</Patch>
@@ -166,6 +168,8 @@
             <Dependency>libcrystalhd</Dependency><!--crystalhd suppport-->
             <Dependency>crystalhd-firmware</Dependency>
             <Dependency>tinyxml</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>doxygen</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -183,7 +187,14 @@
         </Provides>
     </Package>
 
-    <History>
+    <History>     
+      <Update release="3">
+            <Date>2013-02-16</Date>
+            <Version>12.0</Version>
+            <Comment>add missing dependencys</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
       <Update release="2">
             <Date>2013-02-01</Date>
             <Version>12.0</Version>
