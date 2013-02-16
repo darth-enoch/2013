@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Chunky Loop Generator</Summary>
         <Description>cloog is CLooG is a free software and library to generate code for scanning Z-polyhedra. It is used by the GCC Graphite optimization framework.</Description>
-        <Archive sha1sum="decc2221b1f1bd9238288d043835cb018af15d5a" type="targz">http://www.bastoul.net/cloog/pages/download/cloog-0.17.0.tar.gz</Archive>
+        <Archive sha1sum="85f620a26aabf6a934c44ca40a9799af0952f863" type="targz">http://www.bastoul.net/cloog/pages/download/cloog-0.18.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gmp-devel</Dependency>
             <Dependency>ppl-devel</Dependency>
@@ -46,6 +46,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-02.16</Date>
+            <Version>0.18.0</Version>
+            <Comment>New release</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update> 
         <Update release="1">
             <Date>2012-06-22</Date>
             <Version>0.17.0</Version>
