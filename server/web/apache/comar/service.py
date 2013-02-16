@@ -6,7 +6,7 @@ serviceDesc = _({"en": "Apache Web Server",
 
 serviceConf = "apache2"
 
-PIDFILE = "/run/apache2/apache2.pid"
+PIDFILE = "/run/apache2.pid"
 
 @synchronized
 def start():
@@ -24,6 +24,8 @@ def stop():
     stopService(command="/usr/sbin/apache2",
                 args="-d /usr/lib/apache2/ -f /etc/apache2/httpd.conf %s -k stop"  % config.get("APACHE2_OPTS", ""),
                 donotify=True)
+    import time
+    time.sleep(3)
 
 def reload():
     stopService(command="/usr/sbin/apache2",
