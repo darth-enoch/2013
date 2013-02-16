@@ -188,7 +188,7 @@ server
 
 system
 ./system/auth
-./system/base
+./system/base                                   namso-01
 ./system/boot
 ./system/devel
 ./system/doc
