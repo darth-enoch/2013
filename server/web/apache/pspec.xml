@@ -49,7 +49,7 @@
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/var/log/apache2</Path>
             <Path fileType="config">/var/www</Path>
-            <Path fileType="data">/run/apache2</Path>
+            <Path fileType="data">/run</Path>
             <Path fileType="data">/var/cache</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
