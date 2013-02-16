@@ -20,15 +20,22 @@ shelltools.export("LINKFLAGSOPTIMIZE", get.LDFLAGS())
 shelltools.export("PYTHON", get.curPYTHON())
 
 def setup():
-    shelltools.system('./autogen.sh \
-                       --with-vendor="Pardus Anka" \
+    langs = "en-US af ar as bg bn br ca cs cy da de dz el es et eu fa fi fr ga gl gu he hi hr hu it ja ko kn lt lv mai ml mr nb nl nn nr nso or pa-IN pl pt pt-BR ro ru sh si sk sl sr ss st sv ta te th tn tr ts uk ve xh zh-CN zh-TW zu"
+    vars = {"lang": langs,
+            "jobs": get.makeJOBS().replace("-j", ""),
+            "etar": get.workDIR()}
+
+    autotools.aclocal("-I m4")
+    autotools.autoconf()
+    shelltools.touch("autogen.lastrun")
+    autotools.rawConfigure('--with-vendor="Pardus Anka" \
                        --with-unix-wrapper="libreoffice" \
                        --with-ant-home="/usr/share/ant" \
                        --with-jdk-home="/opt/sun-jdk" \
                        --prefix=/usr --exec-prefix=/usr --sysconfdir=/etc \
                        --libdir=/usr/lib --mandir=/usr/share/man \
-                       --enable-dependency-tracking \
-                       --enable-verbose \
+                       --enable-release-build \
+                       --disable-dependency-tracking \
                        --disable-rpath \
                        --disable-crashdump \
                        --disable-ccache \
@@ -39,7 +46,7 @@ def setup():
                        --with-system-libs \
                        --with-system-mythes \
                        --with-system-headers \
-                       --with-lang="ALL" \
+                       --with-lang="%(lang)s" \
                        --enable-graphite \
                        --enable-cups \
                        --enable-dbus \
@@ -101,8 +108,8 @@ def setup():
                        --without-system-vigra \
                        --without-sun-templates \
                        --disable-fetch-external \
-                       --with-parallelism=%s \
-                       --with-external-tar="%s"' % (get.makeJOBS().replace("-j", ""), get.workDIR()))
+                       --with-parallelism=%(jobs)s \
+                       --with-external-tar="%(etar)s"' % vars)
         
 def build():
     autotools.make()
