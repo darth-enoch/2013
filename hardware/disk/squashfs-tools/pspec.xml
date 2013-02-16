@@ -15,16 +15,17 @@
         <Archive sha1sum="e0944471ff68e215d3fecd464f30ea6ceb635fd7" type="targz">http://sourceforge.net/projects/squashfs/files/squashfs/squashfs4.2/squashfs4.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>lzo-devel</Dependency>
+            <!--xz-devel is in system.devel-->
+            <Dependency>xz-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!--<Patch level="1">makefile.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>
         <Name>squashfs-tools</Name>
         <RuntimeDependencies>
             <Dependency>lzo</Dependency>
+            <!--xz is in system.base-->
+            <!--Dependency>xz</Dependency-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/sbin</Path>
@@ -33,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-12</Date>
+            <Version>4.2</Version>
+            <Comment>Change compression type to xz, and some other enhancements.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-14</Date>
             <Version>4.2</Version>
