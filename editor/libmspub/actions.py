@@ -14,7 +14,8 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    autotools.configure()
+    autotools.configure("--disable-static \
+                         --without-docs")
 
 def build():
     autotools.make()
