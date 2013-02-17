@@ -27,7 +27,7 @@
         <Name>module-broadcom-wl</Name>
         <RuntimeDependencies>
             <Dependency>kernel</Dependency>
-            <Dependency>module-broadcom-wl-userspace</Dependency>
+            <Dependency release="current">module-broadcom-wl-userspace</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>broadcom-wl</Package>
@@ -40,9 +40,6 @@
     <Package>
         <Name>module-broadcom-wl-userspace</Name>
         <Summary>modprobe rules and documents for broadcom-wl kernel driver</Summary>
-        <Conflicts>
-            <Package releaseTo="7">module-broadcom-wl</Package>
-        </Conflicts>
         <Files>
             <Path fileType="data">/etc/modprobe.d</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -55,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2013-02-07</Date>
+            <Version>5.100.82.112</Version>
+            <Comment>Runtime dep</Comment>
+            <Name>Ertan Güven</Name>
+            <Email>ertanvn@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2013-02-01</Date>
             <Version>5.100.82.112</Version>

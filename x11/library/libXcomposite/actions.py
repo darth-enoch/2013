@@ -11,7 +11,6 @@ from pisi.actionsapi import shelltools
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    autotools.autoreconf("-vif")
     autotools.configure("--disable-static")
 
 def build():
