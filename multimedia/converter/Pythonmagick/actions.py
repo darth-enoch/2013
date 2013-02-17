@@ -10,8 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    #shelltools.system("./autogen.pl")
-
+    shelltools.system("./autogen.pl")
     autotools.configure()
 
 def build():
