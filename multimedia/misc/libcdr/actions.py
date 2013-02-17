@@ -11,7 +11,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-werror")
+    autotools.configure("--disable-static \
+                         --without-docs")
 
 def build():
     autotools.make()
