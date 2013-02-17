@@ -133,6 +133,16 @@
             <Patch level="1">patches/mageia/x86-p4_clockmod-reasonable-default-for-scaling_min_freq.patch</Patch>
             <Patch level="1">patches/mageia/x86-pci-toshiba-equium-a60-assign-busses.patch</Patch>
 
+            <Patch level="1">patches/mageia/ata-ahci-Add-Device-IDs-for-Intel-Wellsburg-PCH.patch</Patch>
+            <Patch level="1">patches/mageia/ata-ata_piix-Add-Device-IDs-for-Intel-Wellsburg-PCH.patch</Patch>
+            <Patch level="1">patches/mageia/Input-add-support-for-Cypress-PS2-Trackpads.patch</Patch>
+            <Patch level="1">patches/mageia/Input-increase-struct-ps2dev-cmdbuf-to-8-bytes.patch</Patch>
+            <Patch level="1">patches/mageia/i2c-busses-i2c-i801-Add-Device-IDs-for-Intel-Wellsburg-PCH.patch</Patch>
+            <Patch level="1">patches/mageia/mfd-lpc_ich-Add-Device-IDs-for-Intel-Wellsburg-PCH.patch</Patch>
+            <Patch level="1">patches/mageia/net-mac80211-improve-latency-and-throughput-while-software.patch</Patch>
+            <Patch level="1">patches/mageia/net-wireless-ath9k_rx_dma_stop_check.patch</Patch>
+            <Patch level="1">patches/mageia/sound-pci-hda-hda_intel-Add-Device-IDs-for-Intel-Wellsburg-PCH.patch</Patch>
+
             <!-- Fedora Kernel Patches -->
 
             <Patch level="1">patches/fedora/acpi-sony-nonvs-blacklist.patch</Patch>
@@ -308,6 +318,17 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2013-02-17</Date>
+            <Version>3.8.0</Version>
+            <Comment>obsoletemans wifi fixing</Comment>
+            <Type package="kernel">security</Type>
+            <Requires>
+                <Action package="kernel">systemRestart</Action>
+            </Requires>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2013-02-12</Date>
             <Version>3.8.0</Version>
