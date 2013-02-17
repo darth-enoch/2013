@@ -7,6 +7,7 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 WorkDir = "js-1.8.7/js/src"
@@ -25,4 +26,8 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("README*")
+    
+    pisitools.insinto("/usr/include/js", "../public/*.h")
+    shelltools.cd("../") 
+    pisitools.insinto("/usr/include/mozilla", "../mfbt/*.h")
 

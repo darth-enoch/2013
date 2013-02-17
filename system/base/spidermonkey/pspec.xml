@@ -55,6 +55,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/js</Path>
+            <Path fileType="header">/usr/include/mozilla</Path>
         </Files>
     </Package>
 
