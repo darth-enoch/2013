@@ -13,6 +13,7 @@ from pisi.actionsapi import get
 ver = "1.13.1"
 
 def setup():
+    autotools.autoreconf("-fi")
     autotools.configure()
 
 def build():

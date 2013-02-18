@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Introspection system for GObject-based libraries</Summary>
         <Description>gobject-introspection can scan C header and source files in order to generate introspection typelib files. It also provides an API to examine typelib files, useful for creating language bindings among other things.</Description>
-        <Archive sha1sum="30bae5a06417ed78527b889ae66ee357a383b7c5" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/gobject-introspection/1.35/gobject-introspection-1.35.2.tar.xz</Archive>
+        <Archive sha1sum="f281b3fd6a57b5eb54ecd9b6649f6db1d25adf6b" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/gobject-introspection/1.35/gobject-introspection-1.35.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mesa-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -60,6 +60,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-17</Date>
+            <Version>1.35.4</Version>
+            <Comment>New release</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-23</Date>
             <Version>1.35.2</Version>

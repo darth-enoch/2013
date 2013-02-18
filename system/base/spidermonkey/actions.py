@@ -7,9 +7,10 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "js-1.8.7/js/src"
+WorkDir = "js-1.8.5/js/src"
 
 def setup():
    autotools.configure("--enable-jemalloc \
@@ -25,4 +26,3 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("README*")
-

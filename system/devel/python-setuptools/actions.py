@@ -11,4 +11,4 @@ WorkDir="distribute-%s" % get.srcVERSION()
 
 def install():
     pythonmodules.install()
-    #pisitools.remove("/usr/lib/%s/site-packages/setuptools/*.exe" % get.curPYTHON())
+    pisitools.remove("/usr/lib/%s/site-packages/setuptools/*.exe" % get.curPYTHON())

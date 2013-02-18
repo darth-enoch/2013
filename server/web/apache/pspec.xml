@@ -80,88 +80,6 @@
             <AdditionalFile target="/var/www/localhost/htdocs/index-es.html" permission="0755" owner="root">webroot/index-es.html</AdditionalFile>
             <AdditionalFile target="/var/www/localhost/htdocs/index-de.html" permission="0755" owner="root">webroot/index-de.html</AdditionalFile>
             <AdditionalFile target="/var/www/localhost/htdocs/pardus.png" permission="0755" owner="root">webroot/pardus.png</AdditionalFile>
-            <!-- Tulliana icons instead of default icons -->
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/alert.red.png" permission="0755" owner="root">webroot/icons/alert.red.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/alert.red.gif" permission="0755" owner="root">webroot/icons/alert.red.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/back.gif" permission="0755" owner="root">webroot/icons/back.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/back.png" permission="0755" owner="root">webroot/icons/back.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/ball.red.gif" permission="0755" owner="root">webroot/icons/ball.red.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/ball.red.png" permission="0755" owner="root">webroot/icons/ball.red.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/binary.gif" permission="0755" owner="root">webroot/icons/binary.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/binary.png" permission="0755" owner="root">webroot/icons/binary.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/c.gif" permission="0755" owner="root">webroot/icons/c.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/c.png" permission="0755" owner="root">webroot/icons/c.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/dir.gif" permission="0755" owner="root">webroot/icons/dir.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/dir.png" permission="0755" owner="root">webroot/icons/dir.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/down.gif" permission="0755" owner="root">webroot/icons/down.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/down.png" permission="0755" owner="root">webroot/icons/down.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/folder.gif" permission="0755" owner="root">webroot/icons/folder.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/folder.png" permission="0755" owner="root">webroot/icons/folder.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/folder.open.gif" permission="0755" owner="root">webroot/icons/folder.open.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/folder.open.png" permission="0755" owner="root">webroot/icons/folder.open.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/folder.sec.gif" permission="0755" owner="root">webroot/icons/folder.sec.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/folder.sec.png" permission="0755" owner="root">webroot/icons/folder.sec.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/forward.gif" permission="0755" owner="root">webroot/icons/forward.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/forward.png" permission="0755" owner="root">webroot/icons/forward.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/image1.gif" permission="0755" owner="root">webroot/icons/image1.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/image1.png" permission="0755" owner="root">webroot/icons/image1.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/image2.gif" permission="0755" owner="root">webroot/icons/image2.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/image2.png" permission="0755" owner="root">webroot/icons/image2.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/image3.gif" permission="0755" owner="root">webroot/icons/image3.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/image3.png" permission="0755" owner="root">webroot/icons/image3.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/layout.gif" permission="0755" owner="root">webroot/icons/layout.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/layout.png" permission="0755" owner="root">webroot/icons/layout.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/pdf.gif" permission="0755" owner="root">webroot/icons/pdf.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/pdf.png" permission="0755" owner="root">webroot/icons/pdf.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/sound1.gif" permission="0755" owner="root">webroot/icons/sound1.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/sound1.png" permission="0755" owner="root">webroot/icons/sound1.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/sound2.gif" permission="0755" owner="root">webroot/icons/sound2.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/sound2.png" permission="0755" owner="root">webroot/icons/sound2.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/tex.gif" permission="0755" owner="root">webroot/icons/tex.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/tex.png" permission="0755" owner="root">webroot/icons/tex.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/text.gif" permission="0755" owner="root">webroot/icons/text.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/text.png" permission="0755" owner="root">webroot/icons/text.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/up.gif" permission="0755" owner="root">webroot/icons/up.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/up.png" permission="0755" owner="root">webroot/icons/up.png</AdditionalFile>
-            <!-- small icons -->
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/back.gif" permission="0755" owner="root">webroot/icons/small/back.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/back.png" permission="0755" owner="root">webroot/icons/small/back.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/binary.gif" permission="0755" owner="root">webroot/icons/small/binary.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/binary.png" permission="0755" owner="root">webroot/icons/small/binary.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/c.gif" permission="0755" owner="root">webroot/icons/small/c.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/c.png" permission="0755" owner="root">webroot/icons/small/c.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/dir.gif" permission="0755" owner="root">webroot/icons/small/dir.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/dir.png" permission="0755" owner="root">webroot/icons/small/dir.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/down.gif" permission="0755" owner="root">webroot/icons/small/down.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/down.png" permission="0755" owner="root">webroot/icons/small/down.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/folder.gif" permission="0755" owner="root">webroot/icons/small/folder.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/folder.png" permission="0755" owner="root">webroot/icons/small/folder.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/folder.open.gif" permission="0755" owner="root">webroot/icons/small/folder.open.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/folder.open.png" permission="0755" owner="root">webroot/icons/small/folder.open.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/folder.sec.gif" permission="0755" owner="root">webroot/icons/small/folder.sec.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/folder.sec.png" permission="0755" owner="root">webroot/icons/small/folder.sec.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/forward.gif" permission="0755" owner="root">webroot/icons/small/forward.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/forward.png" permission="0755" owner="root">webroot/icons/small/forward.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/image1.gif" permission="0755" owner="root">webroot/icons/small/image1.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/image1.png" permission="0755" owner="root">webroot/icons/small/image1.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/image2.gif" permission="0755" owner="root">webroot/icons/small/image2.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/image2.png" permission="0755" owner="root">webroot/icons/small/image2.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/image3.gif" permission="0755" owner="root">webroot/icons/small/image3.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/image3.png" permission="0755" owner="root">webroot/icons/small/image3.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/layout.gif" permission="0755" owner="root">webroot/icons/small/layout.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/layout.png" permission="0755" owner="root">webroot/icons/small/layout.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/pdf.gif" permission="0755" owner="root">webroot/icons/small/pdf.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/pdf.png" permission="0755" owner="root">webroot/icons/small/pdf.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/sound1.gif" permission="0755" owner="root">webroot/icons/small/sound1.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/sound1.png" permission="0755" owner="root">webroot/icons/small/sound1.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/sound2.gif" permission="0755" owner="root">webroot/icons/small/sound2.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/sound2.png" permission="0755" owner="root">webroot/icons/small/sound2.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/tex.gif" permission="0755" owner="root">webroot/icons/small/tex.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/tex.png" permission="0755" owner="root">webroot/icons/small/tex.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/text.gif" permission="0755" owner="root">webroot/icons/small/text.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/text.png" permission="0755" owner="root">webroot/icons/small/text.png</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/up.gif" permission="0755" owner="root">webroot/icons/small/up.gif</AdditionalFile>
-            <AdditionalFile target="/var/www/localhost/htdocs/icons/small/up.png" permission="0755" owner="root">webroot/icons/small/up.png</AdditionalFile>
         </AdditionalFiles>
         <Provides>
              <COMAR script="package.py">System.Package</COMAR>
@@ -170,6 +88,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-17</Date>
+            <Version>2.4.3</Version>
+            <Comment>Cosmetic corrections</Comment>
+            <Name>Ertan Güven</Name>
+            <Email>ertangvn@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-07</Date>
             <Version>2.4.3</Version>

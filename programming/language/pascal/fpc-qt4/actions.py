@@ -12,8 +12,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 if get.ARCH() == "i686":
-    WorkDir="bin-qt4pas-V2.1_Qt4.5.3"
-
+  
     def install_lib():
         pisitools.dolib("libQt4Pas.so.5.2.1")
         pisitools.dosym("libQt4Pas.so.5.2.1", "/usr/lib/libQt4Pas.so")

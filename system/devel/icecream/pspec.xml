@@ -12,13 +12,13 @@
         <IsA>service</IsA>
         <Summary>Distributed C(++) compiling tool</Summary>
         <Description>Icecream is a program for distributed compiling of C/C++ code across several machines based on ideas and code by distcc.</Description>
-        <Archive sha1sum="3699b6dacdc873a22a478b5959cfe0e7dd7115aa" type="tarbz2">ftp://ftp.suse.com/pub/projects/icecream/icecc-0.9.7.tar.bz2</Archive>
+        <Archive sha1sum="d21f4ace3a467f87889882796fc2cf563060a887" type="tarbz2">ftp://ftp.suse.com/pub/projects/icecream/icecc-0.9.98.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>librsync-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="0">0.9.7-automake-1.11.2.patch</Patch>
-            <Patch level="0">fix-rusage.diff</Patch>
+            <!--<Patch level="0">0.9.7-automake-1.11.2.patch</Patch>
+            <Patch level="0">fix-rusage.diff</Patch>--> <!--Fixed-->
         </Patches>
     </Source>
 
@@ -30,11 +30,13 @@
         <Files>
             <Path fileType="executable">/opt/icecream/sbin/iceccd</Path>
             <Path fileType="executable">/opt/icecream/bin/icecc</Path>
+            <Path fileType="executable">/usr/libexec/icecc</Path>
             <Path fileType="library">/opt/icecream/lib</Path>
             <Path fileType="executable">/opt/icecream/bin</Path>
             <Path fileType="header">/opt/icecream/include/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/icecc</Path>
+            <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/lib/systemd/system/icecream-daemon.service</Path>
         </Files>
         <AdditionalFiles>
@@ -52,7 +54,7 @@
             <Dependency>icecream</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/opt/icecream/sbin/scheduler</Path>
+            <Path fileType="executable">/opt/icecream/sbin/icecc-scheduler</Path>
             <Path fileType="data">/lib/systemd/system/icecream-scheduler.service</Path>
         </Files>
         <AdditionalFiles>
@@ -64,6 +66,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-02-18</Date>
+            <Version>0.9.98.3</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
       <Update release="1">
             <Date>2012-10-09</Date>
             <Version>0.9.7</Version>
