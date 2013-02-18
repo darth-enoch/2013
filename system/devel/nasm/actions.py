@@ -10,7 +10,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-#WorkDir = "nasm-%s" % get.srcVERSION().replace("_", "")
+WorkDir = "nasm-%s" % get.srcVERSION().replace("_", "")
 
 binFiles = ["nasm", "ndisasm"]
 rdoffFiles = ["ldrdf", "rdf2bin", "rdf2ihx", "rdfdump", "rdflib", "rdx"]
