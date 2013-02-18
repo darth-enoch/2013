@@ -19,10 +19,10 @@
             <Dependency>gnuconfig</Dependency>
             <Dependency>patch</Dependency>
         </BuildDependencies>
-        <!-- <Patches>
-            <Patch level="1">do-not-generate-pyo-install-script.patch</Patch>
-	    <Patch level="2">automake-1.12.2-aclocal7-test-fix.diff</Patch>
-        </Patches>-->
+        <Patches>
+            <Patch level="1">automake-1.13.1-non-existing-m4-dir.patch</Patch>
+            <Patch level="1">automake-1.13.1-reenable-disabled-macros.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -35,7 +35,7 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/automake-*</Path>
             <Path fileType="data">/usr/share/aclocal-*</Path>
-	    <Path fileType="data">/usr/share/aclocal</Path>
+            <Path fileType="data">/usr/share/aclocal</Path>
             <Path fileType="info">/usr/share/info</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
