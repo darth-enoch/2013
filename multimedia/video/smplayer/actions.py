@@ -20,7 +20,7 @@ def build():
 def install():
     autotools.rawInstall("PREFIX=/usr DESTDIR=%s DOC_PATH=/usr/share/doc/%s" % (get.installDIR(),get.srcNAME()))
 
-    pisitools.copytree("../smplayer-oxygen-air-theme", "%s/usr/share/smplayer/themes/Oxygen-Air" % get.installDIR())
+    pisitools.copytree("../smplayer-themes-20120919/Oxygen-Air", "%s/usr/share/smplayer/themes/Oxygen-Air" % get.installDIR())
     pisitools.copytree("../smplayer-themes-20120919/blackPanther-Light", "%s/usr/share/smplayer/themes/blackPanther-Light" % get.installDIR())
     pisitools.copytree("../smplayer-themes-20120919/blackPanther-Real", "%s/usr/share/smplayer/themes/blackPanther-Real" % get.installDIR())
     pisitools.copytree("../smplayer-themes-20120919/blackPanther-VistaLike", "%s/usr/share/smplayer/themes/blackPanther-VistaLike" % get.installDIR())
@@ -31,4 +31,9 @@ def install():
     pisitools.copytree("../smplayer-themes-20120919/Oxygen", "%s/usr/share/smplayer/themes/Oxygen" % get.installDIR())
     pisitools.copytree("../smplayer-themes-20120919/Oxygen-Refit", "%s/usr/share/smplayer/themes/Oxygen-Refit" % get.installDIR())
     pisitools.copytree("../smplayer-themes-20120919/Silk", "%s/usr/share/smplayer/themes/Silk" % get.installDIR())
-    pisitools.copytree("../smplayer-themes-20120919/Tango", "%s/usr/share/smplayer/themes/Tango" % get.installDIR())
+    pisitools.copytree("../smplayer-themes-20120919/Tango", "%s/usr/share/smplayer/themes/Tango" % get.installDIR())    
+    pisitools.copytree("../smplayer-themes-20120919/Black", "%s/usr/share/smplayer/themes/Black" % get.installDIR())
+    pisitools.copytree("../smplayer-themes-20120919/Gonzo", "%s/usr/share/smplayer/themes/Gonzo" % get.installDIR())
+    pisitools.copytree("../smplayer-themes-20120919/Mac", "%s/usr/share/smplayer/themes/Mac" % get.installDIR())
+    pisitools.copytree("../smplayer-themes-20120919/Modern", "%s/usr/share/smplayer/themes/Modern" % get.installDIR())
+    pisitools.copytree("../smplayer-themes-20120919/Vista", "%s/usr/share/smplayer/themes/Vista" % get.installDIR())
