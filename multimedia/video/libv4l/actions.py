@@ -11,24 +11,16 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-# Raw building
-args = "PREFIX=/usr \
-        CFLAGS='%s'" % get.CFLAGS().replace("-O2", "-O3")
-
-if get.buildTYPE() == "emul32":
-    args += " -C lib LIBDIR=/usr/lib32"
-    shelltools.export("CC", "%s -m32" % get.CC())
-    shelltools.export("CXX", "%s -m32" % get.CXX())
-    #shelltools.export("LDFLAGS", "%s -m32" % get.LDFLAGS())
-else:
-    args += " LIBDIR=/usr/lib"
+def setup():
+    autotools.configure("--disable-static \
+                         --disable-rpath")
 
 def build():
-    pisitools.dosed("Make.rules", "^CFLAGS\s:=.*")
-    autotools.make(args)
+    autotools.make()
 
 def install():
-    autotools.rawInstall("%s DESTDIR=%s" % (args, get.installDIR()))
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    if get.buildTYPE() == "emul32": return
 
     pisitools.dodoc("ChangeLog", "COPYING*", "README*", "TODO")
     pisitools.insinto("/%s/%s/" % (get.docDIR(), get.srcNAME()), "contrib")
