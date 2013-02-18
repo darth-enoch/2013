@@ -14,7 +14,12 @@
     margin-bottom: 10px ! important;
     margin-top: 10px ! important;
     text-align: justify ! important;
-    font-family: "DejaVu Sans",sans-serif ! important;
+    font-family: "DejaVu Sans",sans-serif ! important;4
+    background-image: url(http://www.yakuter.com/wp-content/yuklemeler/jest-promosyon.gif);
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-color: white;
+	background-position: top-left;
     }
 
   h1 {
