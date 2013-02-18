@@ -18,8 +18,6 @@ def setup():
     #shelltools.system("sed -i -e '/mozjs/s:185:187:g' configure")
     #look http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/sys-auth/polkit/polkit-0.107.ebuild
     #shelltools.system("cmd='sed -i -e "/mozjs/s:185:187:g" configure src/polkitbackend/polkitbackendjsauthority.c'")
-    pisitools.dosed("configure.ac", "185", "187")
-    pisitools.dosed("src/polkitbackend/polkitbackendjsauthority.c", "185", "187")
     autotools.autoreconf("-fi")
     autotools.configure("--with-pam-module-dir=/lib/security/ \
                          --with-os-type=Pardus \
